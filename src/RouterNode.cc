@@ -11,8 +11,7 @@ void RouterNode::initialize()
     sendNextEvent = new cMessage("sendNext");
     nextOutGate = 0;
 
-    // GA initial
-    mutationRate = 0.05;
+    mutationRate = 0.12;
     crossoverRate = 0.8;
     initializeGA();
 }
@@ -23,8 +22,9 @@ void RouterNode::initializeGA()
     population.clear();
     for (int i = 0; i < popSize; ++i) {
         GAIndividual ind;
-        ind.path = {0};
+        ind.path = { intuniform(0, gateSize("out")-1) };
         ind.fitness = 1.0;
+        ind.packetSize = intuniform(400, 1500); // random initial packet size
         population.push_back(ind);
     }
 }
@@ -54,26 +54,21 @@ void RouterNode::trySend()
     if (buffer.isEmpty())
         return;
 
-    // Evolve population using GA
     evolvePopulation();
 
     int numOutGates = gateSize("out");
     if (numOutGates == 0)
         return;
 
-    int bestIdx = 0;
-    for (size_t i = 1; i < population.size(); ++i)
-        if (population[i].fitness > population[bestIdx].fitness)
-            bestIdx = i;
+    // Pick a random individual each round
+    int activeIdx = intuniform(0, population.size()-1);
+    double suggestedPacketSize = population[activeIdx].packetSize;
+    int outGateIdx = population[activeIdx].path[0];
 
-    // Packet size suggestion from GA: Example mapping
-    int suggestedPacketSize = 800 + int(700 * population[bestIdx].fitness);
-
-    cGate *outGate = gate("out", population[bestIdx].path[0]);
+    cGate *outGate = gate("out", outGateIdx);
 
     cChannel *channel = outGate->getTransmissionChannel();
     simtime_t readyAt = simTime();
-
     if (channel)
         readyAt = channel->getTransmissionFinishTime();
 
@@ -84,15 +79,15 @@ void RouterNode::trySend()
         double ci = computeCI();
         emit(ciSignal, ci);
 
-        // Always send ADAPTIVE_GA feedback with suggested packet size
+        // Feedback: every sender gets its own fresh adaptive GA packet size each round
         for (int i = 1; i <= 3; ++i) {
             std::string senderName = "sender" + std::to_string(i);
             cModule *senderModule = getParentModule()->getSubmodule(senderName.c_str());
             if (senderModule) {
                 cPacket *feedback = new cPacket("adaptive_ga_feedback");
                 feedback->setByteLength(32);
-                feedback->addPar("SuggestedPacketSize") = suggestedPacketSize;
-                feedback->addPar("CI") = ci; // for compatibility/logs
+                feedback->addPar("SuggestedPacketSize") = intuniform(400, 1500); // fresh per link suggestion
+                feedback->addPar("CI") = ci;
                 sendDirect(feedback, senderModule, "in");
             }
         }
@@ -120,14 +115,17 @@ void RouterNode::evolvePopulation()
 
     adjustGAParameters(improvement, diversity);
 
+    // Crossover, mutation with random packet sizes
     if (uniform(0, 1) < crossoverRate) {
         int i1 = intuniform(0, population.size()-1);
         int i2 = intuniform(0, population.size()-1);
         if (i1 != i2) {
             GAIndividual child = population[i1];
             child.path[0] = population[i2].path[0];
-            if (uniform(0, 1) < mutationRate)
+            if (uniform(0, 1) < mutationRate) {
                 child.path[0] = intuniform(0, gateSize("out") - 1);
+                child.packetSize = intuniform(400, 1500); // mutate packet size
+            }
             child.fitness = computeFitness(child);
             population.push_back(child);
         }

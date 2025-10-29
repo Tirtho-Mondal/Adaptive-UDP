@@ -1,4 +1,4 @@
-SB ov 1538 ev 2 rid General-0-20251029-20:14:51-22204
+SB ov 1538 ev 2 rid General-0-20251029-20:22:25-16024
 
 E # 0 t 0 m 1 ce -1 msg -1
 MC id 1 c omnetpp::cModule t adaptive_udp.simulations.AdaptiveUDPNetwork n AdaptiveUDPNetwork cm 1
@@ -132,18 +132,18 @@ BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.00164 am 5 a
 ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.00164 am 5 at 0.00292 pe 7
 
 E # 8 t 0.00164 m 2 ce 7 msg 8
-- INFO: [GA FEEDBACK] Time: 0.00164 | Feedback size: 32 bytes | SuggestedPacketSize=1485
-- INFO: [ADAPTATION] Updated packet size: 1485 bytes (was 800 bytes)
+- INFO: [GA FEEDBACK] Time: 0.00164 | Feedback size: 32 bytes | SuggestedPacketSize=943
+- INFO: [ADAPTATION] Updated packet size: 943 bytes (was 800 bytes)
 DM id 8 tid 8 eid 8 etid 8 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 8
 
 E # 9 t 0.00164 m 3 ce 7 msg 9
-- INFO: [GA FEEDBACK] Time: 0.00164 | Feedback size: 32 bytes | SuggestedPacketSize=1485
-- INFO: [ADAPTATION] Updated packet size: 1485 bytes (was 800 bytes)
+- INFO: [GA FEEDBACK] Time: 0.00164 | Feedback size: 32 bytes | SuggestedPacketSize=1114
+- INFO: [ADAPTATION] Updated packet size: 1114 bytes (was 800 bytes)
 DM id 9 tid 9 eid 9 etid 9 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 9
 
 E # 10 t 0.00164 m 4 ce 7 msg 10
-- INFO: [GA FEEDBACK] Time: 0.00164 | Feedback size: 32 bytes | SuggestedPacketSize=1485
-- INFO: [ADAPTATION] Updated packet size: 1485 bytes (was 800 bytes)
+- INFO: [GA FEEDBACK] Time: 0.00164 | Feedback size: 32 bytes | SuggestedPacketSize=644
+- INFO: [ADAPTATION] Updated packet size: 644 bytes (was 800 bytes)
 DM id 10 tid 10 eid 10 etid 10 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 10
 
 E # 11 t 0.00292 m 5 ce 7 msg 3
@@ -170,18 +170,18 @@ BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.00292 am 5 a
 ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.00292 am 5 at 0.0042 pe 11
 
 E # 12 t 0.00292 m 2 ce 11 msg 11
-- INFO: [GA FEEDBACK] Time: 0.00292 | Feedback size: 32 bytes | SuggestedPacketSize=1490
-- INFO: [ADAPTATION] Updated packet size: 1490 bytes (was 1485 bytes)
+- INFO: [GA FEEDBACK] Time: 0.00292 | Feedback size: 32 bytes | SuggestedPacketSize=528
+- INFO: [ADAPTATION] Updated packet size: 528 bytes (was 943 bytes)
 DM id 11 tid 11 eid 11 etid 11 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 12
 
 E # 13 t 0.00292 m 3 ce 11 msg 12
-- INFO: [GA FEEDBACK] Time: 0.00292 | Feedback size: 32 bytes | SuggestedPacketSize=1490
-- INFO: [ADAPTATION] Updated packet size: 1490 bytes (was 1485 bytes)
+- INFO: [GA FEEDBACK] Time: 0.00292 | Feedback size: 32 bytes | SuggestedPacketSize=528
+- INFO: [ADAPTATION] Updated packet size: 528 bytes (was 1114 bytes)
 DM id 12 tid 12 eid 12 etid 12 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 13
 
 E # 14 t 0.00292 m 4 ce 11 msg 13
-- INFO: [GA FEEDBACK] Time: 0.00292 | Feedback size: 32 bytes | SuggestedPacketSize=1490
-- INFO: [ADAPTATION] Updated packet size: 1490 bytes (was 1485 bytes)
+- INFO: [GA FEEDBACK] Time: 0.00292 | Feedback size: 32 bytes | SuggestedPacketSize=1477
+- INFO: [ADAPTATION] Updated packet size: 1477 bytes (was 644 bytes)
 DM id 13 tid 13 eid 13 etid 13 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 14
 
 E # 15 t 0.0042 m 5 ce 11 msg 3
@@ -206,18 +206,18 @@ ES id 16 tid 16 eid 16 etid 16 c omnetpp::cPacket n adaptive_ga_feedback l 256 s
 CL id 17 tid 16 eid 17 etid 16 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 16
 
 E # 16 t 0.0042 m 2 ce 15 msg 14
-- INFO: [GA FEEDBACK] Time: 0.0042 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1490 bytes)
+- INFO: [GA FEEDBACK] Time: 0.0042 | Feedback size: 32 bytes | SuggestedPacketSize=735
+- INFO: [ADAPTATION] Updated packet size: 735 bytes (was 528 bytes)
 DM id 14 tid 14 eid 14 etid 14 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 16
 
 E # 17 t 0.0042 m 3 ce 15 msg 15
-- INFO: [GA FEEDBACK] Time: 0.0042 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1490 bytes)
+- INFO: [GA FEEDBACK] Time: 0.0042 | Feedback size: 32 bytes | SuggestedPacketSize=788
+- INFO: [ADAPTATION] Updated packet size: 788 bytes (was 528 bytes)
 DM id 15 tid 15 eid 15 etid 15 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 17
 
 E # 18 t 0.0042 m 4 ce 15 msg 16
-- INFO: [GA FEEDBACK] Time: 0.0042 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1490 bytes)
+- INFO: [GA FEEDBACK] Time: 0.0042 | Feedback size: 32 bytes | SuggestedPacketSize=1466
+- INFO: [ADAPTATION] Updated packet size: 1466 bytes (was 1477 bytes)
 DM id 16 tid 16 eid 16 etid 16 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 18
 
 E # 19 t 0.00492 m 6 ce 7 msg 5
@@ -226,8 +226,8 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.00492 am 6 a
 
 E # 20 t 0.00492 m 6 ce 19 msg 4
 BS id 5 tid 5 eid 5 etid 5 c omnetpp::cPacket n UDP_Packet_0_800B l 6400 m 6 pe 19
-SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
-ES id 5 tid 5 eid 5 etid 5 c omnetpp::cPacket n UDP_Packet_0_800B l 6400 sm 6 sg 2621440 st 0.00492 am 7 ag 0 at 0.00772 pe 20
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 5 tid 5 eid 5 etid 5 c omnetpp::cPacket n UDP_Packet_0_800B l 6400 sm 6 sg 2621441 st 0.00492 am 8 ag 0 at 0.00772 pe 20
 CL id 17 tid 5 eid 17 etid 5 c omnetpp::cMessage n UDP_Packet_0_800B m 6 pe -1 cid 5
 CM id 17 tid 17 eid 17 etid 17 c omnetpp::cMessage n adaptive_ga_feedback pe -1
 BS id 17 tid 17 eid 17 etid 17 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 20
@@ -246,18 +246,18 @@ ES id 19 tid 19 eid 19 etid 19 c omnetpp::cPacket n adaptive_ga_feedback l 256 s
 CL id 20 tid 19 eid 20 etid 19 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 19
 
 E # 21 t 0.00492 m 2 ce 20 msg 17
-- INFO: [GA FEEDBACK] Time: 0.00492 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
+- INFO: [GA FEEDBACK] Time: 0.00492 | Feedback size: 32 bytes | SuggestedPacketSize=457
+- INFO: [ADAPTATION] Updated packet size: 457 bytes (was 735 bytes)
 DM id 17 tid 17 eid 17 etid 17 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 21
 
 E # 22 t 0.00492 m 3 ce 20 msg 18
-- INFO: [GA FEEDBACK] Time: 0.00492 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
+- INFO: [GA FEEDBACK] Time: 0.00492 | Feedback size: 32 bytes | SuggestedPacketSize=691
+- INFO: [ADAPTATION] Updated packet size: 691 bytes (was 788 bytes)
 DM id 18 tid 18 eid 18 etid 18 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 22
 
 E # 23 t 0.00492 m 4 ce 20 msg 19
-- INFO: [GA FEEDBACK] Time: 0.00492 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
+- INFO: [GA FEEDBACK] Time: 0.00492 | Feedback size: 32 bytes | SuggestedPacketSize=1179
+- INFO: [ADAPTATION] Updated packet size: 1179 bytes (was 1466 bytes)
 DM id 19 tid 19 eid 19 etid 19 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 23
 
 E # 24 t 0.0062 m 6 ce 11 msg 6
@@ -286,18 +286,18 @@ ES id 22 tid 22 eid 22 etid 22 c omnetpp::cPacket n adaptive_ga_feedback l 256 s
 CL id 23 tid 22 eid 23 etid 22 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 22
 
 E # 26 t 0.0062 m 2 ce 25 msg 20
-- INFO: [GA FEEDBACK] Time: 0.0062 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
+- INFO: [GA FEEDBACK] Time: 0.0062 | Feedback size: 32 bytes | SuggestedPacketSize=1308
+- INFO: [ADAPTATION] Updated packet size: 1308 bytes (was 457 bytes)
 DM id 20 tid 20 eid 20 etid 20 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 26
 
 E # 27 t 0.0062 m 3 ce 25 msg 21
-- INFO: [GA FEEDBACK] Time: 0.0062 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
+- INFO: [GA FEEDBACK] Time: 0.0062 | Feedback size: 32 bytes | SuggestedPacketSize=1033
+- INFO: [ADAPTATION] Updated packet size: 1033 bytes (was 691 bytes)
 DM id 21 tid 21 eid 21 etid 21 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 27
 
 E # 28 t 0.0062 m 4 ce 25 msg 22
-- INFO: [GA FEEDBACK] Time: 0.0062 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
+- INFO: [GA FEEDBACK] Time: 0.0062 | Feedback size: 32 bytes | SuggestedPacketSize=484
+- INFO: [ADAPTATION] Updated packet size: 484 bytes (was 1179 bytes)
 DM id 22 tid 22 eid 22 etid 22 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 28
 
 E # 29 t 0.00748 m 6 ce 15 msg 7
@@ -306,8 +306,8 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.00748 am 6 a
 
 E # 30 t 0.00748 m 6 ce 29 msg 4
 BS id 7 tid 7 eid 7 etid 7 c omnetpp::cPacket n UDP_Packet_0_800B l 6400 m 6 pe 29
-SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
-ES id 7 tid 7 eid 7 etid 7 c omnetpp::cPacket n UDP_Packet_0_800B l 6400 sm 6 sg 2621440 st 0.00748 am 7 ag 0 at 0.01028 pe 30
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 7 tid 7 eid 7 etid 7 c omnetpp::cPacket n UDP_Packet_0_800B l 6400 sm 6 sg 2621441 st 0.00748 am 8 ag 0 at 0.01028 pe 30
 CL id 23 tid 7 eid 23 etid 7 c omnetpp::cMessage n UDP_Packet_0_800B m 6 pe -1 cid 7
 CM id 23 tid 23 eid 23 etid 23 c omnetpp::cMessage n adaptive_ga_feedback pe -1
 BS id 23 tid 23 eid 23 etid 23 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 30
@@ -326,1015 +326,781 @@ ES id 25 tid 25 eid 25 etid 25 c omnetpp::cPacket n adaptive_ga_feedback l 256 s
 CL id 26 tid 25 eid 26 etid 25 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 25
 
 E # 31 t 0.00748 m 2 ce 30 msg 23
-- INFO: [GA FEEDBACK] Time: 0.00748 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
+- INFO: [GA FEEDBACK] Time: 0.00748 | Feedback size: 32 bytes | SuggestedPacketSize=1372
+- INFO: [ADAPTATION] Updated packet size: 1372 bytes (was 1308 bytes)
 DM id 23 tid 23 eid 23 etid 23 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 31
 
 E # 32 t 0.00748 m 3 ce 30 msg 24
-- INFO: [GA FEEDBACK] Time: 0.00748 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
+- INFO: [GA FEEDBACK] Time: 0.00748 | Feedback size: 32 bytes | SuggestedPacketSize=1268
+- INFO: [ADAPTATION] Updated packet size: 1268 bytes (was 1033 bytes)
 DM id 24 tid 24 eid 24 etid 24 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 32
 
 E # 33 t 0.00748 m 4 ce 30 msg 25
-- INFO: [GA FEEDBACK] Time: 0.00748 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
+- INFO: [GA FEEDBACK] Time: 0.00748 | Feedback size: 32 bytes | SuggestedPacketSize=1354
+- INFO: [ADAPTATION] Updated packet size: 1354 bytes (was 484 bytes)
 DM id 25 tid 25 eid 25 etid 25 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 33
 
-E # 34 t 0.00772 m 7 ce 20 msg 5
-- INFO: receiver1 received packet #1 from router2
-DM id 5 tid 5 eid 5 etid 5 c omnetpp::cMessage n UDP_Packet_0_800B m 7 pe 34
+E # 34 t 0.00772 m 8 ce 20 msg 5
+- INFO: receiver2 received packet #1 from router2
+DM id 5 tid 5 eid 5 etid 5 c omnetpp::cMessage n UDP_Packet_0_800B m 8 pe 34
 
 E # 35 t 0.009 m 7 ce 25 msg 6
-- INFO: receiver1 received packet #2 from router2
+- INFO: receiver1 received packet #1 from router2
 DM id 6 tid 6 eid 6 etid 6 c omnetpp::cMessage n UDP_Packet_0_800B m 7 pe 35
 
-E # 36 t 0.01028 m 7 ce 30 msg 7
-- INFO: receiver1 received packet #3 from router2
-DM id 7 tid 7 eid 7 etid 7 c omnetpp::cMessage n UDP_Packet_0_800B m 7 pe 36
+E # 36 t 0.01028 m 8 ce 30 msg 7
+- INFO: receiver2 received packet #2 from router2
+DM id 7 tid 7 eid 7 etid 7 c omnetpp::cMessage n UDP_Packet_0_800B m 8 pe 36
 
 E # 37 t 0.2 m 2 ce 1 msg 0
-CM id 26 tid 26 eid 26 etid 26 c omnetpp::cMessage n UDP_Packet_1_1495B pe -1
-- INFO: [SEND] Time: 0.2 | Packet #1 | Sent size: 1495 bytes
-BS id 26 tid 26 eid 26 etid 26 c omnetpp::cPacket n UDP_Packet_1_1495B l 11960 m 2 pe 37
-SH sm 2 sg 3 pd 0.001 td 0.001196 rd 0.001196
-ES id 26 tid 26 eid 26 etid 26 c omnetpp::cPacket n UDP_Packet_1_1495B l 11960 sm 2 sg 3 st 0.2 am 5 ag 1048576 at 0.202196 pe 37
-CL id 27 tid 26 eid 27 etid 26 c omnetpp::cMessage n UDP_Packet_1_1495B m 2 pe -1 cid 26
+CM id 26 tid 26 eid 26 etid 26 c omnetpp::cMessage n UDP_Packet_1_1372B pe -1
+- INFO: [SEND] Time: 0.2 | Packet #1 | Sent size: 1372 bytes
+BS id 26 tid 26 eid 26 etid 26 c omnetpp::cPacket n UDP_Packet_1_1372B l 10976 m 2 pe 37
+SH sm 2 sg 3 pd 0.001 td 0.0010976 rd 0.0010976
+ES id 26 tid 26 eid 26 etid 26 c omnetpp::cPacket n UDP_Packet_1_1372B l 10976 sm 2 sg 3 st 0.2 am 5 ag 1048576 at 0.2020976 pe 37
+CL id 27 tid 26 eid 27 etid 26 c omnetpp::cMessage n UDP_Packet_1_1372B m 2 pe -1 cid 26
 BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n sendTimer sm 2 st 0.2 am 2 at 0.4 pe 37
 ES id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n sendTimer sm 2 st 0.2 am 2 at 0.4 pe 37
 
 E # 38 t 0.2 m 3 ce 2 msg 1
-CM id 27 tid 27 eid 27 etid 27 c omnetpp::cMessage n UDP_Packet_1_1495B pe -1
-- INFO: [SEND] Time: 0.2 | Packet #1 | Sent size: 1495 bytes
-BS id 27 tid 27 eid 27 etid 27 c omnetpp::cPacket n UDP_Packet_1_1495B l 11960 m 3 pe 38
-SH sm 3 sg 3 pd 0.001 td 0.001196 rd 0.001196
-ES id 27 tid 27 eid 27 etid 27 c omnetpp::cPacket n UDP_Packet_1_1495B l 11960 sm 3 sg 3 st 0.2 am 5 ag 1048577 at 0.202196 pe 38
-CL id 28 tid 27 eid 28 etid 27 c omnetpp::cMessage n UDP_Packet_1_1495B m 3 pe -1 cid 27
+CM id 27 tid 27 eid 27 etid 27 c omnetpp::cMessage n UDP_Packet_1_1268B pe -1
+- INFO: [SEND] Time: 0.2 | Packet #1 | Sent size: 1268 bytes
+BS id 27 tid 27 eid 27 etid 27 c omnetpp::cPacket n UDP_Packet_1_1268B l 10144 m 3 pe 38
+SH sm 3 sg 3 pd 0.001 td 0.0010144 rd 0.0010144
+ES id 27 tid 27 eid 27 etid 27 c omnetpp::cPacket n UDP_Packet_1_1268B l 10144 sm 3 sg 3 st 0.2 am 5 ag 1048577 at 0.2020144 pe 38
+CL id 28 tid 27 eid 28 etid 27 c omnetpp::cMessage n UDP_Packet_1_1268B m 3 pe -1 cid 27
 BS id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n sendTimer sm 3 st 0.2 am 3 at 0.4 pe 38
 ES id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n sendTimer sm 3 st 0.2 am 3 at 0.4 pe 38
 
 E # 39 t 0.2 m 4 ce 3 msg 2
-CM id 28 tid 28 eid 28 etid 28 c omnetpp::cMessage n UDP_Packet_1_1495B pe -1
-- INFO: [SEND] Time: 0.2 | Packet #1 | Sent size: 1495 bytes
-BS id 28 tid 28 eid 28 etid 28 c omnetpp::cPacket n UDP_Packet_1_1495B l 11960 m 4 pe 39
-SH sm 4 sg 3 pd 0.001 td 0.001196 rd 0.001196
-ES id 28 tid 28 eid 28 etid 28 c omnetpp::cPacket n UDP_Packet_1_1495B l 11960 sm 4 sg 3 st 0.2 am 5 ag 1048578 at 0.202196 pe 39
-CL id 29 tid 28 eid 29 etid 28 c omnetpp::cMessage n UDP_Packet_1_1495B m 4 pe -1 cid 28
+CM id 28 tid 28 eid 28 etid 28 c omnetpp::cMessage n UDP_Packet_1_1354B pe -1
+- INFO: [SEND] Time: 0.2 | Packet #1 | Sent size: 1354 bytes
+BS id 28 tid 28 eid 28 etid 28 c omnetpp::cPacket n UDP_Packet_1_1354B l 10832 m 4 pe 39
+SH sm 4 sg 3 pd 0.001 td 0.0010832 rd 0.0010832
+ES id 28 tid 28 eid 28 etid 28 c omnetpp::cPacket n UDP_Packet_1_1354B l 10832 sm 4 sg 3 st 0.2 am 5 ag 1048578 at 0.2020832 pe 39
+CL id 29 tid 28 eid 29 etid 28 c omnetpp::cMessage n UDP_Packet_1_1354B m 4 pe -1 cid 28
 BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n sendTimer sm 4 st 0.2 am 4 at 0.4 pe 39
 ES id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n sendTimer sm 4 st 0.2 am 4 at 0.4 pe 39
 
-E # 40 t 0.202196 m 5 ce 37 msg 26
-BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.202196 am 5 at 0.202196 pe 40
-ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.202196 am 5 at 0.202196 pe 40
+E # 40 t 0.2020144 m 5 ce 38 msg 27
+BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.2020144 am 5 at 0.2020144 pe 40
+ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.2020144 am 5 at 0.2020144 pe 40
 
-E # 41 t 0.202196 m 5 ce 38 msg 27
-
-E # 42 t 0.202196 m 5 ce 39 msg 28
-
-E # 43 t 0.202196 m 5 ce 40 msg 3
-BS id 26 tid 26 eid 26 etid 26 c omnetpp::cPacket n UDP_Packet_1_1495B l 11960 m 5 pe 40
-SH sm 5 sg 2621440 pd 0.002 td 0.002392 rd 0.002392
-ES id 26 tid 26 eid 26 etid 26 c omnetpp::cPacket n UDP_Packet_1_1495B l 11960 sm 5 sg 2621440 st 0.202196 am 6 ag 1048576 at 0.206588 pe 43
-CL id 29 tid 26 eid 29 etid 26 c omnetpp::cMessage n UDP_Packet_1_1495B m 5 pe -1 cid 26
+E # 41 t 0.2020144 m 5 ce 40 msg 3
+BS id 27 tid 27 eid 27 etid 27 c omnetpp::cPacket n UDP_Packet_1_1268B l 10144 m 5 pe 40
+SH sm 5 sg 2621440 pd 0.002 td 0.0020288 rd 0.0020288
+ES id 27 tid 27 eid 27 etid 27 c omnetpp::cPacket n UDP_Packet_1_1268B l 10144 sm 5 sg 2621440 st 0.2020144 am 6 ag 1048576 at 0.2060432 pe 41
+CL id 29 tid 27 eid 29 etid 27 c omnetpp::cMessage n UDP_Packet_1_1268B m 5 pe -1 cid 27
 CM id 29 tid 29 eid 29 etid 29 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 29 tid 29 eid 29 etid 29 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 43
+BS id 29 tid 29 eid 29 etid 29 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 41
 SD sm 5 dm 2 dg 0
-ES id 29 tid 29 eid 29 etid 29 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.202196 am 2 ag 0 at 0.202196 pe 43
+ES id 29 tid 29 eid 29 etid 29 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.2020144 am 2 ag 0 at 0.2020144 pe 41
 CL id 30 tid 29 eid 30 etid 29 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 29
 CM id 30 tid 30 eid 30 etid 30 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 30 tid 30 eid 30 etid 30 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 43
+BS id 30 tid 30 eid 30 etid 30 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 41
 SD sm 5 dm 3 dg 0
-ES id 30 tid 30 eid 30 etid 30 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.202196 am 3 ag 0 at 0.202196 pe 43
+ES id 30 tid 30 eid 30 etid 30 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.2020144 am 3 ag 0 at 0.2020144 pe 41
 CL id 31 tid 30 eid 31 etid 30 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 30
 CM id 31 tid 31 eid 31 etid 31 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 31 tid 31 eid 31 etid 31 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 43
+BS id 31 tid 31 eid 31 etid 31 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 41
 SD sm 5 dm 4 dg 0
-ES id 31 tid 31 eid 31 etid 31 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.202196 am 4 ag 0 at 0.202196 pe 43
+ES id 31 tid 31 eid 31 etid 31 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.2020144 am 4 ag 0 at 0.2020144 pe 41
 CL id 32 tid 31 eid 32 etid 31 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 31
-BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.202196 am 5 at 0.204588 pe 43
-ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.202196 am 5 at 0.204588 pe 43
 
-E # 44 t 0.202196 m 2 ce 43 msg 29
-- INFO: [GA FEEDBACK] Time: 0.202196 | Feedback size: 32 bytes | SuggestedPacketSize=1485
-- INFO: [ADAPTATION] Updated packet size: 1485 bytes (was 1495 bytes)
-DM id 29 tid 29 eid 29 etid 29 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 44
+E # 42 t 0.2020144 m 2 ce 41 msg 29
+- INFO: [GA FEEDBACK] Time: 0.2020144 | Feedback size: 32 bytes | SuggestedPacketSize=569
+- INFO: [ADAPTATION] Updated packet size: 569 bytes (was 1372 bytes)
+DM id 29 tid 29 eid 29 etid 29 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 42
 
-E # 45 t 0.202196 m 3 ce 43 msg 30
-- INFO: [GA FEEDBACK] Time: 0.202196 | Feedback size: 32 bytes | SuggestedPacketSize=1485
-- INFO: [ADAPTATION] Updated packet size: 1485 bytes (was 1495 bytes)
-DM id 30 tid 30 eid 30 etid 30 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 45
+E # 43 t 0.2020144 m 3 ce 41 msg 30
+- INFO: [GA FEEDBACK] Time: 0.2020144 | Feedback size: 32 bytes | SuggestedPacketSize=656
+- INFO: [ADAPTATION] Updated packet size: 656 bytes (was 1268 bytes)
+DM id 30 tid 30 eid 30 etid 30 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 43
 
-E # 46 t 0.202196 m 4 ce 43 msg 31
-- INFO: [GA FEEDBACK] Time: 0.202196 | Feedback size: 32 bytes | SuggestedPacketSize=1485
-- INFO: [ADAPTATION] Updated packet size: 1485 bytes (was 1495 bytes)
-DM id 31 tid 31 eid 31 etid 31 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 46
+E # 44 t 0.2020144 m 4 ce 41 msg 31
+- INFO: [GA FEEDBACK] Time: 0.2020144 | Feedback size: 32 bytes | SuggestedPacketSize=1216
+- INFO: [ADAPTATION] Updated packet size: 1216 bytes (was 1354 bytes)
+DM id 31 tid 31 eid 31 etid 31 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 44
 
-E # 47 t 0.204588 m 5 ce 43 msg 3
-BS id 27 tid 27 eid 27 etid 27 c omnetpp::cPacket n UDP_Packet_1_1495B l 11960 m 5 pe 41
-SH sm 5 sg 2621440 pd 0.002 td 0.002392 rd 0.002392
-ES id 27 tid 27 eid 27 etid 27 c omnetpp::cPacket n UDP_Packet_1_1495B l 11960 sm 5 sg 2621440 st 0.204588 am 6 ag 1048576 at 0.20898 pe 47
-CL id 32 tid 27 eid 32 etid 27 c omnetpp::cMessage n UDP_Packet_1_1495B m 5 pe -1 cid 27
+E # 45 t 0.2020832 m 5 ce 39 msg 28
+BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.2020832 am 5 at 0.2020832 pe 45
+ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.2020832 am 5 at 0.2020832 pe 45
+
+E # 46 t 0.2020832 m 5 ce 45 msg 3
+BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.2020832 am 5 at 0.2040432 pe 46
+ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.2020832 am 5 at 0.2040432 pe 46
+
+E # 47 t 0.2020976 m 5 ce 37 msg 26
+
+E # 48 t 0.2040432 m 5 ce 46 msg 3
+BS id 28 tid 28 eid 28 etid 28 c omnetpp::cPacket n UDP_Packet_1_1354B l 10832 m 5 pe 45
+SH sm 5 sg 2621440 pd 0.002 td 0.0021664 rd 0.0021664
+ES id 28 tid 28 eid 28 etid 28 c omnetpp::cPacket n UDP_Packet_1_1354B l 10832 sm 5 sg 2621440 st 0.2040432 am 6 ag 1048576 at 0.2082096 pe 48
+CL id 32 tid 28 eid 32 etid 28 c omnetpp::cMessage n UDP_Packet_1_1354B m 5 pe -1 cid 28
 CM id 32 tid 32 eid 32 etid 32 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 32 tid 32 eid 32 etid 32 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 47
+BS id 32 tid 32 eid 32 etid 32 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 48
 SD sm 5 dm 2 dg 0
-ES id 32 tid 32 eid 32 etid 32 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.204588 am 2 ag 0 at 0.204588 pe 47
+ES id 32 tid 32 eid 32 etid 32 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.2040432 am 2 ag 0 at 0.2040432 pe 48
 CL id 33 tid 32 eid 33 etid 32 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 32
 CM id 33 tid 33 eid 33 etid 33 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 33 tid 33 eid 33 etid 33 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 47
+BS id 33 tid 33 eid 33 etid 33 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 48
 SD sm 5 dm 3 dg 0
-ES id 33 tid 33 eid 33 etid 33 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.204588 am 3 ag 0 at 0.204588 pe 47
+ES id 33 tid 33 eid 33 etid 33 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.2040432 am 3 ag 0 at 0.2040432 pe 48
 CL id 34 tid 33 eid 34 etid 33 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 33
 CM id 34 tid 34 eid 34 etid 34 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 34 tid 34 eid 34 etid 34 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 47
+BS id 34 tid 34 eid 34 etid 34 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 48
 SD sm 5 dm 4 dg 0
-ES id 34 tid 34 eid 34 etid 34 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.204588 am 4 ag 0 at 0.204588 pe 47
+ES id 34 tid 34 eid 34 etid 34 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.2040432 am 4 ag 0 at 0.2040432 pe 48
 CL id 35 tid 34 eid 35 etid 34 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 34
-BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.204588 am 5 at 0.20698 pe 47
-ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.204588 am 5 at 0.20698 pe 47
+BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.2040432 am 5 at 0.2062096 pe 48
+ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.2040432 am 5 at 0.2062096 pe 48
 
-E # 48 t 0.204588 m 2 ce 47 msg 32
-- INFO: [GA FEEDBACK] Time: 0.204588 | Feedback size: 32 bytes | SuggestedPacketSize=1490
-- INFO: [ADAPTATION] Updated packet size: 1490 bytes (was 1485 bytes)
-DM id 32 tid 32 eid 32 etid 32 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 48
+E # 49 t 0.2040432 m 2 ce 48 msg 32
+- INFO: [GA FEEDBACK] Time: 0.2040432 | Feedback size: 32 bytes | SuggestedPacketSize=783
+- INFO: [ADAPTATION] Updated packet size: 783 bytes (was 569 bytes)
+DM id 32 tid 32 eid 32 etid 32 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 49
 
-E # 49 t 0.204588 m 3 ce 47 msg 33
-- INFO: [GA FEEDBACK] Time: 0.204588 | Feedback size: 32 bytes | SuggestedPacketSize=1490
-- INFO: [ADAPTATION] Updated packet size: 1490 bytes (was 1485 bytes)
-DM id 33 tid 33 eid 33 etid 33 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 49
+E # 50 t 0.2040432 m 3 ce 48 msg 33
+- INFO: [GA FEEDBACK] Time: 0.2040432 | Feedback size: 32 bytes | SuggestedPacketSize=770
+- INFO: [ADAPTATION] Updated packet size: 770 bytes (was 656 bytes)
+DM id 33 tid 33 eid 33 etid 33 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 50
 
-E # 50 t 0.204588 m 4 ce 47 msg 34
-- INFO: [GA FEEDBACK] Time: 0.204588 | Feedback size: 32 bytes | SuggestedPacketSize=1490
-- INFO: [ADAPTATION] Updated packet size: 1490 bytes (was 1485 bytes)
-DM id 34 tid 34 eid 34 etid 34 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 50
+E # 51 t 0.2040432 m 4 ce 48 msg 34
+- INFO: [GA FEEDBACK] Time: 0.2040432 | Feedback size: 32 bytes | SuggestedPacketSize=955
+- INFO: [ADAPTATION] Updated packet size: 955 bytes (was 1216 bytes)
+DM id 34 tid 34 eid 34 etid 34 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 51
 
-E # 51 t 0.206588 m 6 ce 43 msg 26
-BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.206588 am 6 at 0.206588 pe 51
-ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.206588 am 6 at 0.206588 pe 51
+E # 52 t 0.2060432 m 6 ce 41 msg 27
+BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.2060432 am 6 at 0.2060432 pe 52
+ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.2060432 am 6 at 0.2060432 pe 52
 
-E # 52 t 0.206588 m 6 ce 51 msg 4
-BS id 26 tid 26 eid 26 etid 26 c omnetpp::cPacket n UDP_Packet_1_1495B l 11960 m 6 pe 51
-SH sm 6 sg 2621440 pd 0.002 td 0.001495 rd 0.001495
-ES id 26 tid 26 eid 26 etid 26 c omnetpp::cPacket n UDP_Packet_1_1495B l 11960 sm 6 sg 2621440 st 0.206588 am 7 ag 0 at 0.210083 pe 52
-CL id 35 tid 26 eid 35 etid 26 c omnetpp::cMessage n UDP_Packet_1_1495B m 6 pe -1 cid 26
+E # 53 t 0.2060432 m 6 ce 52 msg 4
+BS id 27 tid 27 eid 27 etid 27 c omnetpp::cPacket n UDP_Packet_1_1268B l 10144 m 6 pe 52
+SH sm 6 sg 2621441 pd 0.002 td 0.001268 rd 0.001268
+ES id 27 tid 27 eid 27 etid 27 c omnetpp::cPacket n UDP_Packet_1_1268B l 10144 sm 6 sg 2621441 st 0.2060432 am 8 ag 0 at 0.2093112 pe 53
+CL id 35 tid 27 eid 35 etid 27 c omnetpp::cMessage n UDP_Packet_1_1268B m 6 pe -1 cid 27
 CM id 35 tid 35 eid 35 etid 35 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 35 tid 35 eid 35 etid 35 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 52
+BS id 35 tid 35 eid 35 etid 35 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 53
 SD sm 6 dm 2 dg 0
-ES id 35 tid 35 eid 35 etid 35 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.206588 am 2 ag 0 at 0.206588 pe 52
+ES id 35 tid 35 eid 35 etid 35 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.2060432 am 2 ag 0 at 0.2060432 pe 53
 CL id 36 tid 35 eid 36 etid 35 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 35
 CM id 36 tid 36 eid 36 etid 36 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 36 tid 36 eid 36 etid 36 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 52
+BS id 36 tid 36 eid 36 etid 36 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 53
 SD sm 6 dm 3 dg 0
-ES id 36 tid 36 eid 36 etid 36 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.206588 am 3 ag 0 at 0.206588 pe 52
+ES id 36 tid 36 eid 36 etid 36 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.2060432 am 3 ag 0 at 0.2060432 pe 53
 CL id 37 tid 36 eid 37 etid 36 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 36
 CM id 37 tid 37 eid 37 etid 37 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 37 tid 37 eid 37 etid 37 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 52
+BS id 37 tid 37 eid 37 etid 37 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 53
 SD sm 6 dm 4 dg 0
-ES id 37 tid 37 eid 37 etid 37 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.206588 am 4 ag 0 at 0.206588 pe 52
+ES id 37 tid 37 eid 37 etid 37 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.2060432 am 4 ag 0 at 0.2060432 pe 53
 CL id 38 tid 37 eid 38 etid 37 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 37
 
-E # 53 t 0.206588 m 2 ce 52 msg 35
-- INFO: [GA FEEDBACK] Time: 0.206588 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1490 bytes)
-DM id 35 tid 35 eid 35 etid 35 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 53
+E # 54 t 0.2060432 m 2 ce 53 msg 35
+- INFO: [GA FEEDBACK] Time: 0.2060432 | Feedback size: 32 bytes | SuggestedPacketSize=1331
+- INFO: [ADAPTATION] Updated packet size: 1331 bytes (was 783 bytes)
+DM id 35 tid 35 eid 35 etid 35 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 54
 
-E # 54 t 0.206588 m 3 ce 52 msg 36
-- INFO: [GA FEEDBACK] Time: 0.206588 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1490 bytes)
-DM id 36 tid 36 eid 36 etid 36 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 54
+E # 55 t 0.2060432 m 3 ce 53 msg 36
+- INFO: [GA FEEDBACK] Time: 0.2060432 | Feedback size: 32 bytes | SuggestedPacketSize=1134
+- INFO: [ADAPTATION] Updated packet size: 1134 bytes (was 770 bytes)
+DM id 36 tid 36 eid 36 etid 36 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 55
 
-E # 55 t 0.206588 m 4 ce 52 msg 37
-- INFO: [GA FEEDBACK] Time: 0.206588 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1490 bytes)
-DM id 37 tid 37 eid 37 etid 37 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 55
+E # 56 t 0.2060432 m 4 ce 53 msg 37
+- INFO: [GA FEEDBACK] Time: 0.2060432 | Feedback size: 32 bytes | SuggestedPacketSize=523
+- INFO: [ADAPTATION] Updated packet size: 523 bytes (was 955 bytes)
+DM id 37 tid 37 eid 37 etid 37 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 56
 
-E # 56 t 0.20698 m 5 ce 47 msg 3
-BS id 28 tid 28 eid 28 etid 28 c omnetpp::cPacket n UDP_Packet_1_1495B l 11960 m 5 pe 42
-SH sm 5 sg 2621440 pd 0.002 td 0.002392 rd 0.002392
-ES id 28 tid 28 eid 28 etid 28 c omnetpp::cPacket n UDP_Packet_1_1495B l 11960 sm 5 sg 2621440 st 0.20698 am 6 ag 1048576 at 0.211372 pe 56
-CL id 38 tid 28 eid 38 etid 28 c omnetpp::cMessage n UDP_Packet_1_1495B m 5 pe -1 cid 28
+E # 57 t 0.2062096 m 5 ce 48 msg 3
+BS id 26 tid 26 eid 26 etid 26 c omnetpp::cPacket n UDP_Packet_1_1372B l 10976 m 5 pe 47
+SH sm 5 sg 2621440 pd 0.002 td 0.0021952 rd 0.0021952
+ES id 26 tid 26 eid 26 etid 26 c omnetpp::cPacket n UDP_Packet_1_1372B l 10976 sm 5 sg 2621440 st 0.2062096 am 6 ag 1048576 at 0.2104048 pe 57
+CL id 38 tid 26 eid 38 etid 26 c omnetpp::cMessage n UDP_Packet_1_1372B m 5 pe -1 cid 26
 CM id 38 tid 38 eid 38 etid 38 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 38 tid 38 eid 38 etid 38 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 56
+BS id 38 tid 38 eid 38 etid 38 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 57
 SD sm 5 dm 2 dg 0
-ES id 38 tid 38 eid 38 etid 38 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.20698 am 2 ag 0 at 0.20698 pe 56
+ES id 38 tid 38 eid 38 etid 38 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.2062096 am 2 ag 0 at 0.2062096 pe 57
 CL id 39 tid 38 eid 39 etid 38 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 38
 CM id 39 tid 39 eid 39 etid 39 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 39 tid 39 eid 39 etid 39 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 56
+BS id 39 tid 39 eid 39 etid 39 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 57
 SD sm 5 dm 3 dg 0
-ES id 39 tid 39 eid 39 etid 39 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.20698 am 3 ag 0 at 0.20698 pe 56
+ES id 39 tid 39 eid 39 etid 39 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.2062096 am 3 ag 0 at 0.2062096 pe 57
 CL id 40 tid 39 eid 40 etid 39 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 39
 CM id 40 tid 40 eid 40 etid 40 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 40 tid 40 eid 40 etid 40 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 56
+BS id 40 tid 40 eid 40 etid 40 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 57
 SD sm 5 dm 4 dg 0
-ES id 40 tid 40 eid 40 etid 40 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.20698 am 4 ag 0 at 0.20698 pe 56
+ES id 40 tid 40 eid 40 etid 40 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.2062096 am 4 ag 0 at 0.2062096 pe 57
 CL id 41 tid 40 eid 41 etid 40 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 40
 
-E # 57 t 0.20698 m 2 ce 56 msg 38
-- INFO: [GA FEEDBACK] Time: 0.20698 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
-DM id 38 tid 38 eid 38 etid 38 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 57
+E # 58 t 0.2062096 m 2 ce 57 msg 38
+- INFO: [GA FEEDBACK] Time: 0.2062096 | Feedback size: 32 bytes | SuggestedPacketSize=962
+- INFO: [ADAPTATION] Updated packet size: 962 bytes (was 1331 bytes)
+DM id 38 tid 38 eid 38 etid 38 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 58
 
-E # 58 t 0.20698 m 3 ce 56 msg 39
-- INFO: [GA FEEDBACK] Time: 0.20698 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
-DM id 39 tid 39 eid 39 etid 39 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 58
+E # 59 t 0.2062096 m 3 ce 57 msg 39
+- INFO: [GA FEEDBACK] Time: 0.2062096 | Feedback size: 32 bytes | SuggestedPacketSize=1182
+- INFO: [ADAPTATION] Updated packet size: 1182 bytes (was 1134 bytes)
+DM id 39 tid 39 eid 39 etid 39 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 59
 
-E # 59 t 0.20698 m 4 ce 56 msg 40
-- INFO: [GA FEEDBACK] Time: 0.20698 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
-DM id 40 tid 40 eid 40 etid 40 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 59
+E # 60 t 0.2062096 m 4 ce 57 msg 40
+- INFO: [GA FEEDBACK] Time: 0.2062096 | Feedback size: 32 bytes | SuggestedPacketSize=1465
+- INFO: [ADAPTATION] Updated packet size: 1465 bytes (was 523 bytes)
+DM id 40 tid 40 eid 40 etid 40 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 60
 
-E # 60 t 0.20898 m 6 ce 47 msg 27
-BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.20898 am 6 at 0.20898 pe 60
-ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.20898 am 6 at 0.20898 pe 60
+E # 61 t 0.2082096 m 6 ce 48 msg 28
+BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.2082096 am 6 at 0.2082096 pe 61
+ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.2082096 am 6 at 0.2082096 pe 61
 
-E # 61 t 0.20898 m 6 ce 60 msg 4
-BS id 27 tid 27 eid 27 etid 27 c omnetpp::cPacket n UDP_Packet_1_1495B l 11960 m 6 pe 60
-SH sm 6 sg 2621440 pd 0.002 td 0.001495 rd 0.001495
-ES id 27 tid 27 eid 27 etid 27 c omnetpp::cPacket n UDP_Packet_1_1495B l 11960 sm 6 sg 2621440 st 0.20898 am 7 ag 0 at 0.212475 pe 61
-CL id 41 tid 27 eid 41 etid 27 c omnetpp::cMessage n UDP_Packet_1_1495B m 6 pe -1 cid 27
+E # 62 t 0.2082096 m 6 ce 61 msg 4
+BS id 28 tid 28 eid 28 etid 28 c omnetpp::cPacket n UDP_Packet_1_1354B l 10832 m 6 pe 61
+SH sm 6 sg 2621440 pd 0.002 td 0.001354 rd 0.001354
+ES id 28 tid 28 eid 28 etid 28 c omnetpp::cPacket n UDP_Packet_1_1354B l 10832 sm 6 sg 2621440 st 0.2082096 am 7 ag 0 at 0.2115636 pe 62
+CL id 41 tid 28 eid 41 etid 28 c omnetpp::cMessage n UDP_Packet_1_1354B m 6 pe -1 cid 28
 CM id 41 tid 41 eid 41 etid 41 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 41 tid 41 eid 41 etid 41 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 61
+BS id 41 tid 41 eid 41 etid 41 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 62
 SD sm 6 dm 2 dg 0
-ES id 41 tid 41 eid 41 etid 41 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.20898 am 2 ag 0 at 0.20898 pe 61
+ES id 41 tid 41 eid 41 etid 41 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.2082096 am 2 ag 0 at 0.2082096 pe 62
 CL id 42 tid 41 eid 42 etid 41 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 41
 CM id 42 tid 42 eid 42 etid 42 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 42 tid 42 eid 42 etid 42 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 61
+BS id 42 tid 42 eid 42 etid 42 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 62
 SD sm 6 dm 3 dg 0
-ES id 42 tid 42 eid 42 etid 42 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.20898 am 3 ag 0 at 0.20898 pe 61
+ES id 42 tid 42 eid 42 etid 42 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.2082096 am 3 ag 0 at 0.2082096 pe 62
 CL id 43 tid 42 eid 43 etid 42 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 42
 CM id 43 tid 43 eid 43 etid 43 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 43 tid 43 eid 43 etid 43 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 61
+BS id 43 tid 43 eid 43 etid 43 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 62
 SD sm 6 dm 4 dg 0
-ES id 43 tid 43 eid 43 etid 43 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.20898 am 4 ag 0 at 0.20898 pe 61
+ES id 43 tid 43 eid 43 etid 43 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.2082096 am 4 ag 0 at 0.2082096 pe 62
 CL id 44 tid 43 eid 44 etid 43 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 43
 
-E # 62 t 0.20898 m 2 ce 61 msg 41
-- INFO: [GA FEEDBACK] Time: 0.20898 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
-DM id 41 tid 41 eid 41 etid 41 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 62
+E # 63 t 0.2082096 m 2 ce 62 msg 41
+- INFO: [GA FEEDBACK] Time: 0.2082096 | Feedback size: 32 bytes | SuggestedPacketSize=1467
+- INFO: [ADAPTATION] Updated packet size: 1467 bytes (was 962 bytes)
+DM id 41 tid 41 eid 41 etid 41 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 63
 
-E # 63 t 0.20898 m 3 ce 61 msg 42
-- INFO: [GA FEEDBACK] Time: 0.20898 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
-DM id 42 tid 42 eid 42 etid 42 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 63
+E # 64 t 0.2082096 m 3 ce 62 msg 42
+- INFO: [GA FEEDBACK] Time: 0.2082096 | Feedback size: 32 bytes | SuggestedPacketSize=1272
+- INFO: [ADAPTATION] Updated packet size: 1272 bytes (was 1182 bytes)
+DM id 42 tid 42 eid 42 etid 42 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 64
 
-E # 64 t 0.20898 m 4 ce 61 msg 43
-- INFO: [GA FEEDBACK] Time: 0.20898 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
-DM id 43 tid 43 eid 43 etid 43 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 64
+E # 65 t 0.2082096 m 4 ce 62 msg 43
+- INFO: [GA FEEDBACK] Time: 0.2082096 | Feedback size: 32 bytes | SuggestedPacketSize=411
+- INFO: [ADAPTATION] Updated packet size: 411 bytes (was 1465 bytes)
+DM id 43 tid 43 eid 43 etid 43 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 65
 
-E # 65 t 0.210083 m 7 ce 52 msg 26
-- INFO: receiver1 received packet #4 from router2
-DM id 26 tid 26 eid 26 etid 26 c omnetpp::cMessage n UDP_Packet_1_1495B m 7 pe 65
+E # 66 t 0.2093112 m 8 ce 53 msg 27
+- INFO: receiver2 received packet #3 from router2
+DM id 27 tid 27 eid 27 etid 27 c omnetpp::cMessage n UDP_Packet_1_1268B m 8 pe 66
 
-E # 66 t 0.211372 m 6 ce 56 msg 28
-BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.211372 am 6 at 0.211372 pe 66
-ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.211372 am 6 at 0.211372 pe 66
+E # 67 t 0.2104048 m 6 ce 57 msg 26
+BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.2104048 am 6 at 0.2104048 pe 67
+ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.2104048 am 6 at 0.2104048 pe 67
 
-E # 67 t 0.211372 m 6 ce 66 msg 4
-BS id 28 tid 28 eid 28 etid 28 c omnetpp::cPacket n UDP_Packet_1_1495B l 11960 m 6 pe 66
-SH sm 6 sg 2621440 pd 0.002 td 0.001495 rd 0.001495
-ES id 28 tid 28 eid 28 etid 28 c omnetpp::cPacket n UDP_Packet_1_1495B l 11960 sm 6 sg 2621440 st 0.211372 am 7 ag 0 at 0.214867 pe 67
-CL id 44 tid 28 eid 44 etid 28 c omnetpp::cMessage n UDP_Packet_1_1495B m 6 pe -1 cid 28
+E # 68 t 0.2104048 m 6 ce 67 msg 4
+BS id 26 tid 26 eid 26 etid 26 c omnetpp::cPacket n UDP_Packet_1_1372B l 10976 m 6 pe 67
+SH sm 6 sg 2621440 pd 0.002 td 0.001372 rd 0.001372
+ES id 26 tid 26 eid 26 etid 26 c omnetpp::cPacket n UDP_Packet_1_1372B l 10976 sm 6 sg 2621440 st 0.2104048 am 7 ag 0 at 0.2137768 pe 68
+CL id 44 tid 26 eid 44 etid 26 c omnetpp::cMessage n UDP_Packet_1_1372B m 6 pe -1 cid 26
 CM id 44 tid 44 eid 44 etid 44 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 44 tid 44 eid 44 etid 44 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 67
+BS id 44 tid 44 eid 44 etid 44 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 68
 SD sm 6 dm 2 dg 0
-ES id 44 tid 44 eid 44 etid 44 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.211372 am 2 ag 0 at 0.211372 pe 67
+ES id 44 tid 44 eid 44 etid 44 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.2104048 am 2 ag 0 at 0.2104048 pe 68
 CL id 45 tid 44 eid 45 etid 44 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 44
 CM id 45 tid 45 eid 45 etid 45 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 45 tid 45 eid 45 etid 45 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 67
+BS id 45 tid 45 eid 45 etid 45 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 68
 SD sm 6 dm 3 dg 0
-ES id 45 tid 45 eid 45 etid 45 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.211372 am 3 ag 0 at 0.211372 pe 67
+ES id 45 tid 45 eid 45 etid 45 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.2104048 am 3 ag 0 at 0.2104048 pe 68
 CL id 46 tid 45 eid 46 etid 45 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 45
 CM id 46 tid 46 eid 46 etid 46 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 46 tid 46 eid 46 etid 46 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 67
+BS id 46 tid 46 eid 46 etid 46 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 68
 SD sm 6 dm 4 dg 0
-ES id 46 tid 46 eid 46 etid 46 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.211372 am 4 ag 0 at 0.211372 pe 67
+ES id 46 tid 46 eid 46 etid 46 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.2104048 am 4 ag 0 at 0.2104048 pe 68
 CL id 47 tid 46 eid 47 etid 46 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 46
 
-E # 68 t 0.211372 m 2 ce 67 msg 44
-- INFO: [GA FEEDBACK] Time: 0.211372 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
-DM id 44 tid 44 eid 44 etid 44 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 68
+E # 69 t 0.2104048 m 2 ce 68 msg 44
+- INFO: [GA FEEDBACK] Time: 0.2104048 | Feedback size: 32 bytes | SuggestedPacketSize=1206
+- INFO: [ADAPTATION] Updated packet size: 1206 bytes (was 1467 bytes)
+DM id 44 tid 44 eid 44 etid 44 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 69
 
-E # 69 t 0.211372 m 3 ce 67 msg 45
-- INFO: [GA FEEDBACK] Time: 0.211372 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
-DM id 45 tid 45 eid 45 etid 45 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 69
+E # 70 t 0.2104048 m 3 ce 68 msg 45
+- INFO: [GA FEEDBACK] Time: 0.2104048 | Feedback size: 32 bytes | SuggestedPacketSize=675
+- INFO: [ADAPTATION] Updated packet size: 675 bytes (was 1272 bytes)
+DM id 45 tid 45 eid 45 etid 45 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 70
 
-E # 70 t 0.211372 m 4 ce 67 msg 46
-- INFO: [GA FEEDBACK] Time: 0.211372 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
-DM id 46 tid 46 eid 46 etid 46 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 70
+E # 71 t 0.2104048 m 4 ce 68 msg 46
+- INFO: [GA FEEDBACK] Time: 0.2104048 | Feedback size: 32 bytes | SuggestedPacketSize=844
+- INFO: [ADAPTATION] Updated packet size: 844 bytes (was 411 bytes)
+DM id 46 tid 46 eid 46 etid 46 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 71
 
-E # 71 t 0.212475 m 7 ce 61 msg 27
-- INFO: receiver1 received packet #5 from router2
-DM id 27 tid 27 eid 27 etid 27 c omnetpp::cMessage n UDP_Packet_1_1495B m 7 pe 71
+E # 72 t 0.2115636 m 7 ce 62 msg 28
+- INFO: receiver1 received packet #2 from router2
+DM id 28 tid 28 eid 28 etid 28 c omnetpp::cMessage n UDP_Packet_1_1354B m 7 pe 72
 
-E # 72 t 0.214867 m 7 ce 67 msg 28
-- INFO: receiver1 received packet #6 from router2
-DM id 28 tid 28 eid 28 etid 28 c omnetpp::cMessage n UDP_Packet_1_1495B m 7 pe 72
+E # 73 t 0.2137768 m 7 ce 68 msg 26
+- INFO: receiver1 received packet #3 from router2
+DM id 26 tid 26 eid 26 etid 26 c omnetpp::cMessage n UDP_Packet_1_1372B m 7 pe 73
 
-E # 73 t 0.4 m 2 ce 37 msg 0
-CM id 47 tid 47 eid 47 etid 47 c omnetpp::cMessage n UDP_Packet_2_1495B pe -1
-- INFO: [SEND] Time: 0.4 | Packet #2 | Sent size: 1495 bytes
-BS id 47 tid 47 eid 47 etid 47 c omnetpp::cPacket n UDP_Packet_2_1495B l 11960 m 2 pe 73
-SH sm 2 sg 3 pd 0.001 td 0.001196 rd 0.001196
-ES id 47 tid 47 eid 47 etid 47 c omnetpp::cPacket n UDP_Packet_2_1495B l 11960 sm 2 sg 3 st 0.4 am 5 ag 1048576 at 0.402196 pe 73
-CL id 48 tid 47 eid 48 etid 47 c omnetpp::cMessage n UDP_Packet_2_1495B m 2 pe -1 cid 47
-BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n sendTimer sm 2 st 0.4 am 2 at 0.6 pe 73
-ES id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n sendTimer sm 2 st 0.4 am 2 at 0.6 pe 73
+E # 74 t 0.4 m 2 ce 37 msg 0
+CM id 47 tid 47 eid 47 etid 47 c omnetpp::cMessage n UDP_Packet_2_1206B pe -1
+- INFO: [SEND] Time: 0.4 | Packet #2 | Sent size: 1206 bytes
+BS id 47 tid 47 eid 47 etid 47 c omnetpp::cPacket n UDP_Packet_2_1206B l 9648 m 2 pe 74
+SH sm 2 sg 3 pd 0.001 td 0.0009648 rd 0.0009648
+ES id 47 tid 47 eid 47 etid 47 c omnetpp::cPacket n UDP_Packet_2_1206B l 9648 sm 2 sg 3 st 0.4 am 5 ag 1048576 at 0.4019648 pe 74
+CL id 48 tid 47 eid 48 etid 47 c omnetpp::cMessage n UDP_Packet_2_1206B m 2 pe -1 cid 47
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n sendTimer sm 2 st 0.4 am 2 at 0.6 pe 74
+ES id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n sendTimer sm 2 st 0.4 am 2 at 0.6 pe 74
 
-E # 74 t 0.4 m 3 ce 38 msg 1
-CM id 48 tid 48 eid 48 etid 48 c omnetpp::cMessage n UDP_Packet_2_1495B pe -1
-- INFO: [SEND] Time: 0.4 | Packet #2 | Sent size: 1495 bytes
-BS id 48 tid 48 eid 48 etid 48 c omnetpp::cPacket n UDP_Packet_2_1495B l 11960 m 3 pe 74
-SH sm 3 sg 3 pd 0.001 td 0.001196 rd 0.001196
-ES id 48 tid 48 eid 48 etid 48 c omnetpp::cPacket n UDP_Packet_2_1495B l 11960 sm 3 sg 3 st 0.4 am 5 ag 1048577 at 0.402196 pe 74
-CL id 49 tid 48 eid 49 etid 48 c omnetpp::cMessage n UDP_Packet_2_1495B m 3 pe -1 cid 48
-BS id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n sendTimer sm 3 st 0.4 am 3 at 0.6 pe 74
-ES id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n sendTimer sm 3 st 0.4 am 3 at 0.6 pe 74
+E # 75 t 0.4 m 3 ce 38 msg 1
+CM id 48 tid 48 eid 48 etid 48 c omnetpp::cMessage n UDP_Packet_2_675B pe -1
+- INFO: [SEND] Time: 0.4 | Packet #2 | Sent size: 675 bytes
+BS id 48 tid 48 eid 48 etid 48 c omnetpp::cPacket n UDP_Packet_2_675B l 5400 m 3 pe 75
+SH sm 3 sg 3 pd 0.001 td 0.00054 rd 0.00054
+ES id 48 tid 48 eid 48 etid 48 c omnetpp::cPacket n UDP_Packet_2_675B l 5400 sm 3 sg 3 st 0.4 am 5 ag 1048577 at 0.40154 pe 75
+CL id 49 tid 48 eid 49 etid 48 c omnetpp::cMessage n UDP_Packet_2_675B m 3 pe -1 cid 48
+BS id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n sendTimer sm 3 st 0.4 am 3 at 0.6 pe 75
+ES id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n sendTimer sm 3 st 0.4 am 3 at 0.6 pe 75
 
-E # 75 t 0.4 m 4 ce 39 msg 2
-CM id 49 tid 49 eid 49 etid 49 c omnetpp::cMessage n UDP_Packet_2_1495B pe -1
-- INFO: [SEND] Time: 0.4 | Packet #2 | Sent size: 1495 bytes
-BS id 49 tid 49 eid 49 etid 49 c omnetpp::cPacket n UDP_Packet_2_1495B l 11960 m 4 pe 75
-SH sm 4 sg 3 pd 0.001 td 0.001196 rd 0.001196
-ES id 49 tid 49 eid 49 etid 49 c omnetpp::cPacket n UDP_Packet_2_1495B l 11960 sm 4 sg 3 st 0.4 am 5 ag 1048578 at 0.402196 pe 75
-CL id 50 tid 49 eid 50 etid 49 c omnetpp::cMessage n UDP_Packet_2_1495B m 4 pe -1 cid 49
-BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n sendTimer sm 4 st 0.4 am 4 at 0.6 pe 75
-ES id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n sendTimer sm 4 st 0.4 am 4 at 0.6 pe 75
+E # 76 t 0.4 m 4 ce 39 msg 2
+CM id 49 tid 49 eid 49 etid 49 c omnetpp::cMessage n UDP_Packet_2_844B pe -1
+- INFO: [SEND] Time: 0.4 | Packet #2 | Sent size: 844 bytes
+BS id 49 tid 49 eid 49 etid 49 c omnetpp::cPacket n UDP_Packet_2_844B l 6752 m 4 pe 76
+SH sm 4 sg 3 pd 0.001 td 0.0006752 rd 0.0006752
+ES id 49 tid 49 eid 49 etid 49 c omnetpp::cPacket n UDP_Packet_2_844B l 6752 sm 4 sg 3 st 0.4 am 5 ag 1048578 at 0.4016752 pe 76
+CL id 50 tid 49 eid 50 etid 49 c omnetpp::cMessage n UDP_Packet_2_844B m 4 pe -1 cid 49
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n sendTimer sm 4 st 0.4 am 4 at 0.6 pe 76
+ES id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n sendTimer sm 4 st 0.4 am 4 at 0.6 pe 76
 
-E # 76 t 0.402196 m 5 ce 73 msg 47
-BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.402196 am 5 at 0.402196 pe 76
-ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.402196 am 5 at 0.402196 pe 76
+E # 77 t 0.40154 m 5 ce 75 msg 48
+BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.40154 am 5 at 0.40154 pe 77
+ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.40154 am 5 at 0.40154 pe 77
 
-E # 77 t 0.402196 m 5 ce 74 msg 48
-
-E # 78 t 0.402196 m 5 ce 75 msg 49
-
-E # 79 t 0.402196 m 5 ce 76 msg 3
-BS id 47 tid 47 eid 47 etid 47 c omnetpp::cPacket n UDP_Packet_2_1495B l 11960 m 5 pe 76
-SH sm 5 sg 2621440 pd 0.002 td 0.002392 rd 0.002392
-ES id 47 tid 47 eid 47 etid 47 c omnetpp::cPacket n UDP_Packet_2_1495B l 11960 sm 5 sg 2621440 st 0.402196 am 6 ag 1048576 at 0.406588 pe 79
-CL id 50 tid 47 eid 50 etid 47 c omnetpp::cMessage n UDP_Packet_2_1495B m 5 pe -1 cid 47
+E # 78 t 0.40154 m 5 ce 77 msg 3
+BS id 48 tid 48 eid 48 etid 48 c omnetpp::cPacket n UDP_Packet_2_675B l 5400 m 5 pe 77
+SH sm 5 sg 2621440 pd 0.002 td 0.00108 rd 0.00108
+ES id 48 tid 48 eid 48 etid 48 c omnetpp::cPacket n UDP_Packet_2_675B l 5400 sm 5 sg 2621440 st 0.40154 am 6 ag 1048576 at 0.40462 pe 78
+CL id 50 tid 48 eid 50 etid 48 c omnetpp::cMessage n UDP_Packet_2_675B m 5 pe -1 cid 48
 CM id 50 tid 50 eid 50 etid 50 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 50 tid 50 eid 50 etid 50 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 79
+BS id 50 tid 50 eid 50 etid 50 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 78
 SD sm 5 dm 2 dg 0
-ES id 50 tid 50 eid 50 etid 50 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.402196 am 2 ag 0 at 0.402196 pe 79
+ES id 50 tid 50 eid 50 etid 50 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.40154 am 2 ag 0 at 0.40154 pe 78
 CL id 51 tid 50 eid 51 etid 50 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 50
 CM id 51 tid 51 eid 51 etid 51 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 51 tid 51 eid 51 etid 51 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 79
+BS id 51 tid 51 eid 51 etid 51 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 78
 SD sm 5 dm 3 dg 0
-ES id 51 tid 51 eid 51 etid 51 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.402196 am 3 ag 0 at 0.402196 pe 79
+ES id 51 tid 51 eid 51 etid 51 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.40154 am 3 ag 0 at 0.40154 pe 78
 CL id 52 tid 51 eid 52 etid 51 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 51
 CM id 52 tid 52 eid 52 etid 52 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 52 tid 52 eid 52 etid 52 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 79
+BS id 52 tid 52 eid 52 etid 52 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 78
 SD sm 5 dm 4 dg 0
-ES id 52 tid 52 eid 52 etid 52 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.402196 am 4 ag 0 at 0.402196 pe 79
+ES id 52 tid 52 eid 52 etid 52 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.40154 am 4 ag 0 at 0.40154 pe 78
 CL id 53 tid 52 eid 53 etid 52 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 52
-BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.402196 am 5 at 0.404588 pe 79
-ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.402196 am 5 at 0.404588 pe 79
 
-E # 80 t 0.402196 m 2 ce 79 msg 50
-- INFO: [GA FEEDBACK] Time: 0.402196 | Feedback size: 32 bytes | SuggestedPacketSize=1485
-- INFO: [ADAPTATION] Updated packet size: 1485 bytes (was 1495 bytes)
-DM id 50 tid 50 eid 50 etid 50 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 80
+E # 79 t 0.40154 m 2 ce 78 msg 50
+- INFO: [GA FEEDBACK] Time: 0.40154 | Feedback size: 32 bytes | SuggestedPacketSize=1037
+- INFO: [ADAPTATION] Updated packet size: 1037 bytes (was 1206 bytes)
+DM id 50 tid 50 eid 50 etid 50 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 79
 
-E # 81 t 0.402196 m 3 ce 79 msg 51
-- INFO: [GA FEEDBACK] Time: 0.402196 | Feedback size: 32 bytes | SuggestedPacketSize=1485
-- INFO: [ADAPTATION] Updated packet size: 1485 bytes (was 1495 bytes)
-DM id 51 tid 51 eid 51 etid 51 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 81
+E # 80 t 0.40154 m 3 ce 78 msg 51
+- INFO: [GA FEEDBACK] Time: 0.40154 | Feedback size: 32 bytes | SuggestedPacketSize=1170
+- INFO: [ADAPTATION] Updated packet size: 1170 bytes (was 675 bytes)
+DM id 51 tid 51 eid 51 etid 51 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 80
 
-E # 82 t 0.402196 m 4 ce 79 msg 52
-- INFO: [GA FEEDBACK] Time: 0.402196 | Feedback size: 32 bytes | SuggestedPacketSize=1485
-- INFO: [ADAPTATION] Updated packet size: 1485 bytes (was 1495 bytes)
-DM id 52 tid 52 eid 52 etid 52 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 82
+E # 81 t 0.40154 m 4 ce 78 msg 52
+- INFO: [GA FEEDBACK] Time: 0.40154 | Feedback size: 32 bytes | SuggestedPacketSize=494
+- INFO: [ADAPTATION] Updated packet size: 494 bytes (was 844 bytes)
+DM id 52 tid 52 eid 52 etid 52 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 81
 
-E # 83 t 0.404588 m 5 ce 79 msg 3
-BS id 48 tid 48 eid 48 etid 48 c omnetpp::cPacket n UDP_Packet_2_1495B l 11960 m 5 pe 77
-SH sm 5 sg 2621440 pd 0.002 td 0.002392 rd 0.002392
-ES id 48 tid 48 eid 48 etid 48 c omnetpp::cPacket n UDP_Packet_2_1495B l 11960 sm 5 sg 2621440 st 0.404588 am 6 ag 1048576 at 0.40898 pe 83
-CL id 53 tid 48 eid 53 etid 48 c omnetpp::cMessage n UDP_Packet_2_1495B m 5 pe -1 cid 48
+E # 82 t 0.4016752 m 5 ce 76 msg 49
+BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.4016752 am 5 at 0.4016752 pe 82
+ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.4016752 am 5 at 0.4016752 pe 82
+
+E # 83 t 0.4016752 m 5 ce 82 msg 3
+BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.4016752 am 5 at 0.40262 pe 83
+ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.4016752 am 5 at 0.40262 pe 83
+
+E # 84 t 0.4019648 m 5 ce 74 msg 47
+
+E # 85 t 0.40262 m 5 ce 83 msg 3
+BS id 49 tid 49 eid 49 etid 49 c omnetpp::cPacket n UDP_Packet_2_844B l 6752 m 5 pe 82
+SH sm 5 sg 2621440 pd 0.002 td 0.0013504 rd 0.0013504
+ES id 49 tid 49 eid 49 etid 49 c omnetpp::cPacket n UDP_Packet_2_844B l 6752 sm 5 sg 2621440 st 0.40262 am 6 ag 1048576 at 0.4059704 pe 85
+CL id 53 tid 49 eid 53 etid 49 c omnetpp::cMessage n UDP_Packet_2_844B m 5 pe -1 cid 49
 CM id 53 tid 53 eid 53 etid 53 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 53 tid 53 eid 53 etid 53 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 83
+BS id 53 tid 53 eid 53 etid 53 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 85
 SD sm 5 dm 2 dg 0
-ES id 53 tid 53 eid 53 etid 53 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.404588 am 2 ag 0 at 0.404588 pe 83
+ES id 53 tid 53 eid 53 etid 53 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.40262 am 2 ag 0 at 0.40262 pe 85
 CL id 54 tid 53 eid 54 etid 53 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 53
 CM id 54 tid 54 eid 54 etid 54 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 54 tid 54 eid 54 etid 54 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 83
+BS id 54 tid 54 eid 54 etid 54 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 85
 SD sm 5 dm 3 dg 0
-ES id 54 tid 54 eid 54 etid 54 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.404588 am 3 ag 0 at 0.404588 pe 83
+ES id 54 tid 54 eid 54 etid 54 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.40262 am 3 ag 0 at 0.40262 pe 85
 CL id 55 tid 54 eid 55 etid 54 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 54
 CM id 55 tid 55 eid 55 etid 55 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 55 tid 55 eid 55 etid 55 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 83
+BS id 55 tid 55 eid 55 etid 55 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 85
 SD sm 5 dm 4 dg 0
-ES id 55 tid 55 eid 55 etid 55 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.404588 am 4 ag 0 at 0.404588 pe 83
+ES id 55 tid 55 eid 55 etid 55 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.40262 am 4 ag 0 at 0.40262 pe 85
 CL id 56 tid 55 eid 56 etid 55 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 55
-BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.404588 am 5 at 0.40698 pe 83
-ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.404588 am 5 at 0.40698 pe 83
+BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.40262 am 5 at 0.4039704 pe 85
+ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.40262 am 5 at 0.4039704 pe 85
 
-E # 84 t 0.404588 m 2 ce 83 msg 53
-- INFO: [GA FEEDBACK] Time: 0.404588 | Feedback size: 32 bytes | SuggestedPacketSize=1490
-- INFO: [ADAPTATION] Updated packet size: 1490 bytes (was 1485 bytes)
-DM id 53 tid 53 eid 53 etid 53 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 84
+E # 86 t 0.40262 m 2 ce 85 msg 53
+- INFO: [GA FEEDBACK] Time: 0.40262 | Feedback size: 32 bytes | SuggestedPacketSize=850
+- INFO: [ADAPTATION] Updated packet size: 850 bytes (was 1037 bytes)
+DM id 53 tid 53 eid 53 etid 53 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 86
 
-E # 85 t 0.404588 m 3 ce 83 msg 54
-- INFO: [GA FEEDBACK] Time: 0.404588 | Feedback size: 32 bytes | SuggestedPacketSize=1490
-- INFO: [ADAPTATION] Updated packet size: 1490 bytes (was 1485 bytes)
-DM id 54 tid 54 eid 54 etid 54 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 85
+E # 87 t 0.40262 m 3 ce 85 msg 54
+- INFO: [GA FEEDBACK] Time: 0.40262 | Feedback size: 32 bytes | SuggestedPacketSize=580
+- INFO: [ADAPTATION] Updated packet size: 580 bytes (was 1170 bytes)
+DM id 54 tid 54 eid 54 etid 54 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 87
 
-E # 86 t 0.404588 m 4 ce 83 msg 55
-- INFO: [GA FEEDBACK] Time: 0.404588 | Feedback size: 32 bytes | SuggestedPacketSize=1490
-- INFO: [ADAPTATION] Updated packet size: 1490 bytes (was 1485 bytes)
-DM id 55 tid 55 eid 55 etid 55 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 86
+E # 88 t 0.40262 m 4 ce 85 msg 55
+- INFO: [GA FEEDBACK] Time: 0.40262 | Feedback size: 32 bytes | SuggestedPacketSize=723
+- INFO: [ADAPTATION] Updated packet size: 723 bytes (was 494 bytes)
+DM id 55 tid 55 eid 55 etid 55 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 88
 
-E # 87 t 0.406588 m 6 ce 79 msg 47
-BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.406588 am 6 at 0.406588 pe 87
-ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.406588 am 6 at 0.406588 pe 87
-
-E # 88 t 0.406588 m 6 ce 87 msg 4
-BS id 47 tid 47 eid 47 etid 47 c omnetpp::cPacket n UDP_Packet_2_1495B l 11960 m 6 pe 87
-SH sm 6 sg 2621440 pd 0.002 td 0.001495 rd 0.001495
-ES id 47 tid 47 eid 47 etid 47 c omnetpp::cPacket n UDP_Packet_2_1495B l 11960 sm 6 sg 2621440 st 0.406588 am 7 ag 0 at 0.410083 pe 88
-CL id 56 tid 47 eid 56 etid 47 c omnetpp::cMessage n UDP_Packet_2_1495B m 6 pe -1 cid 47
+E # 89 t 0.4039704 m 5 ce 85 msg 3
+BS id 47 tid 47 eid 47 etid 47 c omnetpp::cPacket n UDP_Packet_2_1206B l 9648 m 5 pe 84
+SH sm 5 sg 2621440 pd 0.002 td 0.0019296 rd 0.0019296
+ES id 47 tid 47 eid 47 etid 47 c omnetpp::cPacket n UDP_Packet_2_1206B l 9648 sm 5 sg 2621440 st 0.4039704 am 6 ag 1048576 at 0.4079 pe 89
+CL id 56 tid 47 eid 56 etid 47 c omnetpp::cMessage n UDP_Packet_2_1206B m 5 pe -1 cid 47
 CM id 56 tid 56 eid 56 etid 56 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 56 tid 56 eid 56 etid 56 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 88
-SD sm 6 dm 2 dg 0
-ES id 56 tid 56 eid 56 etid 56 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.406588 am 2 ag 0 at 0.406588 pe 88
-CL id 57 tid 56 eid 57 etid 56 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 56
-CM id 57 tid 57 eid 57 etid 57 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 57 tid 57 eid 57 etid 57 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 88
-SD sm 6 dm 3 dg 0
-ES id 57 tid 57 eid 57 etid 57 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.406588 am 3 ag 0 at 0.406588 pe 88
-CL id 58 tid 57 eid 58 etid 57 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 57
-CM id 58 tid 58 eid 58 etid 58 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 58 tid 58 eid 58 etid 58 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 88
-SD sm 6 dm 4 dg 0
-ES id 58 tid 58 eid 58 etid 58 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.406588 am 4 ag 0 at 0.406588 pe 88
-CL id 59 tid 58 eid 59 etid 58 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 58
-
-E # 89 t 0.406588 m 2 ce 88 msg 56
-- INFO: [GA FEEDBACK] Time: 0.406588 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1490 bytes)
-DM id 56 tid 56 eid 56 etid 56 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 89
-
-E # 90 t 0.406588 m 3 ce 88 msg 57
-- INFO: [GA FEEDBACK] Time: 0.406588 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1490 bytes)
-DM id 57 tid 57 eid 57 etid 57 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 90
-
-E # 91 t 0.406588 m 4 ce 88 msg 58
-- INFO: [GA FEEDBACK] Time: 0.406588 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1490 bytes)
-DM id 58 tid 58 eid 58 etid 58 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 91
-
-E # 92 t 0.40698 m 5 ce 83 msg 3
-BS id 49 tid 49 eid 49 etid 49 c omnetpp::cPacket n UDP_Packet_2_1495B l 11960 m 5 pe 78
-SH sm 5 sg 2621440 pd 0.002 td 0.002392 rd 0.002392
-ES id 49 tid 49 eid 49 etid 49 c omnetpp::cPacket n UDP_Packet_2_1495B l 11960 sm 5 sg 2621440 st 0.40698 am 6 ag 1048576 at 0.411372 pe 92
-CL id 59 tid 49 eid 59 etid 49 c omnetpp::cMessage n UDP_Packet_2_1495B m 5 pe -1 cid 49
-CM id 59 tid 59 eid 59 etid 59 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 59 tid 59 eid 59 etid 59 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 92
+BS id 56 tid 56 eid 56 etid 56 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 89
 SD sm 5 dm 2 dg 0
-ES id 59 tid 59 eid 59 etid 59 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.40698 am 2 ag 0 at 0.40698 pe 92
-CL id 60 tid 59 eid 60 etid 59 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 59
-CM id 60 tid 60 eid 60 etid 60 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 60 tid 60 eid 60 etid 60 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 92
+ES id 56 tid 56 eid 56 etid 56 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.4039704 am 2 ag 0 at 0.4039704 pe 89
+CL id 57 tid 56 eid 57 etid 56 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 56
+CM id 57 tid 57 eid 57 etid 57 c omnetpp::cMessage n adaptive_ga_feedback pe -1
+BS id 57 tid 57 eid 57 etid 57 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 89
 SD sm 5 dm 3 dg 0
-ES id 60 tid 60 eid 60 etid 60 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.40698 am 3 ag 0 at 0.40698 pe 92
-CL id 61 tid 60 eid 61 etid 60 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 60
-CM id 61 tid 61 eid 61 etid 61 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 61 tid 61 eid 61 etid 61 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 92
+ES id 57 tid 57 eid 57 etid 57 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.4039704 am 3 ag 0 at 0.4039704 pe 89
+CL id 58 tid 57 eid 58 etid 57 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 57
+CM id 58 tid 58 eid 58 etid 58 c omnetpp::cMessage n adaptive_ga_feedback pe -1
+BS id 58 tid 58 eid 58 etid 58 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 89
 SD sm 5 dm 4 dg 0
-ES id 61 tid 61 eid 61 etid 61 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.40698 am 4 ag 0 at 0.40698 pe 92
-CL id 62 tid 61 eid 62 etid 61 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 61
+ES id 58 tid 58 eid 58 etid 58 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.4039704 am 4 ag 0 at 0.4039704 pe 89
+CL id 59 tid 58 eid 59 etid 58 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 58
 
-E # 93 t 0.40698 m 2 ce 92 msg 59
-- INFO: [GA FEEDBACK] Time: 0.40698 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
-DM id 59 tid 59 eid 59 etid 59 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 93
+E # 90 t 0.4039704 m 2 ce 89 msg 56
+- INFO: [GA FEEDBACK] Time: 0.4039704 | Feedback size: 32 bytes | SuggestedPacketSize=1149
+- INFO: [ADAPTATION] Updated packet size: 1149 bytes (was 850 bytes)
+DM id 56 tid 56 eid 56 etid 56 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 90
 
-E # 94 t 0.40698 m 3 ce 92 msg 60
-- INFO: [GA FEEDBACK] Time: 0.40698 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
-DM id 60 tid 60 eid 60 etid 60 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 94
+E # 91 t 0.4039704 m 3 ce 89 msg 57
+- INFO: [GA FEEDBACK] Time: 0.4039704 | Feedback size: 32 bytes | SuggestedPacketSize=539
+- INFO: [ADAPTATION] Updated packet size: 539 bytes (was 580 bytes)
+DM id 57 tid 57 eid 57 etid 57 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 91
 
-E # 95 t 0.40698 m 4 ce 92 msg 61
-- INFO: [GA FEEDBACK] Time: 0.40698 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
-DM id 61 tid 61 eid 61 etid 61 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 95
+E # 92 t 0.4039704 m 4 ce 89 msg 58
+- INFO: [GA FEEDBACK] Time: 0.4039704 | Feedback size: 32 bytes | SuggestedPacketSize=1420
+- INFO: [ADAPTATION] Updated packet size: 1420 bytes (was 723 bytes)
+DM id 58 tid 58 eid 58 etid 58 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 92
 
-E # 96 t 0.40898 m 6 ce 83 msg 48
-BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.40898 am 6 at 0.40898 pe 96
-ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.40898 am 6 at 0.40898 pe 96
+E # 93 t 0.40462 m 6 ce 78 msg 48
+BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.40462 am 6 at 0.40462 pe 93
+ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.40462 am 6 at 0.40462 pe 93
 
-E # 97 t 0.40898 m 6 ce 96 msg 4
-BS id 48 tid 48 eid 48 etid 48 c omnetpp::cPacket n UDP_Packet_2_1495B l 11960 m 6 pe 96
-SH sm 6 sg 2621440 pd 0.002 td 0.001495 rd 0.001495
-ES id 48 tid 48 eid 48 etid 48 c omnetpp::cPacket n UDP_Packet_2_1495B l 11960 sm 6 sg 2621440 st 0.40898 am 7 ag 0 at 0.412475 pe 97
-CL id 62 tid 48 eid 62 etid 48 c omnetpp::cMessage n UDP_Packet_2_1495B m 6 pe -1 cid 48
-CM id 62 tid 62 eid 62 etid 62 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 62 tid 62 eid 62 etid 62 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 97
+E # 94 t 0.40462 m 6 ce 93 msg 4
+BS id 48 tid 48 eid 48 etid 48 c omnetpp::cPacket n UDP_Packet_2_675B l 5400 m 6 pe 93
+SH sm 6 sg 2621441 pd 0.002 td 0.000675 rd 0.000675
+ES id 48 tid 48 eid 48 etid 48 c omnetpp::cPacket n UDP_Packet_2_675B l 5400 sm 6 sg 2621441 st 0.40462 am 8 ag 0 at 0.407295 pe 94
+CL id 59 tid 48 eid 59 etid 48 c omnetpp::cMessage n UDP_Packet_2_675B m 6 pe -1 cid 48
+CM id 59 tid 59 eid 59 etid 59 c omnetpp::cMessage n adaptive_ga_feedback pe -1
+BS id 59 tid 59 eid 59 etid 59 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 94
 SD sm 6 dm 2 dg 0
-ES id 62 tid 62 eid 62 etid 62 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.40898 am 2 ag 0 at 0.40898 pe 97
+ES id 59 tid 59 eid 59 etid 59 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.40462 am 2 ag 0 at 0.40462 pe 94
+CL id 60 tid 59 eid 60 etid 59 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 59
+CM id 60 tid 60 eid 60 etid 60 c omnetpp::cMessage n adaptive_ga_feedback pe -1
+BS id 60 tid 60 eid 60 etid 60 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 94
+SD sm 6 dm 3 dg 0
+ES id 60 tid 60 eid 60 etid 60 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.40462 am 3 ag 0 at 0.40462 pe 94
+CL id 61 tid 60 eid 61 etid 60 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 60
+CM id 61 tid 61 eid 61 etid 61 c omnetpp::cMessage n adaptive_ga_feedback pe -1
+BS id 61 tid 61 eid 61 etid 61 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 94
+SD sm 6 dm 4 dg 0
+ES id 61 tid 61 eid 61 etid 61 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.40462 am 4 ag 0 at 0.40462 pe 94
+CL id 62 tid 61 eid 62 etid 61 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 61
+
+E # 95 t 0.40462 m 2 ce 94 msg 59
+- INFO: [GA FEEDBACK] Time: 0.40462 | Feedback size: 32 bytes | SuggestedPacketSize=1325
+- INFO: [ADAPTATION] Updated packet size: 1325 bytes (was 1149 bytes)
+DM id 59 tid 59 eid 59 etid 59 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 95
+
+E # 96 t 0.40462 m 3 ce 94 msg 60
+- INFO: [GA FEEDBACK] Time: 0.40462 | Feedback size: 32 bytes | SuggestedPacketSize=549
+- INFO: [ADAPTATION] Updated packet size: 549 bytes (was 539 bytes)
+DM id 60 tid 60 eid 60 etid 60 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 96
+
+E # 97 t 0.40462 m 4 ce 94 msg 61
+- INFO: [GA FEEDBACK] Time: 0.40462 | Feedback size: 32 bytes | SuggestedPacketSize=425
+- INFO: [ADAPTATION] Updated packet size: 425 bytes (was 1420 bytes)
+DM id 61 tid 61 eid 61 etid 61 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 97
+
+E # 98 t 0.4059704 m 6 ce 85 msg 49
+BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.4059704 am 6 at 0.4059704 pe 98
+ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.4059704 am 6 at 0.4059704 pe 98
+
+E # 99 t 0.4059704 m 6 ce 98 msg 4
+BS id 49 tid 49 eid 49 etid 49 c omnetpp::cPacket n UDP_Packet_2_844B l 6752 m 6 pe 98
+SH sm 6 sg 2621440 pd 0.002 td 0.000844 rd 0.000844
+ES id 49 tid 49 eid 49 etid 49 c omnetpp::cPacket n UDP_Packet_2_844B l 6752 sm 6 sg 2621440 st 0.4059704 am 7 ag 0 at 0.4088144 pe 99
+CL id 62 tid 49 eid 62 etid 49 c omnetpp::cMessage n UDP_Packet_2_844B m 6 pe -1 cid 49
+CM id 62 tid 62 eid 62 etid 62 c omnetpp::cMessage n adaptive_ga_feedback pe -1
+BS id 62 tid 62 eid 62 etid 62 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 99
+SD sm 6 dm 2 dg 0
+ES id 62 tid 62 eid 62 etid 62 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.4059704 am 2 ag 0 at 0.4059704 pe 99
 CL id 63 tid 62 eid 63 etid 62 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 62
 CM id 63 tid 63 eid 63 etid 63 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 63 tid 63 eid 63 etid 63 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 97
+BS id 63 tid 63 eid 63 etid 63 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 99
 SD sm 6 dm 3 dg 0
-ES id 63 tid 63 eid 63 etid 63 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.40898 am 3 ag 0 at 0.40898 pe 97
+ES id 63 tid 63 eid 63 etid 63 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.4059704 am 3 ag 0 at 0.4059704 pe 99
 CL id 64 tid 63 eid 64 etid 63 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 63
 CM id 64 tid 64 eid 64 etid 64 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 64 tid 64 eid 64 etid 64 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 97
+BS id 64 tid 64 eid 64 etid 64 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 99
 SD sm 6 dm 4 dg 0
-ES id 64 tid 64 eid 64 etid 64 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.40898 am 4 ag 0 at 0.40898 pe 97
+ES id 64 tid 64 eid 64 etid 64 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.4059704 am 4 ag 0 at 0.4059704 pe 99
 CL id 65 tid 64 eid 65 etid 64 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 64
 
-E # 98 t 0.40898 m 2 ce 97 msg 62
-- INFO: [GA FEEDBACK] Time: 0.40898 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
-DM id 62 tid 62 eid 62 etid 62 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 98
+E # 100 t 0.4059704 m 2 ce 99 msg 62
+- INFO: [GA FEEDBACK] Time: 0.4059704 | Feedback size: 32 bytes | SuggestedPacketSize=1073
+- INFO: [ADAPTATION] Updated packet size: 1073 bytes (was 1325 bytes)
+DM id 62 tid 62 eid 62 etid 62 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 100
 
-E # 99 t 0.40898 m 3 ce 97 msg 63
-- INFO: [GA FEEDBACK] Time: 0.40898 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
-DM id 63 tid 63 eid 63 etid 63 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 99
+E # 101 t 0.4059704 m 3 ce 99 msg 63
+- INFO: [GA FEEDBACK] Time: 0.4059704 | Feedback size: 32 bytes | SuggestedPacketSize=1328
+- INFO: [ADAPTATION] Updated packet size: 1328 bytes (was 549 bytes)
+DM id 63 tid 63 eid 63 etid 63 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 101
 
-E # 100 t 0.40898 m 4 ce 97 msg 64
-- INFO: [GA FEEDBACK] Time: 0.40898 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
-DM id 64 tid 64 eid 64 etid 64 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 100
+E # 102 t 0.4059704 m 4 ce 99 msg 64
+- INFO: [GA FEEDBACK] Time: 0.4059704 | Feedback size: 32 bytes | SuggestedPacketSize=1163
+- INFO: [ADAPTATION] Updated packet size: 1163 bytes (was 425 bytes)
+DM id 64 tid 64 eid 64 etid 64 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 102
 
-E # 101 t 0.410083 m 7 ce 88 msg 47
-- INFO: receiver1 received packet #7 from router2
-DM id 47 tid 47 eid 47 etid 47 c omnetpp::cMessage n UDP_Packet_2_1495B m 7 pe 101
+E # 103 t 0.407295 m 8 ce 94 msg 48
+- INFO: receiver2 received packet #4 from router2
+DM id 48 tid 48 eid 48 etid 48 c omnetpp::cMessage n UDP_Packet_2_675B m 8 pe 103
 
-E # 102 t 0.411372 m 6 ce 92 msg 49
-BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.411372 am 6 at 0.411372 pe 102
-ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.411372 am 6 at 0.411372 pe 102
+E # 104 t 0.4079 m 6 ce 89 msg 47
+BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.4079 am 6 at 0.4079 pe 104
+ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.4079 am 6 at 0.4079 pe 104
 
-E # 103 t 0.411372 m 6 ce 102 msg 4
-BS id 49 tid 49 eid 49 etid 49 c omnetpp::cPacket n UDP_Packet_2_1495B l 11960 m 6 pe 102
-SH sm 6 sg 2621440 pd 0.002 td 0.001495 rd 0.001495
-ES id 49 tid 49 eid 49 etid 49 c omnetpp::cPacket n UDP_Packet_2_1495B l 11960 sm 6 sg 2621440 st 0.411372 am 7 ag 0 at 0.414867 pe 103
-CL id 65 tid 49 eid 65 etid 49 c omnetpp::cMessage n UDP_Packet_2_1495B m 6 pe -1 cid 49
+E # 105 t 0.4079 m 6 ce 104 msg 4
+BS id 47 tid 47 eid 47 etid 47 c omnetpp::cPacket n UDP_Packet_2_1206B l 9648 m 6 pe 104
+SH sm 6 sg 2621441 pd 0.002 td 0.001206 rd 0.001206
+ES id 47 tid 47 eid 47 etid 47 c omnetpp::cPacket n UDP_Packet_2_1206B l 9648 sm 6 sg 2621441 st 0.4079 am 8 ag 0 at 0.411106 pe 105
+CL id 65 tid 47 eid 65 etid 47 c omnetpp::cMessage n UDP_Packet_2_1206B m 6 pe -1 cid 47
 CM id 65 tid 65 eid 65 etid 65 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 65 tid 65 eid 65 etid 65 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 103
+BS id 65 tid 65 eid 65 etid 65 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 105
 SD sm 6 dm 2 dg 0
-ES id 65 tid 65 eid 65 etid 65 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.411372 am 2 ag 0 at 0.411372 pe 103
+ES id 65 tid 65 eid 65 etid 65 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.4079 am 2 ag 0 at 0.4079 pe 105
 CL id 66 tid 65 eid 66 etid 65 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 65
 CM id 66 tid 66 eid 66 etid 66 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 66 tid 66 eid 66 etid 66 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 103
+BS id 66 tid 66 eid 66 etid 66 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 105
 SD sm 6 dm 3 dg 0
-ES id 66 tid 66 eid 66 etid 66 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.411372 am 3 ag 0 at 0.411372 pe 103
+ES id 66 tid 66 eid 66 etid 66 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.4079 am 3 ag 0 at 0.4079 pe 105
 CL id 67 tid 66 eid 67 etid 66 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 66
 CM id 67 tid 67 eid 67 etid 67 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 67 tid 67 eid 67 etid 67 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 103
+BS id 67 tid 67 eid 67 etid 67 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 105
 SD sm 6 dm 4 dg 0
-ES id 67 tid 67 eid 67 etid 67 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.411372 am 4 ag 0 at 0.411372 pe 103
+ES id 67 tid 67 eid 67 etid 67 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.4079 am 4 ag 0 at 0.4079 pe 105
 CL id 68 tid 67 eid 68 etid 67 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 67
 
-E # 104 t 0.411372 m 2 ce 103 msg 65
-- INFO: [GA FEEDBACK] Time: 0.411372 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
-DM id 65 tid 65 eid 65 etid 65 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 104
+E # 106 t 0.4079 m 2 ce 105 msg 65
+- INFO: [GA FEEDBACK] Time: 0.4079 | Feedback size: 32 bytes | SuggestedPacketSize=991
+- INFO: [ADAPTATION] Updated packet size: 991 bytes (was 1073 bytes)
+DM id 65 tid 65 eid 65 etid 65 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 106
 
-E # 105 t 0.411372 m 3 ce 103 msg 66
-- INFO: [GA FEEDBACK] Time: 0.411372 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
-DM id 66 tid 66 eid 66 etid 66 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 105
+E # 107 t 0.4079 m 3 ce 105 msg 66
+- INFO: [GA FEEDBACK] Time: 0.4079 | Feedback size: 32 bytes | SuggestedPacketSize=441
+- INFO: [ADAPTATION] Updated packet size: 441 bytes (was 1328 bytes)
+DM id 66 tid 66 eid 66 etid 66 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 107
 
-E # 106 t 0.411372 m 4 ce 103 msg 67
-- INFO: [GA FEEDBACK] Time: 0.411372 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
-DM id 67 tid 67 eid 67 etid 67 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 106
+E # 108 t 0.4079 m 4 ce 105 msg 67
+- INFO: [GA FEEDBACK] Time: 0.4079 | Feedback size: 32 bytes | SuggestedPacketSize=674
+- INFO: [ADAPTATION] Updated packet size: 674 bytes (was 1163 bytes)
+DM id 67 tid 67 eid 67 etid 67 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 108
 
-E # 107 t 0.412475 m 7 ce 97 msg 48
-- INFO: receiver1 received packet #8 from router2
-DM id 48 tid 48 eid 48 etid 48 c omnetpp::cMessage n UDP_Packet_2_1495B m 7 pe 107
+E # 109 t 0.4088144 m 7 ce 99 msg 49
+- INFO: receiver1 received packet #4 from router2
+DM id 49 tid 49 eid 49 etid 49 c omnetpp::cMessage n UDP_Packet_2_844B m 7 pe 109
 
-E # 108 t 0.414867 m 7 ce 103 msg 49
-- INFO: receiver1 received packet #9 from router2
-DM id 49 tid 49 eid 49 etid 49 c omnetpp::cMessage n UDP_Packet_2_1495B m 7 pe 108
+E # 110 t 0.411106 m 8 ce 105 msg 47
+- INFO: receiver2 received packet #5 from router2
+DM id 47 tid 47 eid 47 etid 47 c omnetpp::cMessage n UDP_Packet_2_1206B m 8 pe 110
 
-E # 109 t 0.6 m 2 ce 73 msg 0
-CM id 68 tid 68 eid 68 etid 68 c omnetpp::cMessage n UDP_Packet_3_1495B pe -1
-- INFO: [SEND] Time: 0.6 | Packet #3 | Sent size: 1495 bytes
-BS id 68 tid 68 eid 68 etid 68 c omnetpp::cPacket n UDP_Packet_3_1495B l 11960 m 2 pe 109
-SH sm 2 sg 3 pd 0.001 td 0.001196 rd 0.001196
-ES id 68 tid 68 eid 68 etid 68 c omnetpp::cPacket n UDP_Packet_3_1495B l 11960 sm 2 sg 3 st 0.6 am 5 ag 1048576 at 0.602196 pe 109
-CL id 69 tid 68 eid 69 etid 68 c omnetpp::cMessage n UDP_Packet_3_1495B m 2 pe -1 cid 68
-BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n sendTimer sm 2 st 0.6 am 2 at 0.8 pe 109
-ES id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n sendTimer sm 2 st 0.6 am 2 at 0.8 pe 109
+E # 111 t 0.6 m 2 ce 74 msg 0
+CM id 68 tid 68 eid 68 etid 68 c omnetpp::cMessage n UDP_Packet_3_991B pe -1
+- INFO: [SEND] Time: 0.6 | Packet #3 | Sent size: 991 bytes
+BS id 68 tid 68 eid 68 etid 68 c omnetpp::cPacket n UDP_Packet_3_991B l 7928 m 2 pe 111
+SH sm 2 sg 3 pd 0.001 td 0.0007928 rd 0.0007928
+ES id 68 tid 68 eid 68 etid 68 c omnetpp::cPacket n UDP_Packet_3_991B l 7928 sm 2 sg 3 st 0.6 am 5 ag 1048576 at 0.6017928 pe 111
+CL id 69 tid 68 eid 69 etid 68 c omnetpp::cMessage n UDP_Packet_3_991B m 2 pe -1 cid 68
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n sendTimer sm 2 st 0.6 am 2 at 0.8 pe 111
+ES id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n sendTimer sm 2 st 0.6 am 2 at 0.8 pe 111
 
-E # 110 t 0.6 m 3 ce 74 msg 1
-CM id 69 tid 69 eid 69 etid 69 c omnetpp::cMessage n UDP_Packet_3_1495B pe -1
-- INFO: [SEND] Time: 0.6 | Packet #3 | Sent size: 1495 bytes
-BS id 69 tid 69 eid 69 etid 69 c omnetpp::cPacket n UDP_Packet_3_1495B l 11960 m 3 pe 110
-SH sm 3 sg 3 pd 0.001 td 0.001196 rd 0.001196
-ES id 69 tid 69 eid 69 etid 69 c omnetpp::cPacket n UDP_Packet_3_1495B l 11960 sm 3 sg 3 st 0.6 am 5 ag 1048577 at 0.602196 pe 110
-CL id 70 tid 69 eid 70 etid 69 c omnetpp::cMessage n UDP_Packet_3_1495B m 3 pe -1 cid 69
-BS id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n sendTimer sm 3 st 0.6 am 3 at 0.8 pe 110
-ES id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n sendTimer sm 3 st 0.6 am 3 at 0.8 pe 110
+E # 112 t 0.6 m 3 ce 75 msg 1
+CM id 69 tid 69 eid 69 etid 69 c omnetpp::cMessage n UDP_Packet_3_441B pe -1
+- INFO: [SEND] Time: 0.6 | Packet #3 | Sent size: 441 bytes
+BS id 69 tid 69 eid 69 etid 69 c omnetpp::cPacket n UDP_Packet_3_441B l 3528 m 3 pe 112
+SH sm 3 sg 3 pd 0.001 td 0.0003528 rd 0.0003528
+ES id 69 tid 69 eid 69 etid 69 c omnetpp::cPacket n UDP_Packet_3_441B l 3528 sm 3 sg 3 st 0.6 am 5 ag 1048577 at 0.6013528 pe 112
+CL id 70 tid 69 eid 70 etid 69 c omnetpp::cMessage n UDP_Packet_3_441B m 3 pe -1 cid 69
+BS id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n sendTimer sm 3 st 0.6 am 3 at 0.8 pe 112
+ES id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n sendTimer sm 3 st 0.6 am 3 at 0.8 pe 112
 
-E # 111 t 0.6 m 4 ce 75 msg 2
-CM id 70 tid 70 eid 70 etid 70 c omnetpp::cMessage n UDP_Packet_3_1495B pe -1
-- INFO: [SEND] Time: 0.6 | Packet #3 | Sent size: 1495 bytes
-BS id 70 tid 70 eid 70 etid 70 c omnetpp::cPacket n UDP_Packet_3_1495B l 11960 m 4 pe 111
-SH sm 4 sg 3 pd 0.001 td 0.001196 rd 0.001196
-ES id 70 tid 70 eid 70 etid 70 c omnetpp::cPacket n UDP_Packet_3_1495B l 11960 sm 4 sg 3 st 0.6 am 5 ag 1048578 at 0.602196 pe 111
-CL id 71 tid 70 eid 71 etid 70 c omnetpp::cMessage n UDP_Packet_3_1495B m 4 pe -1 cid 70
-BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n sendTimer sm 4 st 0.6 am 4 at 0.8 pe 111
-ES id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n sendTimer sm 4 st 0.6 am 4 at 0.8 pe 111
+E # 113 t 0.6 m 4 ce 76 msg 2
+CM id 70 tid 70 eid 70 etid 70 c omnetpp::cMessage n UDP_Packet_3_674B pe -1
+- INFO: [SEND] Time: 0.6 | Packet #3 | Sent size: 674 bytes
+BS id 70 tid 70 eid 70 etid 70 c omnetpp::cPacket n UDP_Packet_3_674B l 5392 m 4 pe 113
+SH sm 4 sg 3 pd 0.001 td 0.0005392 rd 0.0005392
+ES id 70 tid 70 eid 70 etid 70 c omnetpp::cPacket n UDP_Packet_3_674B l 5392 sm 4 sg 3 st 0.6 am 5 ag 1048578 at 0.6015392 pe 113
+CL id 71 tid 70 eid 71 etid 70 c omnetpp::cMessage n UDP_Packet_3_674B m 4 pe -1 cid 70
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n sendTimer sm 4 st 0.6 am 4 at 0.8 pe 113
+ES id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n sendTimer sm 4 st 0.6 am 4 at 0.8 pe 113
 
-E # 112 t 0.602196 m 5 ce 109 msg 68
-BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.602196 am 5 at 0.602196 pe 112
-ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.602196 am 5 at 0.602196 pe 112
+E # 114 t 0.6013528 m 5 ce 112 msg 69
+BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.6013528 am 5 at 0.6013528 pe 114
+ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.6013528 am 5 at 0.6013528 pe 114
 
-E # 113 t 0.602196 m 5 ce 110 msg 69
-
-E # 114 t 0.602196 m 5 ce 111 msg 70
-
-E # 115 t 0.602196 m 5 ce 112 msg 3
-BS id 68 tid 68 eid 68 etid 68 c omnetpp::cPacket n UDP_Packet_3_1495B l 11960 m 5 pe 112
-SH sm 5 sg 2621440 pd 0.002 td 0.002392 rd 0.002392
-ES id 68 tid 68 eid 68 etid 68 c omnetpp::cPacket n UDP_Packet_3_1495B l 11960 sm 5 sg 2621440 st 0.602196 am 6 ag 1048576 at 0.606588 pe 115
-CL id 71 tid 68 eid 71 etid 68 c omnetpp::cMessage n UDP_Packet_3_1495B m 5 pe -1 cid 68
+E # 115 t 0.6013528 m 5 ce 114 msg 3
+BS id 69 tid 69 eid 69 etid 69 c omnetpp::cPacket n UDP_Packet_3_441B l 3528 m 5 pe 114
+SH sm 5 sg 2621440 pd 0.002 td 0.0007056 rd 0.0007056
+ES id 69 tid 69 eid 69 etid 69 c omnetpp::cPacket n UDP_Packet_3_441B l 3528 sm 5 sg 2621440 st 0.6013528 am 6 ag 1048576 at 0.6040584 pe 115
+CL id 71 tid 69 eid 71 etid 69 c omnetpp::cMessage n UDP_Packet_3_441B m 5 pe -1 cid 69
 CM id 71 tid 71 eid 71 etid 71 c omnetpp::cMessage n adaptive_ga_feedback pe -1
 BS id 71 tid 71 eid 71 etid 71 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 115
 SD sm 5 dm 2 dg 0
-ES id 71 tid 71 eid 71 etid 71 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.602196 am 2 ag 0 at 0.602196 pe 115
+ES id 71 tid 71 eid 71 etid 71 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.6013528 am 2 ag 0 at 0.6013528 pe 115
 CL id 72 tid 71 eid 72 etid 71 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 71
 CM id 72 tid 72 eid 72 etid 72 c omnetpp::cMessage n adaptive_ga_feedback pe -1
 BS id 72 tid 72 eid 72 etid 72 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 115
 SD sm 5 dm 3 dg 0
-ES id 72 tid 72 eid 72 etid 72 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.602196 am 3 ag 0 at 0.602196 pe 115
+ES id 72 tid 72 eid 72 etid 72 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.6013528 am 3 ag 0 at 0.6013528 pe 115
 CL id 73 tid 72 eid 73 etid 72 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 72
 CM id 73 tid 73 eid 73 etid 73 c omnetpp::cMessage n adaptive_ga_feedback pe -1
 BS id 73 tid 73 eid 73 etid 73 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 115
 SD sm 5 dm 4 dg 0
-ES id 73 tid 73 eid 73 etid 73 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.602196 am 4 ag 0 at 0.602196 pe 115
+ES id 73 tid 73 eid 73 etid 73 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.6013528 am 4 ag 0 at 0.6013528 pe 115
 CL id 74 tid 73 eid 74 etid 73 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 73
-BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.602196 am 5 at 0.604588 pe 115
-ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.602196 am 5 at 0.604588 pe 115
 
-E # 116 t 0.602196 m 2 ce 115 msg 71
-- INFO: [GA FEEDBACK] Time: 0.602196 | Feedback size: 32 bytes | SuggestedPacketSize=1485
-- INFO: [ADAPTATION] Updated packet size: 1485 bytes (was 1495 bytes)
+E # 116 t 0.6013528 m 2 ce 115 msg 71
+- INFO: [GA FEEDBACK] Time: 0.6013528 | Feedback size: 32 bytes | SuggestedPacketSize=607
+- INFO: [ADAPTATION] Updated packet size: 607 bytes (was 991 bytes)
 DM id 71 tid 71 eid 71 etid 71 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 116
 
-E # 117 t 0.602196 m 3 ce 115 msg 72
-- INFO: [GA FEEDBACK] Time: 0.602196 | Feedback size: 32 bytes | SuggestedPacketSize=1485
-- INFO: [ADAPTATION] Updated packet size: 1485 bytes (was 1495 bytes)
+E # 117 t 0.6013528 m 3 ce 115 msg 72
+- INFO: [GA FEEDBACK] Time: 0.6013528 | Feedback size: 32 bytes | SuggestedPacketSize=1179
+- INFO: [ADAPTATION] Updated packet size: 1179 bytes (was 441 bytes)
 DM id 72 tid 72 eid 72 etid 72 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 117
 
-E # 118 t 0.602196 m 4 ce 115 msg 73
-- INFO: [GA FEEDBACK] Time: 0.602196 | Feedback size: 32 bytes | SuggestedPacketSize=1485
-- INFO: [ADAPTATION] Updated packet size: 1485 bytes (was 1495 bytes)
+E # 118 t 0.6013528 m 4 ce 115 msg 73
+- INFO: [GA FEEDBACK] Time: 0.6013528 | Feedback size: 32 bytes | SuggestedPacketSize=566
+- INFO: [ADAPTATION] Updated packet size: 566 bytes (was 674 bytes)
 DM id 73 tid 73 eid 73 etid 73 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 118
 
-E # 119 t 0.604588 m 5 ce 115 msg 3
-BS id 69 tid 69 eid 69 etid 69 c omnetpp::cPacket n UDP_Packet_3_1495B l 11960 m 5 pe 113
-SH sm 5 sg 2621440 pd 0.002 td 0.002392 rd 0.002392
-ES id 69 tid 69 eid 69 etid 69 c omnetpp::cPacket n UDP_Packet_3_1495B l 11960 sm 5 sg 2621440 st 0.604588 am 6 ag 1048576 at 0.60898 pe 119
-CL id 74 tid 69 eid 74 etid 69 c omnetpp::cMessage n UDP_Packet_3_1495B m 5 pe -1 cid 69
+E # 119 t 0.6015392 m 5 ce 113 msg 70
+BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.6015392 am 5 at 0.6015392 pe 119
+ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.6015392 am 5 at 0.6015392 pe 119
+
+E # 120 t 0.6015392 m 5 ce 119 msg 3
+BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.6015392 am 5 at 0.6020584 pe 120
+ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.6015392 am 5 at 0.6020584 pe 120
+
+E # 121 t 0.6017928 m 5 ce 111 msg 68
+
+E # 122 t 0.6020584 m 5 ce 120 msg 3
+BS id 70 tid 70 eid 70 etid 70 c omnetpp::cPacket n UDP_Packet_3_674B l 5392 m 5 pe 119
+SH sm 5 sg 2621440 pd 0.002 td 0.0010784 rd 0.0010784
+ES id 70 tid 70 eid 70 etid 70 c omnetpp::cPacket n UDP_Packet_3_674B l 5392 sm 5 sg 2621440 st 0.6020584 am 6 ag 1048576 at 0.6051368 pe 122
+CL id 74 tid 70 eid 74 etid 70 c omnetpp::cMessage n UDP_Packet_3_674B m 5 pe -1 cid 70
 CM id 74 tid 74 eid 74 etid 74 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 74 tid 74 eid 74 etid 74 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 119
+BS id 74 tid 74 eid 74 etid 74 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 122
 SD sm 5 dm 2 dg 0
-ES id 74 tid 74 eid 74 etid 74 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.604588 am 2 ag 0 at 0.604588 pe 119
+ES id 74 tid 74 eid 74 etid 74 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.6020584 am 2 ag 0 at 0.6020584 pe 122
 CL id 75 tid 74 eid 75 etid 74 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 74
 CM id 75 tid 75 eid 75 etid 75 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 75 tid 75 eid 75 etid 75 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 119
+BS id 75 tid 75 eid 75 etid 75 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 122
 SD sm 5 dm 3 dg 0
-ES id 75 tid 75 eid 75 etid 75 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.604588 am 3 ag 0 at 0.604588 pe 119
+ES id 75 tid 75 eid 75 etid 75 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.6020584 am 3 ag 0 at 0.6020584 pe 122
 CL id 76 tid 75 eid 76 etid 75 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 75
 CM id 76 tid 76 eid 76 etid 76 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 76 tid 76 eid 76 etid 76 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 119
+BS id 76 tid 76 eid 76 etid 76 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 122
 SD sm 5 dm 4 dg 0
-ES id 76 tid 76 eid 76 etid 76 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.604588 am 4 ag 0 at 0.604588 pe 119
+ES id 76 tid 76 eid 76 etid 76 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.6020584 am 4 ag 0 at 0.6020584 pe 122
 CL id 77 tid 76 eid 77 etid 76 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 76
-BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.604588 am 5 at 0.60698 pe 119
-ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.604588 am 5 at 0.60698 pe 119
+BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.6020584 am 5 at 0.6031368 pe 122
+ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.6020584 am 5 at 0.6031368 pe 122
 
-E # 120 t 0.604588 m 2 ce 119 msg 74
-- INFO: [GA FEEDBACK] Time: 0.604588 | Feedback size: 32 bytes | SuggestedPacketSize=1490
-- INFO: [ADAPTATION] Updated packet size: 1490 bytes (was 1485 bytes)
-DM id 74 tid 74 eid 74 etid 74 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 120
+E # 123 t 0.6020584 m 2 ce 122 msg 74
+- INFO: [GA FEEDBACK] Time: 0.6020584 | Feedback size: 32 bytes | SuggestedPacketSize=1212
+- INFO: [ADAPTATION] Updated packet size: 1212 bytes (was 607 bytes)
+DM id 74 tid 74 eid 74 etid 74 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 123
 
-E # 121 t 0.604588 m 3 ce 119 msg 75
-- INFO: [GA FEEDBACK] Time: 0.604588 | Feedback size: 32 bytes | SuggestedPacketSize=1490
-- INFO: [ADAPTATION] Updated packet size: 1490 bytes (was 1485 bytes)
-DM id 75 tid 75 eid 75 etid 75 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 121
+E # 124 t 0.6020584 m 3 ce 122 msg 75
+- INFO: [GA FEEDBACK] Time: 0.6020584 | Feedback size: 32 bytes | SuggestedPacketSize=616
+- INFO: [ADAPTATION] Updated packet size: 616 bytes (was 1179 bytes)
+DM id 75 tid 75 eid 75 etid 75 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 124
 
-E # 122 t 0.604588 m 4 ce 119 msg 76
-- INFO: [GA FEEDBACK] Time: 0.604588 | Feedback size: 32 bytes | SuggestedPacketSize=1490
-- INFO: [ADAPTATION] Updated packet size: 1490 bytes (was 1485 bytes)
-DM id 76 tid 76 eid 76 etid 76 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 122
+E # 125 t 0.6020584 m 4 ce 122 msg 76
+- INFO: [GA FEEDBACK] Time: 0.6020584 | Feedback size: 32 bytes | SuggestedPacketSize=424
+- INFO: [ADAPTATION] Updated packet size: 424 bytes (was 566 bytes)
+DM id 76 tid 76 eid 76 etid 76 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 125
 
-E # 123 t 0.606588 m 6 ce 115 msg 68
-BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.606588 am 6 at 0.606588 pe 123
-ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.606588 am 6 at 0.606588 pe 123
-
-E # 124 t 0.606588 m 6 ce 123 msg 4
-BS id 68 tid 68 eid 68 etid 68 c omnetpp::cPacket n UDP_Packet_3_1495B l 11960 m 6 pe 123
-SH sm 6 sg 2621440 pd 0.002 td 0.001495 rd 0.001495
-ES id 68 tid 68 eid 68 etid 68 c omnetpp::cPacket n UDP_Packet_3_1495B l 11960 sm 6 sg 2621440 st 0.606588 am 7 ag 0 at 0.610083 pe 124
-CL id 77 tid 68 eid 77 etid 68 c omnetpp::cMessage n UDP_Packet_3_1495B m 6 pe -1 cid 68
+E # 126 t 0.6031368 m 5 ce 122 msg 3
+BS id 68 tid 68 eid 68 etid 68 c omnetpp::cPacket n UDP_Packet_3_991B l 7928 m 5 pe 121
+SH sm 5 sg 2621440 pd 0.002 td 0.0015856 rd 0.0015856
+ES id 68 tid 68 eid 68 etid 68 c omnetpp::cPacket n UDP_Packet_3_991B l 7928 sm 5 sg 2621440 st 0.6031368 am 6 ag 1048576 at 0.6067224 pe 126
+CL id 77 tid 68 eid 77 etid 68 c omnetpp::cMessage n UDP_Packet_3_991B m 5 pe -1 cid 68
 CM id 77 tid 77 eid 77 etid 77 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 77 tid 77 eid 77 etid 77 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 124
-SD sm 6 dm 2 dg 0
-ES id 77 tid 77 eid 77 etid 77 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.606588 am 2 ag 0 at 0.606588 pe 124
-CL id 78 tid 77 eid 78 etid 77 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 77
+BS id 77 tid 77 eid 77 etid 77 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 126
+SD sm 5 dm 2 dg 0
+ES id 77 tid 77 eid 77 etid 77 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.6031368 am 2 ag 0 at 0.6031368 pe 126
+CL id 78 tid 77 eid 78 etid 77 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 77
 CM id 78 tid 78 eid 78 etid 78 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 78 tid 78 eid 78 etid 78 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 124
-SD sm 6 dm 3 dg 0
-ES id 78 tid 78 eid 78 etid 78 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.606588 am 3 ag 0 at 0.606588 pe 124
-CL id 79 tid 78 eid 79 etid 78 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 78
+BS id 78 tid 78 eid 78 etid 78 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 126
+SD sm 5 dm 3 dg 0
+ES id 78 tid 78 eid 78 etid 78 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.6031368 am 3 ag 0 at 0.6031368 pe 126
+CL id 79 tid 78 eid 79 etid 78 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 78
 CM id 79 tid 79 eid 79 etid 79 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 79 tid 79 eid 79 etid 79 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 124
-SD sm 6 dm 4 dg 0
-ES id 79 tid 79 eid 79 etid 79 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.606588 am 4 ag 0 at 0.606588 pe 124
-CL id 80 tid 79 eid 80 etid 79 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 79
+BS id 79 tid 79 eid 79 etid 79 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 126
+SD sm 5 dm 4 dg 0
+ES id 79 tid 79 eid 79 etid 79 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.6031368 am 4 ag 0 at 0.6031368 pe 126
+CL id 80 tid 79 eid 80 etid 79 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 79
 
-E # 125 t 0.606588 m 2 ce 124 msg 77
-- INFO: [GA FEEDBACK] Time: 0.606588 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1490 bytes)
-DM id 77 tid 77 eid 77 etid 77 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 125
+E # 127 t 0.6031368 m 2 ce 126 msg 77
+- INFO: [GA FEEDBACK] Time: 0.6031368 | Feedback size: 32 bytes | SuggestedPacketSize=691
+- INFO: [ADAPTATION] Updated packet size: 691 bytes (was 1212 bytes)
+DM id 77 tid 77 eid 77 etid 77 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 127
 
-E # 126 t 0.606588 m 3 ce 124 msg 78
-- INFO: [GA FEEDBACK] Time: 0.606588 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1490 bytes)
-DM id 78 tid 78 eid 78 etid 78 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 126
+E # 128 t 0.6031368 m 3 ce 126 msg 78
+- INFO: [GA FEEDBACK] Time: 0.6031368 | Feedback size: 32 bytes | SuggestedPacketSize=1422
+- INFO: [ADAPTATION] Updated packet size: 1422 bytes (was 616 bytes)
+DM id 78 tid 78 eid 78 etid 78 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 128
 
-E # 127 t 0.606588 m 4 ce 124 msg 79
-- INFO: [GA FEEDBACK] Time: 0.606588 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1490 bytes)
-DM id 79 tid 79 eid 79 etid 79 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 127
+E # 129 t 0.6031368 m 4 ce 126 msg 79
+- INFO: [GA FEEDBACK] Time: 0.6031368 | Feedback size: 32 bytes | SuggestedPacketSize=1101
+- INFO: [ADAPTATION] Updated packet size: 1101 bytes (was 424 bytes)
+DM id 79 tid 79 eid 79 etid 79 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 129
 
-E # 128 t 0.60698 m 5 ce 119 msg 3
-BS id 70 tid 70 eid 70 etid 70 c omnetpp::cPacket n UDP_Packet_3_1495B l 11960 m 5 pe 114
-SH sm 5 sg 2621440 pd 0.002 td 0.002392 rd 0.002392
-ES id 70 tid 70 eid 70 etid 70 c omnetpp::cPacket n UDP_Packet_3_1495B l 11960 sm 5 sg 2621440 st 0.60698 am 6 ag 1048576 at 0.611372 pe 128
-CL id 80 tid 70 eid 80 etid 70 c omnetpp::cMessage n UDP_Packet_3_1495B m 5 pe -1 cid 70
+E # 130 t 0.6040584 m 6 ce 115 msg 69
+BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.6040584 am 6 at 0.6040584 pe 130
+ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.6040584 am 6 at 0.6040584 pe 130
+
+E # 131 t 0.6040584 m 6 ce 130 msg 4
+BS id 69 tid 69 eid 69 etid 69 c omnetpp::cPacket n UDP_Packet_3_441B l 3528 m 6 pe 130
+SH sm 6 sg 2621440 pd 0.002 td 0.000441 rd 0.000441
+ES id 69 tid 69 eid 69 etid 69 c omnetpp::cPacket n UDP_Packet_3_441B l 3528 sm 6 sg 2621440 st 0.6040584 am 7 ag 0 at 0.6064994 pe 131
+CL id 80 tid 69 eid 80 etid 69 c omnetpp::cMessage n UDP_Packet_3_441B m 6 pe -1 cid 69
 CM id 80 tid 80 eid 80 etid 80 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 80 tid 80 eid 80 etid 80 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 128
-SD sm 5 dm 2 dg 0
-ES id 80 tid 80 eid 80 etid 80 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.60698 am 2 ag 0 at 0.60698 pe 128
-CL id 81 tid 80 eid 81 etid 80 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 80
+BS id 80 tid 80 eid 80 etid 80 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 131
+SD sm 6 dm 2 dg 0
+ES id 80 tid 80 eid 80 etid 80 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.6040584 am 2 ag 0 at 0.6040584 pe 131
+CL id 81 tid 80 eid 81 etid 80 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 80
 CM id 81 tid 81 eid 81 etid 81 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 81 tid 81 eid 81 etid 81 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 128
-SD sm 5 dm 3 dg 0
-ES id 81 tid 81 eid 81 etid 81 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.60698 am 3 ag 0 at 0.60698 pe 128
-CL id 82 tid 81 eid 82 etid 81 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 81
+BS id 81 tid 81 eid 81 etid 81 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 131
+SD sm 6 dm 3 dg 0
+ES id 81 tid 81 eid 81 etid 81 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.6040584 am 3 ag 0 at 0.6040584 pe 131
+CL id 82 tid 81 eid 82 etid 81 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 81
 CM id 82 tid 82 eid 82 etid 82 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 82 tid 82 eid 82 etid 82 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 128
-SD sm 5 dm 4 dg 0
-ES id 82 tid 82 eid 82 etid 82 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.60698 am 4 ag 0 at 0.60698 pe 128
-CL id 83 tid 82 eid 83 etid 82 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 82
-
-E # 129 t 0.60698 m 2 ce 128 msg 80
-- INFO: [GA FEEDBACK] Time: 0.60698 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
-DM id 80 tid 80 eid 80 etid 80 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 129
-
-E # 130 t 0.60698 m 3 ce 128 msg 81
-- INFO: [GA FEEDBACK] Time: 0.60698 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
-DM id 81 tid 81 eid 81 etid 81 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 130
-
-E # 131 t 0.60698 m 4 ce 128 msg 82
-- INFO: [GA FEEDBACK] Time: 0.60698 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
-DM id 82 tid 82 eid 82 etid 82 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 131
-
-E # 132 t 0.60898 m 6 ce 119 msg 69
-BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.60898 am 6 at 0.60898 pe 132
-ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.60898 am 6 at 0.60898 pe 132
-
-E # 133 t 0.60898 m 6 ce 132 msg 4
-BS id 69 tid 69 eid 69 etid 69 c omnetpp::cPacket n UDP_Packet_3_1495B l 11960 m 6 pe 132
-SH sm 6 sg 2621440 pd 0.002 td 0.001495 rd 0.001495
-ES id 69 tid 69 eid 69 etid 69 c omnetpp::cPacket n UDP_Packet_3_1495B l 11960 sm 6 sg 2621440 st 0.60898 am 7 ag 0 at 0.612475 pe 133
-CL id 83 tid 69 eid 83 etid 69 c omnetpp::cMessage n UDP_Packet_3_1495B m 6 pe -1 cid 69
-CM id 83 tid 83 eid 83 etid 83 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 83 tid 83 eid 83 etid 83 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 133
-SD sm 6 dm 2 dg 0
-ES id 83 tid 83 eid 83 etid 83 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.60898 am 2 ag 0 at 0.60898 pe 133
-CL id 84 tid 83 eid 84 etid 83 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 83
-CM id 84 tid 84 eid 84 etid 84 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 84 tid 84 eid 84 etid 84 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 133
-SD sm 6 dm 3 dg 0
-ES id 84 tid 84 eid 84 etid 84 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.60898 am 3 ag 0 at 0.60898 pe 133
-CL id 85 tid 84 eid 85 etid 84 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 84
-CM id 85 tid 85 eid 85 etid 85 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 85 tid 85 eid 85 etid 85 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 133
+BS id 82 tid 82 eid 82 etid 82 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 131
 SD sm 6 dm 4 dg 0
-ES id 85 tid 85 eid 85 etid 85 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.60898 am 4 ag 0 at 0.60898 pe 133
-CL id 86 tid 85 eid 86 etid 85 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 85
+ES id 82 tid 82 eid 82 etid 82 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.6040584 am 4 ag 0 at 0.6040584 pe 131
+CL id 83 tid 82 eid 83 etid 82 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 82
 
-E # 134 t 0.60898 m 2 ce 133 msg 83
-- INFO: [GA FEEDBACK] Time: 0.60898 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
-DM id 83 tid 83 eid 83 etid 83 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 134
-
-E # 135 t 0.60898 m 3 ce 133 msg 84
-- INFO: [GA FEEDBACK] Time: 0.60898 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
-DM id 84 tid 84 eid 84 etid 84 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 135
-
-E # 136 t 0.60898 m 4 ce 133 msg 85
-- INFO: [GA FEEDBACK] Time: 0.60898 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
-DM id 85 tid 85 eid 85 etid 85 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 136
-
-E # 137 t 0.610083 m 7 ce 124 msg 68
-- INFO: receiver1 received packet #10 from router2
-DM id 68 tid 68 eid 68 etid 68 c omnetpp::cMessage n UDP_Packet_3_1495B m 7 pe 137
-
-E # 138 t 0.611372 m 6 ce 128 msg 70
-BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.611372 am 6 at 0.611372 pe 138
-ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.611372 am 6 at 0.611372 pe 138
-
-E # 139 t 0.611372 m 6 ce 138 msg 4
-BS id 70 tid 70 eid 70 etid 70 c omnetpp::cPacket n UDP_Packet_3_1495B l 11960 m 6 pe 138
-SH sm 6 sg 2621440 pd 0.002 td 0.001495 rd 0.001495
-ES id 70 tid 70 eid 70 etid 70 c omnetpp::cPacket n UDP_Packet_3_1495B l 11960 sm 6 sg 2621440 st 0.611372 am 7 ag 0 at 0.614867 pe 139
-CL id 86 tid 70 eid 86 etid 70 c omnetpp::cMessage n UDP_Packet_3_1495B m 6 pe -1 cid 70
-CM id 86 tid 86 eid 86 etid 86 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 86 tid 86 eid 86 etid 86 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 139
-SD sm 6 dm 2 dg 0
-ES id 86 tid 86 eid 86 etid 86 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.611372 am 2 ag 0 at 0.611372 pe 139
-CL id 87 tid 86 eid 87 etid 86 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 86
-CM id 87 tid 87 eid 87 etid 87 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 87 tid 87 eid 87 etid 87 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 139
-SD sm 6 dm 3 dg 0
-ES id 87 tid 87 eid 87 etid 87 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.611372 am 3 ag 0 at 0.611372 pe 139
-CL id 88 tid 87 eid 88 etid 87 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 87
-CM id 88 tid 88 eid 88 etid 88 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 88 tid 88 eid 88 etid 88 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 139
-SD sm 6 dm 4 dg 0
-ES id 88 tid 88 eid 88 etid 88 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.611372 am 4 ag 0 at 0.611372 pe 139
-CL id 89 tid 88 eid 89 etid 88 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 88
-
-E # 140 t 0.611372 m 2 ce 139 msg 86
-- INFO: [GA FEEDBACK] Time: 0.611372 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
-DM id 86 tid 86 eid 86 etid 86 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 140
-
-E # 141 t 0.611372 m 3 ce 139 msg 87
-- INFO: [GA FEEDBACK] Time: 0.611372 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
-DM id 87 tid 87 eid 87 etid 87 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 141
-
-E # 142 t 0.611372 m 4 ce 139 msg 88
-- INFO: [GA FEEDBACK] Time: 0.611372 | Feedback size: 32 bytes | SuggestedPacketSize=1495
-- INFO: [ADAPTATION] Updated packet size: 1495 bytes (was 1495 bytes)
-DM id 88 tid 88 eid 88 etid 88 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 142
-
-E # 143 t 0.612475 m 7 ce 133 msg 69
-- INFO: receiver1 received packet #11 from router2
-DM id 69 tid 69 eid 69 etid 69 c omnetpp::cMessage n UDP_Packet_3_1495B m 7 pe 143
-
-E # 144 t 0.614867 m 7 ce 139 msg 70
-- INFO: receiver1 received packet #12 from router2
-DM id 70 tid 70 eid 70 etid 70 c omnetpp::cMessage n UDP_Packet_3_1495B m 7 pe 144
-
-E # 145 t 0.8 m 2 ce 109 msg 0
-CM id 89 tid 89 eid 89 etid 89 c omnetpp::cMessage n UDP_Packet_4_1495B pe -1
-- INFO: [SEND] Time: 0.8 | Packet #4 | Sent size: 1495 bytes
-BS id 89 tid 89 eid 89 etid 89 c omnetpp::cPacket n UDP_Packet_4_1495B l 11960 m 2 pe 145
-SH sm 2 sg 3 pd 0.001 td 0.001196 rd 0.001196
-ES id 89 tid 89 eid 89 etid 89 c omnetpp::cPacket n UDP_Packet_4_1495B l 11960 sm 2 sg 3 st 0.8 am 5 ag 1048576 at 0.802196 pe 145
-CL id 90 tid 89 eid 90 etid 89 c omnetpp::cMessage n UDP_Packet_4_1495B m 2 pe -1 cid 89
-BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n sendTimer sm 2 st 0.8 am 2 at 1 pe 145
-ES id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n sendTimer sm 2 st 0.8 am 2 at 1 pe 145
-
-E # 146 t 0.8 m 3 ce 110 msg 1
-CM id 90 tid 90 eid 90 etid 90 c omnetpp::cMessage n UDP_Packet_4_1495B pe -1
-- INFO: [SEND] Time: 0.8 | Packet #4 | Sent size: 1495 bytes
-BS id 90 tid 90 eid 90 etid 90 c omnetpp::cPacket n UDP_Packet_4_1495B l 11960 m 3 pe 146
-SH sm 3 sg 3 pd 0.001 td 0.001196 rd 0.001196
-ES id 90 tid 90 eid 90 etid 90 c omnetpp::cPacket n UDP_Packet_4_1495B l 11960 sm 3 sg 3 st 0.8 am 5 ag 1048577 at 0.802196 pe 146
-CL id 91 tid 90 eid 91 etid 90 c omnetpp::cMessage n UDP_Packet_4_1495B m 3 pe -1 cid 90
-BS id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n sendTimer sm 3 st 0.8 am 3 at 1 pe 146
-ES id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n sendTimer sm 3 st 0.8 am 3 at 1 pe 146
-
-E # 147 t 0.8 m 4 ce 111 msg 2
-CM id 91 tid 91 eid 91 etid 91 c omnetpp::cMessage n UDP_Packet_4_1495B pe -1
-- INFO: [SEND] Time: 0.8 | Packet #4 | Sent size: 1495 bytes
-BS id 91 tid 91 eid 91 etid 91 c omnetpp::cPacket n UDP_Packet_4_1495B l 11960 m 4 pe 147
-SH sm 4 sg 3 pd 0.001 td 0.001196 rd 0.001196
-ES id 91 tid 91 eid 91 etid 91 c omnetpp::cPacket n UDP_Packet_4_1495B l 11960 sm 4 sg 3 st 0.8 am 5 ag 1048578 at 0.802196 pe 147
-CL id 92 tid 91 eid 92 etid 91 c omnetpp::cMessage n UDP_Packet_4_1495B m 4 pe -1 cid 91
-BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n sendTimer sm 4 st 0.8 am 4 at 1 pe 147
-ES id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n sendTimer sm 4 st 0.8 am 4 at 1 pe 147
-
-E # 148 t 0.802196 m 5 ce 145 msg 89
-BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.802196 am 5 at 0.802196 pe 148
-ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.802196 am 5 at 0.802196 pe 148
-
-E # 149 t 0.802196 m 5 ce 146 msg 90
-
-E # 150 t 0.802196 m 5 ce 147 msg 91
-
-E # 151 t 0.802196 m 5 ce 148 msg 3
-BS id 89 tid 89 eid 89 etid 89 c omnetpp::cPacket n UDP_Packet_4_1495B l 11960 m 5 pe 148
-SH sm 5 sg 2621440 pd 0.002 td 0.002392 rd 0.002392
-ES id 89 tid 89 eid 89 etid 89 c omnetpp::cPacket n UDP_Packet_4_1495B l 11960 sm 5 sg 2621440 st 0.802196 am 6 ag 1048576 at 0.806588 pe 151
-CL id 92 tid 89 eid 92 etid 89 c omnetpp::cMessage n UDP_Packet_4_1495B m 5 pe -1 cid 89
-CM id 92 tid 92 eid 92 etid 92 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 92 tid 92 eid 92 etid 92 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 151
-SD sm 5 dm 2 dg 0
-ES id 92 tid 92 eid 92 etid 92 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.802196 am 2 ag 0 at 0.802196 pe 151
-CL id 93 tid 92 eid 93 etid 92 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 92
-CM id 93 tid 93 eid 93 etid 93 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 93 tid 93 eid 93 etid 93 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 151
-SD sm 5 dm 3 dg 0
-ES id 93 tid 93 eid 93 etid 93 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.802196 am 3 ag 0 at 0.802196 pe 151
-CL id 94 tid 93 eid 94 etid 93 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 93
-CM id 94 tid 94 eid 94 etid 94 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 94 tid 94 eid 94 etid 94 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 151
-SD sm 5 dm 4 dg 0
-ES id 94 tid 94 eid 94 etid 94 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.802196 am 4 ag 0 at 0.802196 pe 151
-CL id 95 tid 94 eid 95 etid 94 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 94
-BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.802196 am 5 at 0.804588 pe 151
-ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.802196 am 5 at 0.804588 pe 151
-
-E # 152 t 0.802196 m 2 ce 151 msg 92
-- INFO: [GA FEEDBACK] Time: 0.802196 | Feedback size: 32 bytes | SuggestedPacketSize=1485
-- INFO: [ADAPTATION] Updated packet size: 1485 bytes (was 1495 bytes)
-DM id 92 tid 92 eid 92 etid 92 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 152
-
-E # 153 t 0.802196 m 3 ce 151 msg 93
-- INFO: [GA FEEDBACK] Time: 0.802196 | Feedback size: 32 bytes | SuggestedPacketSize=1485
-- INFO: [ADAPTATION] Updated packet size: 1485 bytes (was 1495 bytes)
-DM id 93 tid 93 eid 93 etid 93 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 153
-
-E # 154 t 0.802196 m 4 ce 151 msg 94
-- INFO: [GA FEEDBACK] Time: 0.802196 | Feedback size: 32 bytes | SuggestedPacketSize=1485
-- INFO: [ADAPTATION] Updated packet size: 1485 bytes (was 1495 bytes)
-DM id 94 tid 94 eid 94 etid 94 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 154
-
-E # 155 t 0.804588 m 5 ce 151 msg 3
-BS id 90 tid 90 eid 90 etid 90 c omnetpp::cPacket n UDP_Packet_4_1495B l 11960 m 5 pe 149
-SH sm 5 sg 2621440 pd 0.002 td 0.002392 rd 0.002392
-ES id 90 tid 90 eid 90 etid 90 c omnetpp::cPacket n UDP_Packet_4_1495B l 11960 sm 5 sg 2621440 st 0.804588 am 6 ag 1048576 at 0.80898 pe 155
-CL id 95 tid 90 eid 95 etid 90 c omnetpp::cMessage n UDP_Packet_4_1495B m 5 pe -1 cid 90
-CM id 95 tid 95 eid 95 etid 95 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 95 tid 95 eid 95 etid 95 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 155
-SD sm 5 dm 2 dg 0
-ES id 95 tid 95 eid 95 etid 95 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.804588 am 2 ag 0 at 0.804588 pe 155
-CL id 96 tid 95 eid 96 etid 95 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 95
-CM id 96 tid 96 eid 96 etid 96 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 96 tid 96 eid 96 etid 96 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 155
-SD sm 5 dm 3 dg 0
-ES id 96 tid 96 eid 96 etid 96 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.804588 am 3 ag 0 at 0.804588 pe 155
-CL id 97 tid 96 eid 97 etid 96 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 96
-CM id 97 tid 97 eid 97 etid 97 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 97 tid 97 eid 97 etid 97 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 5 pe 155
-SD sm 5 dm 4 dg 0
-ES id 97 tid 97 eid 97 etid 97 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 5 st 0.804588 am 4 ag 0 at 0.804588 pe 155
-CL id 98 tid 97 eid 98 etid 97 c omnetpp::cMessage n adaptive_ga_feedback m 5 pe -1 cid 97
-BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.804588 am 5 at 0.80698 pe 155
-ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 0.804588 am 5 at 0.80698 pe 155
-
-E # 156 t 0.804588 m 2 ce 155 msg 95
-- INFO: [GA FEEDBACK] Time: 0.804588 | Feedback size: 32 bytes | SuggestedPacketSize=1490
-- INFO: [ADAPTATION] Updated packet size: 1490 bytes (was 1485 bytes)
-DM id 95 tid 95 eid 95 etid 95 c omnetpp::cMessage n adaptive_ga_feedback m 2 pe 156
-
-E # 157 t 0.804588 m 3 ce 155 msg 96
-- INFO: [GA FEEDBACK] Time: 0.804588 | Feedback size: 32 bytes | SuggestedPacketSize=1490
-- INFO: [ADAPTATION] Updated packet size: 1490 bytes (was 1485 bytes)
-DM id 96 tid 96 eid 96 etid 96 c omnetpp::cMessage n adaptive_ga_feedback m 3 pe 157
-
-E # 158 t 0.804588 m 4 ce 155 msg 97
-- INFO: [GA FEEDBACK] Time: 0.804588 | Feedback size: 32 bytes | SuggestedPacketSize=1490
-- INFO: [ADAPTATION] Updated packet size: 1490 bytes (was 1485 bytes)
-DM id 97 tid 97 eid 97 etid 97 c omnetpp::cMessage n adaptive_ga_feedback m 4 pe 158
-
-E # 159 t 0.806588 m 6 ce 151 msg 89
-BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.806588 am 6 at 0.806588 pe 159
-ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.806588 am 6 at 0.806588 pe 159
-
-E # 160 t 0.806588 m 6 ce 159 msg 4
-BS id 89 tid 89 eid 89 etid 89 c omnetpp::cPacket n UDP_Packet_4_1495B l 11960 m 6 pe 159
-SH sm 6 sg 2621440 pd 0.002 td 0.001495 rd 0.001495
-ES id 89 tid 89 eid 89 etid 89 c omnetpp::cPacket n UDP_Packet_4_1495B l 11960 sm 6 sg 2621440 st 0.806588 am 7 ag 0 at 0.810083 pe 160
-CL id 98 tid 89 eid 98 etid 89 c omnetpp::cMessage n UDP_Packet_4_1495B m 6 pe -1 cid 89
-CM id 98 tid 98 eid 98 etid 98 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 98 tid 98 eid 98 etid 98 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 160
-SD sm 6 dm 2 dg 0
-ES id 98 tid 98 eid 98 etid 98 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.806588 am 2 ag 0 at 0.806588 pe 160
-CL id 99 tid 98 eid 99 etid 98 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 98
-CM id 99 tid 99 eid 99 etid 99 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 99 tid 99 eid 99 etid 99 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 160
-SD sm 6 dm 3 dg 0
-ES id 99 tid 99 eid 99 etid 99 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.806588 am 3 ag 0 at 0.806588 pe 160
-CL id 100 tid 99 eid 100 etid 99 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 99
-CM id 100 tid 100 eid 100 etid 100 c omnetpp::cMessage n adaptive_ga_feedback pe -1
-BS id 100 tid 100 eid 100 etid 100 c omnetpp::cPacket n adaptive_ga_feedback l 256 m 6 pe 160
-SD sm 6 dm 4 dg 0
-ES id 100 tid 100 eid 100 etid 100 c omnetpp::cPacket n adaptive_ga_feedback l 256 sm 6 st 0.806588 am 4 ag 0 at 0.806588 pe 160
-CL id 101 tid 100 eid 101 etid 100 c omnetpp::cMessage n adaptive_ga_feedback m 6 pe -1 cid 100
-
-SE e 0 c 10 m "The user has finished the simulation -- at t=0.806588s, event #160"
+SE e 0 c -1 m ""

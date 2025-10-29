@@ -5,10 +5,10 @@
 #include <vector>
 using namespace omnetpp;
 
-// Genetic Algorithm individual definition
 struct GAIndividual {
     std::vector<int> path;
     double fitness;
+    double packetSize;
 };
 
 class RouterNode : public cSimpleModule
