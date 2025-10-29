@@ -12,6 +12,7 @@ class RouterNode : public cSimpleModule
     int capacity;
     int droppedPackets;
     simsignal_t ciSignal;
+    int nextOutGate; // For round-robin output
 
   protected:
     virtual void initialize() override;

@@ -1,4 +1,4 @@
-SB ov 1538 ev 2 rid General-0-20251023-23:53:13-7824
+SB ov 1538 ev 2 rid General-0-20251029-19:03:44-24300
 
 E # 0 t 0 m 1 ce -1 msg -1
 MC id 1 c omnetpp::cModule t adaptive_udp.simulations.AdaptiveUDPNetwork n AdaptiveUDPNetwork cm 1
@@ -6,25 +6,25 @@ MDC id 1 d ""
 MC id 2 c SenderNode t adaptive_udp.simulations.SenderNode pid 1 n sender1
 GC m 2 g 0 n in o 0
 GC m 2 g 3 n out o 1
-MDC id 2 d p=100,100
+MDC id 2 d p=100,100;i=device/pc
 MC id 3 c SenderNode t adaptive_udp.simulations.SenderNode pid 1 n sender2
 GC m 3 g 0 n in o 0
 GC m 3 g 3 n out o 1
-MDC id 3 d p=100,160
+MDC id 3 d p=100,160;i=device/pc
 MC id 4 c SenderNode t adaptive_udp.simulations.SenderNode pid 1 n sender3
 GC m 4 g 0 n in o 0
 GC m 4 g 3 n out o 1
-MDC id 4 d p=100,220
+MDC id 4 d p=100,220;i=device/pc
 MC id 5 c RouterNode t adaptive_udp.simulations.RouterNode pid 1 n router1
-MDC id 5 d p=300,160
+MDC id 5 d p=300,160;i=abstract/router
 MC id 6 c RouterNode t adaptive_udp.simulations.RouterNode pid 1 n router2
-MDC id 6 d p=500,160
+MDC id 6 d p=500,160;i=abstract/router
 MC id 7 c ReceiverNode t adaptive_udp.simulations.ReceiverNode pid 1 n receiver1
 GC m 7 g 0 n in o 0
-MDC id 7 d p=700,120
+MDC id 7 d p=700,120;i=device/laptop
 MC id 8 c ReceiverNode t adaptive_udp.simulations.ReceiverNode pid 1 n receiver2
 GC m 8 g 0 n in o 0
-MDC id 8 d p=700,200
+MDC id 8 d p=700,200;i=device/laptop
 GC m 5 g 1048576 n in i 0 o 0
 CC sm 2 sg 3 dm 5 dg 1048576
 CDC sm 2 sg 3 d ""
@@ -143,8 +143,8 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.0062 am 6 at
 
 E # 13 t 0.0062 m 6 ce 12 msg 4
 BS id 6 tid 6 eid 6 etid 6 c omnetpp::cPacket n UDP_Packet_0 l 6400 m 6 pe 12
-SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
-ES id 6 tid 6 eid 6 etid 6 c omnetpp::cPacket n UDP_Packet_0 l 6400 sm 6 sg 2621440 st 0.0062 am 7 ag 0 at 0.009 pe 13
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 6 tid 6 eid 6 etid 6 c omnetpp::cPacket n UDP_Packet_0 l 6400 sm 6 sg 2621441 st 0.0062 am 8 ag 0 at 0.009 pe 13
 CL id 8 tid 6 eid 8 etid 6 c omnetpp::cMessage n UDP_Packet_0 m 6 pe -1 cid 6
 
 E # 14 t 0.00748 m 6 ce 9 msg 7
@@ -161,12 +161,12 @@ E # 16 t 0.00772 m 7 ce 11 msg 5
 - INFO: receiver1 received packet #1 from router2
 DM id 5 tid 5 eid 5 etid 5 c omnetpp::cMessage n UDP_Packet_0 m 7 pe 16
 
-E # 17 t 0.009 m 7 ce 13 msg 6
-- INFO: receiver1 received packet #2 from router2
-DM id 6 tid 6 eid 6 etid 6 c omnetpp::cMessage n UDP_Packet_0 m 7 pe 17
+E # 17 t 0.009 m 8 ce 13 msg 6
+- INFO: receiver2 received packet #1 from router2
+DM id 6 tid 6 eid 6 etid 6 c omnetpp::cMessage n UDP_Packet_0 m 8 pe 17
 
 E # 18 t 0.01028 m 7 ce 15 msg 7
-- INFO: receiver1 received packet #3 from router2
+- INFO: receiver1 received packet #2 from router2
 DM id 7 tid 7 eid 7 etid 7 c omnetpp::cMessage n UDP_Packet_0 m 7 pe 18
 
 E # 19 t 0.2 m 2 ce 1 msg 0
@@ -232,8 +232,8 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.20492 am 6 a
 
 E # 29 t 0.20492 m 6 ce 28 msg 4
 BS id 8 tid 8 eid 8 etid 8 c omnetpp::cPacket n UDP_Packet_1 l 6400 m 6 pe 28
-SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
-ES id 8 tid 8 eid 8 etid 8 c omnetpp::cPacket n UDP_Packet_1 l 6400 sm 6 sg 2621440 st 0.20492 am 7 ag 0 at 0.20772 pe 29
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 8 tid 8 eid 8 etid 8 c omnetpp::cPacket n UDP_Packet_1 l 6400 sm 6 sg 2621441 st 0.20492 am 8 ag 0 at 0.20772 pe 29
 CL id 11 tid 8 eid 11 etid 8 c omnetpp::cMessage n UDP_Packet_1 m 6 pe -1 cid 8
 
 E # 30 t 0.2062 m 6 ce 26 msg 9
@@ -252,21 +252,21 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.20748 am 6 a
 
 E # 33 t 0.20748 m 6 ce 32 msg 4
 BS id 10 tid 10 eid 10 etid 10 c omnetpp::cPacket n UDP_Packet_1 l 6400 m 6 pe 32
-SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
-ES id 10 tid 10 eid 10 etid 10 c omnetpp::cPacket n UDP_Packet_1 l 6400 sm 6 sg 2621440 st 0.20748 am 7 ag 0 at 0.21028 pe 33
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 10 tid 10 eid 10 etid 10 c omnetpp::cPacket n UDP_Packet_1 l 6400 sm 6 sg 2621441 st 0.20748 am 8 ag 0 at 0.21028 pe 33
 CL id 11 tid 10 eid 11 etid 10 c omnetpp::cMessage n UDP_Packet_1 m 6 pe -1 cid 10
 
-E # 34 t 0.20772 m 7 ce 29 msg 8
-- INFO: receiver1 received packet #4 from router2
-DM id 8 tid 8 eid 8 etid 8 c omnetpp::cMessage n UDP_Packet_1 m 7 pe 34
+E # 34 t 0.20772 m 8 ce 29 msg 8
+- INFO: receiver2 received packet #2 from router2
+DM id 8 tid 8 eid 8 etid 8 c omnetpp::cMessage n UDP_Packet_1 m 8 pe 34
 
 E # 35 t 0.209 m 7 ce 31 msg 9
-- INFO: receiver1 received packet #5 from router2
+- INFO: receiver1 received packet #3 from router2
 DM id 9 tid 9 eid 9 etid 9 c omnetpp::cMessage n UDP_Packet_1 m 7 pe 35
 
-E # 36 t 0.21028 m 7 ce 33 msg 10
-- INFO: receiver1 received packet #6 from router2
-DM id 10 tid 10 eid 10 etid 10 c omnetpp::cMessage n UDP_Packet_1 m 7 pe 36
+E # 36 t 0.21028 m 8 ce 33 msg 10
+- INFO: receiver2 received packet #3 from router2
+DM id 10 tid 10 eid 10 etid 10 c omnetpp::cMessage n UDP_Packet_1 m 8 pe 36
 
 E # 37 t 0.4 m 2 ce 19 msg 0
 CM id 11 tid 11 eid 11 etid 11 c omnetpp::cMessage n UDP_Packet_2 pe -1
@@ -350,8 +350,8 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.4062 am 6 at
 
 E # 50 t 0.4062 m 6 ce 49 msg 4
 BS id 12 tid 12 eid 12 etid 12 c omnetpp::cPacket n UDP_Packet_2 l 6400 m 6 pe 49
-SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
-ES id 12 tid 12 eid 12 etid 12 c omnetpp::cPacket n UDP_Packet_2 l 6400 sm 6 sg 2621440 st 0.4062 am 7 ag 0 at 0.409 pe 50
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 12 tid 12 eid 12 etid 12 c omnetpp::cPacket n UDP_Packet_2 l 6400 sm 6 sg 2621441 st 0.4062 am 8 ag 0 at 0.409 pe 50
 CL id 15 tid 12 eid 15 etid 12 c omnetpp::cMessage n UDP_Packet_2 m 6 pe -1 cid 12
 
 E # 51 t 0.40748 m 6 ce 45 msg 13
@@ -365,15 +365,15 @@ ES id 13 tid 13 eid 13 etid 13 c omnetpp::cPacket n UDP_Packet_2 l 6400 sm 6 sg 
 CL id 15 tid 13 eid 15 etid 13 c omnetpp::cMessage n UDP_Packet_2 m 6 pe -1 cid 13
 
 E # 53 t 0.40772 m 7 ce 47 msg 11
-- INFO: receiver1 received packet #7 from router2
+- INFO: receiver1 received packet #4 from router2
 DM id 11 tid 11 eid 11 etid 11 c omnetpp::cMessage n UDP_Packet_2 m 7 pe 53
 
-E # 54 t 0.409 m 7 ce 50 msg 12
-- INFO: receiver1 received packet #8 from router2
-DM id 12 tid 12 eid 12 etid 12 c omnetpp::cMessage n UDP_Packet_2 m 7 pe 54
+E # 54 t 0.409 m 8 ce 50 msg 12
+- INFO: receiver2 received packet #4 from router2
+DM id 12 tid 12 eid 12 etid 12 c omnetpp::cMessage n UDP_Packet_2 m 8 pe 54
 
 E # 55 t 0.41028 m 7 ce 52 msg 13
-- INFO: receiver1 received packet #9 from router2
+- INFO: receiver1 received packet #5 from router2
 DM id 13 tid 13 eid 13 etid 13 c omnetpp::cMessage n UDP_Packet_2 m 7 pe 55
 
 E # 56 t 0.6 m 2 ce 37 msg 0
@@ -439,8 +439,8 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.60492 am 6 a
 
 E # 66 t 0.60492 m 6 ce 65 msg 4
 BS id 16 tid 16 eid 16 etid 16 c omnetpp::cPacket n UDP_Packet_3 l 6400 m 6 pe 65
-SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
-ES id 16 tid 16 eid 16 etid 16 c omnetpp::cPacket n UDP_Packet_3 l 6400 sm 6 sg 2621440 st 0.60492 am 7 ag 0 at 0.60772 pe 66
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 16 tid 16 eid 16 etid 16 c omnetpp::cPacket n UDP_Packet_3 l 6400 sm 6 sg 2621441 st 0.60492 am 8 ag 0 at 0.60772 pe 66
 CL id 18 tid 16 eid 18 etid 16 c omnetpp::cMessage n UDP_Packet_3 m 6 pe -1 cid 16
 
 E # 67 t 0.6062 m 6 ce 63 msg 17
@@ -459,21 +459,21 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.60764 am 6 a
 
 E # 70 t 0.60764 m 6 ce 69 msg 4
 BS id 15 tid 15 eid 15 etid 15 c omnetpp::cPacket n UDP_Packet_3 l 7200 m 6 pe 69
-SH sm 6 sg 2621440 pd 0.002 td 0.0009 rd 0.0009
-ES id 15 tid 15 eid 15 etid 15 c omnetpp::cPacket n UDP_Packet_3 l 7200 sm 6 sg 2621440 st 0.60764 am 7 ag 0 at 0.61054 pe 70
+SH sm 6 sg 2621441 pd 0.002 td 0.0009 rd 0.0009
+ES id 15 tid 15 eid 15 etid 15 c omnetpp::cPacket n UDP_Packet_3 l 7200 sm 6 sg 2621441 st 0.60764 am 8 ag 0 at 0.61054 pe 70
 CL id 18 tid 15 eid 18 etid 15 c omnetpp::cMessage n UDP_Packet_3 m 6 pe -1 cid 15
 
-E # 71 t 0.60772 m 7 ce 66 msg 16
-- INFO: receiver1 received packet #10 from router2
-DM id 16 tid 16 eid 16 etid 16 c omnetpp::cMessage n UDP_Packet_3 m 7 pe 71
+E # 71 t 0.60772 m 8 ce 66 msg 16
+- INFO: receiver2 received packet #5 from router2
+DM id 16 tid 16 eid 16 etid 16 c omnetpp::cMessage n UDP_Packet_3 m 8 pe 71
 
 E # 72 t 0.609 m 7 ce 68 msg 17
-- INFO: receiver1 received packet #11 from router2
+- INFO: receiver1 received packet #6 from router2
 DM id 17 tid 17 eid 17 etid 17 c omnetpp::cMessage n UDP_Packet_3 m 7 pe 72
 
-E # 73 t 0.61054 m 7 ce 70 msg 15
-- INFO: receiver1 received packet #12 from router2
-DM id 15 tid 15 eid 15 etid 15 c omnetpp::cMessage n UDP_Packet_3 m 7 pe 73
+E # 73 t 0.61054 m 8 ce 70 msg 15
+- INFO: receiver2 received packet #6 from router2
+DM id 15 tid 15 eid 15 etid 15 c omnetpp::cMessage n UDP_Packet_3 m 8 pe 73
 
 E # 74 t 0.8 m 2 ce 56 msg 0
 CM id 18 tid 18 eid 18 etid 18 c omnetpp::cMessage n UDP_Packet_4 pe -1
@@ -548,8 +548,8 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 0.8062 am 6 at
 
 E # 86 t 0.8062 m 6 ce 85 msg 4
 BS id 20 tid 20 eid 20 etid 20 c omnetpp::cPacket n UDP_Packet_4 l 6400 m 6 pe 85
-SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
-ES id 20 tid 20 eid 20 etid 20 c omnetpp::cPacket n UDP_Packet_4 l 6400 sm 6 sg 2621440 st 0.8062 am 7 ag 0 at 0.809 pe 86
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 20 tid 20 eid 20 etid 20 c omnetpp::cPacket n UDP_Packet_4 l 6400 sm 6 sg 2621441 st 0.8062 am 8 ag 0 at 0.809 pe 86
 CL id 21 tid 20 eid 21 etid 20 c omnetpp::cMessage n UDP_Packet_4 m 6 pe -1 cid 20
 CM id 21 tid 21 eid 21 etid 21 c omnetpp::cMessage n feedback pe -1
 BS id 21 tid 21 eid 21 etid 21 c omnetpp::cMessage n feedback m 6 pe 86
@@ -572,15 +572,15 @@ ES id 18 tid 18 eid 18 etid 18 c omnetpp::cPacket n UDP_Packet_4 l 7200 sm 6 sg 
 CL id 22 tid 18 eid 22 etid 18 c omnetpp::cMessage n UDP_Packet_4 m 6 pe -1 cid 18
 
 E # 90 t 0.80772 m 7 ce 84 msg 19
-- INFO: receiver1 received packet #13 from router2
+- INFO: receiver1 received packet #7 from router2
 DM id 19 tid 19 eid 19 etid 19 c omnetpp::cMessage n UDP_Packet_4 m 7 pe 90
 
-E # 91 t 0.809 m 7 ce 86 msg 20
-- INFO: receiver1 received packet #14 from router2
-DM id 20 tid 20 eid 20 etid 20 c omnetpp::cMessage n UDP_Packet_4 m 7 pe 91
+E # 91 t 0.809 m 8 ce 86 msg 20
+- INFO: receiver2 received packet #7 from router2
+DM id 20 tid 20 eid 20 etid 20 c omnetpp::cMessage n UDP_Packet_4 m 8 pe 91
 
 E # 92 t 0.81054 m 7 ce 89 msg 18
-- INFO: receiver1 received packet #15 from router2
+- INFO: receiver1 received packet #8 from router2
 DM id 18 tid 18 eid 18 etid 18 c omnetpp::cMessage n UDP_Packet_4 m 7 pe 92
 
 E # 93 t 1 m 2 ce 74 msg 0
@@ -664,8 +664,8 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 1.00492 am 6 a
 
 E # 105 t 1.00492 m 6 ce 104 msg 4
 BS id 23 tid 23 eid 23 etid 23 c omnetpp::cPacket n UDP_Packet_5 l 6400 m 6 pe 104
-SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
-ES id 23 tid 23 eid 23 etid 23 c omnetpp::cPacket n UDP_Packet_5 l 6400 sm 6 sg 2621440 st 1.00492 am 7 ag 0 at 1.00772 pe 105
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 23 tid 23 eid 23 etid 23 c omnetpp::cPacket n UDP_Packet_5 l 6400 sm 6 sg 2621441 st 1.00492 am 8 ag 0 at 1.00772 pe 105
 CL id 27 tid 23 eid 27 etid 23 c omnetpp::cMessage n UDP_Packet_5 m 6 pe -1 cid 23
 
 E # 106 t 1.0062 m 6 ce 101 msg 24
@@ -678,9 +678,9 @@ SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
 ES id 24 tid 24 eid 24 etid 24 c omnetpp::cPacket n UDP_Packet_5 l 6400 sm 6 sg 2621440 st 1.0062 am 7 ag 0 at 1.009 pe 107
 CL id 27 tid 24 eid 27 etid 24 c omnetpp::cMessage n UDP_Packet_5 m 6 pe -1 cid 24
 
-E # 108 t 1.00772 m 7 ce 105 msg 23
-- INFO: receiver1 received packet #16 from router2
-DM id 23 tid 23 eid 23 etid 23 c omnetpp::cMessage n UDP_Packet_5 m 7 pe 108
+E # 108 t 1.00772 m 8 ce 105 msg 23
+- INFO: receiver2 received packet #8 from router2
+DM id 23 tid 23 eid 23 etid 23 c omnetpp::cMessage n UDP_Packet_5 m 8 pe 108
 
 E # 109 t 1.0078 m 6 ce 102 msg 22
 BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 1.0078 am 6 at 1.0078 pe 109
@@ -688,17 +688,17 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 1.0078 am 6 at
 
 E # 110 t 1.0078 m 6 ce 109 msg 4
 BS id 22 tid 22 eid 22 etid 22 c omnetpp::cPacket n UDP_Packet_5 l 8000 m 6 pe 109
-SH sm 6 sg 2621440 pd 0.002 td 0.001 rd 0.001
-ES id 22 tid 22 eid 22 etid 22 c omnetpp::cPacket n UDP_Packet_5 l 8000 sm 6 sg 2621440 st 1.0078 am 7 ag 0 at 1.0108 pe 110
+SH sm 6 sg 2621441 pd 0.002 td 0.001 rd 0.001
+ES id 22 tid 22 eid 22 etid 22 c omnetpp::cPacket n UDP_Packet_5 l 8000 sm 6 sg 2621441 st 1.0078 am 8 ag 0 at 1.0108 pe 110
 CL id 27 tid 22 eid 27 etid 22 c omnetpp::cMessage n UDP_Packet_5 m 6 pe -1 cid 22
 
 E # 111 t 1.009 m 7 ce 107 msg 24
-- INFO: receiver1 received packet #17 from router2
+- INFO: receiver1 received packet #9 from router2
 DM id 24 tid 24 eid 24 etid 24 c omnetpp::cMessage n UDP_Packet_5 m 7 pe 111
 
-E # 112 t 1.0108 m 7 ce 110 msg 22
-- INFO: receiver1 received packet #18 from router2
-DM id 22 tid 22 eid 22 etid 22 c omnetpp::cMessage n UDP_Packet_5 m 7 pe 112
+E # 112 t 1.0108 m 8 ce 110 msg 22
+- INFO: receiver2 received packet #9 from router2
+DM id 22 tid 22 eid 22 etid 22 c omnetpp::cMessage n UDP_Packet_5 m 8 pe 112
 
 E # 113 t 1.2 m 2 ce 93 msg 0
 CM id 27 tid 27 eid 27 etid 27 c omnetpp::cMessage n UDP_Packet_6 pe -1
@@ -782,12 +782,12 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 1.2062 am 6 at
 
 E # 126 t 1.2062 m 6 ce 125 msg 4
 BS id 29 tid 29 eid 29 etid 29 c omnetpp::cPacket n UDP_Packet_6 l 6400 m 6 pe 125
-SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
-ES id 29 tid 29 eid 29 etid 29 c omnetpp::cPacket n UDP_Packet_6 l 6400 sm 6 sg 2621440 st 1.2062 am 7 ag 0 at 1.209 pe 126
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 29 tid 29 eid 29 etid 29 c omnetpp::cPacket n UDP_Packet_6 l 6400 sm 6 sg 2621441 st 1.2062 am 8 ag 0 at 1.209 pe 126
 CL id 31 tid 29 eid 31 etid 29 c omnetpp::cMessage n UDP_Packet_6 m 6 pe -1 cid 29
 
 E # 127 t 1.20772 m 7 ce 124 msg 28
-- INFO: receiver1 received packet #19 from router2
+- INFO: receiver1 received packet #10 from router2
 DM id 28 tid 28 eid 28 etid 28 c omnetpp::cMessage n UDP_Packet_6 m 7 pe 127
 
 E # 128 t 1.20812 m 6 ce 122 msg 27
@@ -800,12 +800,12 @@ SH sm 6 sg 2621440 pd 0.002 td 0.0012 rd 0.0012
 ES id 27 tid 27 eid 27 etid 27 c omnetpp::cPacket n UDP_Packet_6 l 9600 sm 6 sg 2621440 st 1.20812 am 7 ag 0 at 1.21132 pe 129
 CL id 31 tid 27 eid 31 etid 27 c omnetpp::cMessage n UDP_Packet_6 m 6 pe -1 cid 27
 
-E # 130 t 1.209 m 7 ce 126 msg 29
-- INFO: receiver1 received packet #20 from router2
-DM id 29 tid 29 eid 29 etid 29 c omnetpp::cMessage n UDP_Packet_6 m 7 pe 130
+E # 130 t 1.209 m 8 ce 126 msg 29
+- INFO: receiver2 received packet #10 from router2
+DM id 29 tid 29 eid 29 etid 29 c omnetpp::cMessage n UDP_Packet_6 m 8 pe 130
 
 E # 131 t 1.21132 m 7 ce 129 msg 27
-- INFO: receiver1 received packet #21 from router2
+- INFO: receiver1 received packet #11 from router2
 DM id 27 tid 27 eid 27 etid 27 c omnetpp::cMessage n UDP_Packet_6 m 7 pe 131
 
 E # 132 t 1.4 m 2 ce 113 msg 0
@@ -871,8 +871,8 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 1.40492 am 6 a
 
 E # 142 t 1.40492 m 6 ce 141 msg 4
 BS id 32 tid 32 eid 32 etid 32 c omnetpp::cPacket n UDP_Packet_7 l 6400 m 6 pe 141
-SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
-ES id 32 tid 32 eid 32 etid 32 c omnetpp::cPacket n UDP_Packet_7 l 6400 sm 6 sg 2621440 st 1.40492 am 7 ag 0 at 1.40772 pe 142
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 32 tid 32 eid 32 etid 32 c omnetpp::cPacket n UDP_Packet_7 l 6400 sm 6 sg 2621441 st 1.40492 am 8 ag 0 at 1.40772 pe 142
 CL id 34 tid 32 eid 34 etid 32 c omnetpp::cMessage n UDP_Packet_7 m 6 pe -1 cid 32
 
 E # 143 t 1.4062 m 6 ce 139 msg 33
@@ -885,9 +885,9 @@ SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
 ES id 33 tid 33 eid 33 etid 33 c omnetpp::cPacket n UDP_Packet_7 l 6400 sm 6 sg 2621440 st 1.4062 am 7 ag 0 at 1.409 pe 144
 CL id 34 tid 33 eid 34 etid 33 c omnetpp::cMessage n UDP_Packet_7 m 6 pe -1 cid 33
 
-E # 145 t 1.40772 m 7 ce 142 msg 32
-- INFO: receiver1 received packet #22 from router2
-DM id 32 tid 32 eid 32 etid 32 c omnetpp::cMessage n UDP_Packet_7 m 7 pe 145
+E # 145 t 1.40772 m 8 ce 142 msg 32
+- INFO: receiver2 received packet #11 from router2
+DM id 32 tid 32 eid 32 etid 32 c omnetpp::cMessage n UDP_Packet_7 m 8 pe 145
 
 E # 146 t 1.40828 m 6 ce 140 msg 31
 BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 1.40828 am 6 at 1.40828 pe 146
@@ -895,17 +895,17 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 1.40828 am 6 a
 
 E # 147 t 1.40828 m 6 ce 146 msg 4
 BS id 31 tid 31 eid 31 etid 31 c omnetpp::cPacket n UDP_Packet_7 l 10400 m 6 pe 146
-SH sm 6 sg 2621440 pd 0.002 td 0.0013 rd 0.0013
-ES id 31 tid 31 eid 31 etid 31 c omnetpp::cPacket n UDP_Packet_7 l 10400 sm 6 sg 2621440 st 1.40828 am 7 ag 0 at 1.41158 pe 147
+SH sm 6 sg 2621441 pd 0.002 td 0.0013 rd 0.0013
+ES id 31 tid 31 eid 31 etid 31 c omnetpp::cPacket n UDP_Packet_7 l 10400 sm 6 sg 2621441 st 1.40828 am 8 ag 0 at 1.41158 pe 147
 CL id 34 tid 31 eid 34 etid 31 c omnetpp::cMessage n UDP_Packet_7 m 6 pe -1 cid 31
 
 E # 148 t 1.409 m 7 ce 144 msg 33
-- INFO: receiver1 received packet #23 from router2
+- INFO: receiver1 received packet #12 from router2
 DM id 33 tid 33 eid 33 etid 33 c omnetpp::cMessage n UDP_Packet_7 m 7 pe 148
 
-E # 149 t 1.41158 m 7 ce 147 msg 31
-- INFO: receiver1 received packet #24 from router2
-DM id 31 tid 31 eid 31 etid 31 c omnetpp::cMessage n UDP_Packet_7 m 7 pe 149
+E # 149 t 1.41158 m 8 ce 147 msg 31
+- INFO: receiver2 received packet #12 from router2
+DM id 31 tid 31 eid 31 etid 31 c omnetpp::cMessage n UDP_Packet_7 m 8 pe 149
 
 E # 150 t 1.6 m 2 ce 132 msg 0
 CM id 34 tid 34 eid 34 etid 34 c omnetpp::cMessage n UDP_Packet_8 pe -1
@@ -989,8 +989,8 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 1.6062 am 6 at
 
 E # 163 t 1.6062 m 6 ce 162 msg 4
 BS id 36 tid 36 eid 36 etid 36 c omnetpp::cPacket n UDP_Packet_8 l 6400 m 6 pe 162
-SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
-ES id 36 tid 36 eid 36 etid 36 c omnetpp::cPacket n UDP_Packet_8 l 6400 sm 6 sg 2621440 st 1.6062 am 7 ag 0 at 1.609 pe 163
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 36 tid 36 eid 36 etid 36 c omnetpp::cPacket n UDP_Packet_8 l 6400 sm 6 sg 2621441 st 1.6062 am 8 ag 0 at 1.609 pe 163
 CL id 38 tid 36 eid 38 etid 36 c omnetpp::cMessage n UDP_Packet_8 m 6 pe -1 cid 36
 CM id 38 tid 38 eid 38 etid 38 c omnetpp::cMessage n feedback pe -1
 BS id 38 tid 38 eid 38 etid 38 c omnetpp::cMessage n feedback m 6 pe 163
@@ -1003,7 +1003,7 @@ E # 164 t 1.6062 m 2 ce 163 msg 38
 DM id 38 tid 38 eid 38 etid 38 c omnetpp::cMessage n feedback m 2 pe 164
 
 E # 165 t 1.60772 m 7 ce 161 msg 35
-- INFO: receiver1 received packet #25 from router2
+- INFO: receiver1 received packet #13 from router2
 DM id 35 tid 35 eid 35 etid 35 c omnetpp::cMessage n UDP_Packet_8 m 7 pe 165
 
 E # 166 t 1.60828 m 6 ce 159 msg 34
@@ -1016,12 +1016,12 @@ SH sm 6 sg 2621440 pd 0.002 td 0.0013 rd 0.0013
 ES id 34 tid 34 eid 34 etid 34 c omnetpp::cPacket n UDP_Packet_8 l 10400 sm 6 sg 2621440 st 1.60828 am 7 ag 0 at 1.61158 pe 167
 CL id 39 tid 34 eid 39 etid 34 c omnetpp::cMessage n UDP_Packet_8 m 6 pe -1 cid 34
 
-E # 168 t 1.609 m 7 ce 163 msg 36
-- INFO: receiver1 received packet #26 from router2
-DM id 36 tid 36 eid 36 etid 36 c omnetpp::cMessage n UDP_Packet_8 m 7 pe 168
+E # 168 t 1.609 m 8 ce 163 msg 36
+- INFO: receiver2 received packet #13 from router2
+DM id 36 tid 36 eid 36 etid 36 c omnetpp::cMessage n UDP_Packet_8 m 8 pe 168
 
 E # 169 t 1.61158 m 7 ce 167 msg 34
-- INFO: receiver1 received packet #27 from router2
+- INFO: receiver1 received packet #14 from router2
 DM id 34 tid 34 eid 34 etid 34 c omnetpp::cMessage n UDP_Packet_8 m 7 pe 169
 
 E # 170 t 1.8 m 2 ce 150 msg 0
@@ -1087,8 +1087,8 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 1.80492 am 6 a
 
 E # 180 t 1.80492 m 6 ce 179 msg 4
 BS id 40 tid 40 eid 40 etid 40 c omnetpp::cPacket n UDP_Packet_9 l 6400 m 6 pe 179
-SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
-ES id 40 tid 40 eid 40 etid 40 c omnetpp::cPacket n UDP_Packet_9 l 6400 sm 6 sg 2621440 st 1.80492 am 7 ag 0 at 1.80772 pe 180
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 40 tid 40 eid 40 etid 40 c omnetpp::cPacket n UDP_Packet_9 l 6400 sm 6 sg 2621441 st 1.80492 am 8 ag 0 at 1.80772 pe 180
 CL id 42 tid 40 eid 42 etid 40 c omnetpp::cMessage n UDP_Packet_9 m 6 pe -1 cid 40
 CM id 42 tid 42 eid 42 etid 42 c omnetpp::cMessage n feedback pe -1
 BS id 42 tid 42 eid 42 etid 42 c omnetpp::cMessage n feedback m 6 pe 180
@@ -1110,9 +1110,9 @@ SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
 ES id 41 tid 41 eid 41 etid 41 c omnetpp::cPacket n UDP_Packet_9 l 6400 sm 6 sg 2621440 st 1.8062 am 7 ag 0 at 1.809 pe 183
 CL id 43 tid 41 eid 43 etid 41 c omnetpp::cMessage n UDP_Packet_9 m 6 pe -1 cid 41
 
-E # 184 t 1.80772 m 7 ce 180 msg 40
-- INFO: receiver1 received packet #28 from router2
-DM id 40 tid 40 eid 40 etid 40 c omnetpp::cMessage n UDP_Packet_9 m 7 pe 184
+E # 184 t 1.80772 m 8 ce 180 msg 40
+- INFO: receiver2 received packet #14 from router2
+DM id 40 tid 40 eid 40 etid 40 c omnetpp::cMessage n UDP_Packet_9 m 8 pe 184
 
 E # 185 t 1.8086 m 6 ce 178 msg 39
 BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 1.8086 am 6 at 1.8086 pe 185
@@ -1120,17 +1120,17 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 1.8086 am 6 at
 
 E # 186 t 1.8086 m 6 ce 185 msg 4
 BS id 39 tid 39 eid 39 etid 39 c omnetpp::cPacket n UDP_Packet_9 l 12000 m 6 pe 185
-SH sm 6 sg 2621440 pd 0.002 td 0.0015 rd 0.0015
-ES id 39 tid 39 eid 39 etid 39 c omnetpp::cPacket n UDP_Packet_9 l 12000 sm 6 sg 2621440 st 1.8086 am 7 ag 0 at 1.8121 pe 186
+SH sm 6 sg 2621441 pd 0.002 td 0.0015 rd 0.0015
+ES id 39 tid 39 eid 39 etid 39 c omnetpp::cPacket n UDP_Packet_9 l 12000 sm 6 sg 2621441 st 1.8086 am 8 ag 0 at 1.8121 pe 186
 CL id 43 tid 39 eid 43 etid 39 c omnetpp::cMessage n UDP_Packet_9 m 6 pe -1 cid 39
 
 E # 187 t 1.809 m 7 ce 183 msg 41
-- INFO: receiver1 received packet #29 from router2
+- INFO: receiver1 received packet #15 from router2
 DM id 41 tid 41 eid 41 etid 41 c omnetpp::cMessage n UDP_Packet_9 m 7 pe 187
 
-E # 188 t 1.8121 m 7 ce 186 msg 39
-- INFO: receiver1 received packet #30 from router2
-DM id 39 tid 39 eid 39 etid 39 c omnetpp::cMessage n UDP_Packet_9 m 7 pe 188
+E # 188 t 1.8121 m 8 ce 186 msg 39
+- INFO: receiver2 received packet #15 from router2
+DM id 39 tid 39 eid 39 etid 39 c omnetpp::cMessage n UDP_Packet_9 m 8 pe 188
 
 E # 189 t 2 m 2 ce 170 msg 0
 CM id 43 tid 43 eid 43 etid 43 c omnetpp::cMessage n UDP_Packet_10 pe -1
@@ -1205,12 +1205,12 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 2.0062 am 6 at
 
 E # 201 t 2.0062 m 6 ce 200 msg 4
 BS id 45 tid 45 eid 45 etid 45 c omnetpp::cPacket n UDP_Packet_10 l 6400 m 6 pe 200
-SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
-ES id 45 tid 45 eid 45 etid 45 c omnetpp::cPacket n UDP_Packet_10 l 6400 sm 6 sg 2621440 st 2.0062 am 7 ag 0 at 2.009 pe 201
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 45 tid 45 eid 45 etid 45 c omnetpp::cPacket n UDP_Packet_10 l 6400 sm 6 sg 2621441 st 2.0062 am 8 ag 0 at 2.009 pe 201
 CL id 46 tid 45 eid 46 etid 45 c omnetpp::cMessage n UDP_Packet_10 m 6 pe -1 cid 45
 
 E # 202 t 2.00772 m 7 ce 199 msg 44
-- INFO: receiver1 received packet #31 from router2
+- INFO: receiver1 received packet #16 from router2
 DM id 44 tid 44 eid 44 etid 44 c omnetpp::cMessage n UDP_Packet_10 m 7 pe 202
 
 E # 203 t 2.0086 m 6 ce 197 msg 43
@@ -1223,12 +1223,12 @@ SH sm 6 sg 2621440 pd 0.002 td 0.0015 rd 0.0015
 ES id 43 tid 43 eid 43 etid 43 c omnetpp::cPacket n UDP_Packet_10 l 12000 sm 6 sg 2621440 st 2.0086 am 7 ag 0 at 2.0121 pe 204
 CL id 46 tid 43 eid 46 etid 43 c omnetpp::cMessage n UDP_Packet_10 m 6 pe -1 cid 43
 
-E # 205 t 2.009 m 7 ce 201 msg 45
-- INFO: receiver1 received packet #32 from router2
-DM id 45 tid 45 eid 45 etid 45 c omnetpp::cMessage n UDP_Packet_10 m 7 pe 205
+E # 205 t 2.009 m 8 ce 201 msg 45
+- INFO: receiver2 received packet #16 from router2
+DM id 45 tid 45 eid 45 etid 45 c omnetpp::cMessage n UDP_Packet_10 m 8 pe 205
 
 E # 206 t 2.0121 m 7 ce 204 msg 43
-- INFO: receiver1 received packet #33 from router2
+- INFO: receiver1 received packet #17 from router2
 DM id 43 tid 43 eid 43 etid 43 c omnetpp::cMessage n UDP_Packet_10 m 7 pe 206
 
 E # 207 t 2.2 m 2 ce 189 msg 0
@@ -1312,8 +1312,8 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 2.20492 am 6 a
 
 E # 219 t 2.20492 m 6 ce 218 msg 4
 BS id 47 tid 47 eid 47 etid 47 c omnetpp::cPacket n UDP_Packet_11 l 6400 m 6 pe 218
-SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
-ES id 47 tid 47 eid 47 etid 47 c omnetpp::cPacket n UDP_Packet_11 l 6400 sm 6 sg 2621440 st 2.20492 am 7 ag 0 at 2.20772 pe 219
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 47 tid 47 eid 47 etid 47 c omnetpp::cPacket n UDP_Packet_11 l 6400 sm 6 sg 2621441 st 2.20492 am 8 ag 0 at 2.20772 pe 219
 CL id 51 tid 47 eid 51 etid 47 c omnetpp::cMessage n UDP_Packet_11 m 6 pe -1 cid 47
 
 E # 220 t 2.2062 m 6 ce 214 msg 48
@@ -1326,9 +1326,9 @@ SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
 ES id 48 tid 48 eid 48 etid 48 c omnetpp::cPacket n UDP_Packet_11 l 6400 sm 6 sg 2621440 st 2.2062 am 7 ag 0 at 2.209 pe 221
 CL id 51 tid 48 eid 51 etid 48 c omnetpp::cMessage n UDP_Packet_11 m 6 pe -1 cid 48
 
-E # 222 t 2.20772 m 7 ce 219 msg 47
-- INFO: receiver1 received packet #34 from router2
-DM id 47 tid 47 eid 47 etid 47 c omnetpp::cMessage n UDP_Packet_11 m 7 pe 222
+E # 222 t 2.20772 m 8 ce 219 msg 47
+- INFO: receiver2 received packet #17 from router2
+DM id 47 tid 47 eid 47 etid 47 c omnetpp::cMessage n UDP_Packet_11 m 8 pe 222
 
 E # 223 t 2.2086 m 6 ce 216 msg 46
 BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 2.2086 am 6 at 2.2086 pe 223
@@ -1336,8 +1336,8 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 2.2086 am 6 at
 
 E # 224 t 2.2086 m 6 ce 223 msg 4
 BS id 46 tid 46 eid 46 etid 46 c omnetpp::cPacket n UDP_Packet_11 l 12000 m 6 pe 223
-SH sm 6 sg 2621440 pd 0.002 td 0.0015 rd 0.0015
-ES id 46 tid 46 eid 46 etid 46 c omnetpp::cPacket n UDP_Packet_11 l 12000 sm 6 sg 2621440 st 2.2086 am 7 ag 0 at 2.2121 pe 224
+SH sm 6 sg 2621441 pd 0.002 td 0.0015 rd 0.0015
+ES id 46 tid 46 eid 46 etid 46 c omnetpp::cPacket n UDP_Packet_11 l 12000 sm 6 sg 2621441 st 2.2086 am 8 ag 0 at 2.2121 pe 224
 CL id 51 tid 46 eid 51 etid 46 c omnetpp::cMessage n UDP_Packet_11 m 6 pe -1 cid 46
 CM id 51 tid 51 eid 51 etid 51 c omnetpp::cMessage n feedback pe -1
 BS id 51 tid 51 eid 51 etid 51 c omnetpp::cMessage n feedback m 6 pe 224
@@ -1350,12 +1350,12 @@ E # 225 t 2.2086 m 2 ce 224 msg 51
 DM id 51 tid 51 eid 51 etid 51 c omnetpp::cMessage n feedback m 2 pe 225
 
 E # 226 t 2.209 m 7 ce 221 msg 48
-- INFO: receiver1 received packet #35 from router2
+- INFO: receiver1 received packet #18 from router2
 DM id 48 tid 48 eid 48 etid 48 c omnetpp::cMessage n UDP_Packet_11 m 7 pe 226
 
-E # 227 t 2.2121 m 7 ce 224 msg 46
-- INFO: receiver1 received packet #36 from router2
-DM id 46 tid 46 eid 46 etid 46 c omnetpp::cMessage n UDP_Packet_11 m 7 pe 227
+E # 227 t 2.2121 m 8 ce 224 msg 46
+- INFO: receiver2 received packet #18 from router2
+DM id 46 tid 46 eid 46 etid 46 c omnetpp::cMessage n UDP_Packet_11 m 8 pe 227
 
 E # 228 t 2.4 m 2 ce 207 msg 0
 CM id 52 tid 52 eid 52 etid 52 c omnetpp::cMessage n UDP_Packet_12 pe -1
@@ -1430,12 +1430,12 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 2.4062 am 6 at
 
 E # 240 t 2.4062 m 6 ce 239 msg 4
 BS id 54 tid 54 eid 54 etid 54 c omnetpp::cPacket n UDP_Packet_12 l 6400 m 6 pe 239
-SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
-ES id 54 tid 54 eid 54 etid 54 c omnetpp::cPacket n UDP_Packet_12 l 6400 sm 6 sg 2621440 st 2.4062 am 7 ag 0 at 2.409 pe 240
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 54 tid 54 eid 54 etid 54 c omnetpp::cPacket n UDP_Packet_12 l 6400 sm 6 sg 2621441 st 2.4062 am 8 ag 0 at 2.409 pe 240
 CL id 55 tid 54 eid 55 etid 54 c omnetpp::cMessage n UDP_Packet_12 m 6 pe -1 cid 54
 
 E # 241 t 2.40772 m 7 ce 238 msg 53
-- INFO: receiver1 received packet #37 from router2
+- INFO: receiver1 received packet #19 from router2
 DM id 53 tid 53 eid 53 etid 53 c omnetpp::cMessage n UDP_Packet_12 m 7 pe 241
 
 E # 242 t 2.4086 m 6 ce 236 msg 52
@@ -1448,12 +1448,12 @@ SH sm 6 sg 2621440 pd 0.002 td 0.0015 rd 0.0015
 ES id 52 tid 52 eid 52 etid 52 c omnetpp::cPacket n UDP_Packet_12 l 12000 sm 6 sg 2621440 st 2.4086 am 7 ag 0 at 2.4121 pe 243
 CL id 55 tid 52 eid 55 etid 52 c omnetpp::cMessage n UDP_Packet_12 m 6 pe -1 cid 52
 
-E # 244 t 2.409 m 7 ce 240 msg 54
-- INFO: receiver1 received packet #38 from router2
-DM id 54 tid 54 eid 54 etid 54 c omnetpp::cMessage n UDP_Packet_12 m 7 pe 244
+E # 244 t 2.409 m 8 ce 240 msg 54
+- INFO: receiver2 received packet #19 from router2
+DM id 54 tid 54 eid 54 etid 54 c omnetpp::cMessage n UDP_Packet_12 m 8 pe 244
 
 E # 245 t 2.4121 m 7 ce 243 msg 52
-- INFO: receiver1 received packet #39 from router2
+- INFO: receiver1 received packet #20 from router2
 DM id 52 tid 52 eid 52 etid 52 c omnetpp::cMessage n UDP_Packet_12 m 7 pe 245
 
 E # 246 t 2.6 m 2 ce 228 msg 0
@@ -1519,8 +1519,8 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 2.60492 am 6 a
 
 E # 256 t 2.60492 m 6 ce 255 msg 4
 BS id 56 tid 56 eid 56 etid 56 c omnetpp::cPacket n UDP_Packet_13 l 6400 m 6 pe 255
-SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
-ES id 56 tid 56 eid 56 etid 56 c omnetpp::cPacket n UDP_Packet_13 l 6400 sm 6 sg 2621440 st 2.60492 am 7 ag 0 at 2.60772 pe 256
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 56 tid 56 eid 56 etid 56 c omnetpp::cPacket n UDP_Packet_13 l 6400 sm 6 sg 2621441 st 2.60492 am 8 ag 0 at 2.60772 pe 256
 CL id 58 tid 56 eid 58 etid 56 c omnetpp::cMessage n UDP_Packet_13 m 6 pe -1 cid 56
 
 E # 257 t 2.6062 m 6 ce 253 msg 57
@@ -1533,9 +1533,9 @@ SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
 ES id 57 tid 57 eid 57 etid 57 c omnetpp::cPacket n UDP_Packet_13 l 6400 sm 6 sg 2621440 st 2.6062 am 7 ag 0 at 2.609 pe 258
 CL id 58 tid 57 eid 58 etid 57 c omnetpp::cMessage n UDP_Packet_13 m 6 pe -1 cid 57
 
-E # 259 t 2.60772 m 7 ce 256 msg 56
-- INFO: receiver1 received packet #40 from router2
-DM id 56 tid 56 eid 56 etid 56 c omnetpp::cMessage n UDP_Packet_13 m 7 pe 259
+E # 259 t 2.60772 m 8 ce 256 msg 56
+- INFO: receiver2 received packet #20 from router2
+DM id 56 tid 56 eid 56 etid 56 c omnetpp::cMessage n UDP_Packet_13 m 8 pe 259
 
 E # 260 t 2.6086 m 6 ce 254 msg 55
 BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 2.6086 am 6 at 2.6086 pe 260
@@ -1543,17 +1543,17 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 2.6086 am 6 at
 
 E # 261 t 2.6086 m 6 ce 260 msg 4
 BS id 55 tid 55 eid 55 etid 55 c omnetpp::cPacket n UDP_Packet_13 l 12000 m 6 pe 260
-SH sm 6 sg 2621440 pd 0.002 td 0.0015 rd 0.0015
-ES id 55 tid 55 eid 55 etid 55 c omnetpp::cPacket n UDP_Packet_13 l 12000 sm 6 sg 2621440 st 2.6086 am 7 ag 0 at 2.6121 pe 261
+SH sm 6 sg 2621441 pd 0.002 td 0.0015 rd 0.0015
+ES id 55 tid 55 eid 55 etid 55 c omnetpp::cPacket n UDP_Packet_13 l 12000 sm 6 sg 2621441 st 2.6086 am 8 ag 0 at 2.6121 pe 261
 CL id 58 tid 55 eid 58 etid 55 c omnetpp::cMessage n UDP_Packet_13 m 6 pe -1 cid 55
 
 E # 262 t 2.609 m 7 ce 258 msg 57
-- INFO: receiver1 received packet #41 from router2
+- INFO: receiver1 received packet #21 from router2
 DM id 57 tid 57 eid 57 etid 57 c omnetpp::cMessage n UDP_Packet_13 m 7 pe 262
 
-E # 263 t 2.6121 m 7 ce 261 msg 55
-- INFO: receiver1 received packet #42 from router2
-DM id 55 tid 55 eid 55 etid 55 c omnetpp::cMessage n UDP_Packet_13 m 7 pe 263
+E # 263 t 2.6121 m 8 ce 261 msg 55
+- INFO: receiver2 received packet #21 from router2
+DM id 55 tid 55 eid 55 etid 55 c omnetpp::cMessage n UDP_Packet_13 m 8 pe 263
 
 E # 264 t 2.8 m 2 ce 246 msg 0
 CM id 58 tid 58 eid 58 etid 58 c omnetpp::cMessage n UDP_Packet_14 pe -1
@@ -1646,12 +1646,12 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 2.8062 am 6 at
 
 E # 278 t 2.8062 m 6 ce 277 msg 4
 BS id 60 tid 60 eid 60 etid 60 c omnetpp::cPacket n UDP_Packet_14 l 6400 m 6 pe 277
-SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
-ES id 60 tid 60 eid 60 etid 60 c omnetpp::cPacket n UDP_Packet_14 l 6400 sm 6 sg 2621440 st 2.8062 am 7 ag 0 at 2.809 pe 278
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 60 tid 60 eid 60 etid 60 c omnetpp::cPacket n UDP_Packet_14 l 6400 sm 6 sg 2621441 st 2.8062 am 8 ag 0 at 2.809 pe 278
 CL id 63 tid 60 eid 63 etid 60 c omnetpp::cMessage n UDP_Packet_14 m 6 pe -1 cid 60
 
 E # 279 t 2.80772 m 7 ce 276 msg 59
-- INFO: receiver1 received packet #43 from router2
+- INFO: receiver1 received packet #22 from router2
 DM id 59 tid 59 eid 59 etid 59 c omnetpp::cMessage n UDP_Packet_14 m 7 pe 279
 
 E # 280 t 2.8086 m 6 ce 273 msg 58
@@ -1664,12 +1664,12 @@ SH sm 6 sg 2621440 pd 0.002 td 0.0015 rd 0.0015
 ES id 58 tid 58 eid 58 etid 58 c omnetpp::cPacket n UDP_Packet_14 l 12000 sm 6 sg 2621440 st 2.8086 am 7 ag 0 at 2.8121 pe 281
 CL id 63 tid 58 eid 63 etid 58 c omnetpp::cMessage n UDP_Packet_14 m 6 pe -1 cid 58
 
-E # 282 t 2.809 m 7 ce 278 msg 60
-- INFO: receiver1 received packet #44 from router2
-DM id 60 tid 60 eid 60 etid 60 c omnetpp::cMessage n UDP_Packet_14 m 7 pe 282
+E # 282 t 2.809 m 8 ce 278 msg 60
+- INFO: receiver2 received packet #22 from router2
+DM id 60 tid 60 eid 60 etid 60 c omnetpp::cMessage n UDP_Packet_14 m 8 pe 282
 
 E # 283 t 2.8121 m 7 ce 281 msg 58
-- INFO: receiver1 received packet #45 from router2
+- INFO: receiver1 received packet #23 from router2
 DM id 58 tid 58 eid 58 etid 58 c omnetpp::cMessage n UDP_Packet_14 m 7 pe 283
 
 E # 284 t 3 m 2 ce 264 msg 0
@@ -1735,8 +1735,8 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 3.00492 am 6 a
 
 E # 294 t 3.00492 m 6 ce 293 msg 4
 BS id 64 tid 64 eid 64 etid 64 c omnetpp::cPacket n UDP_Packet_15 l 6400 m 6 pe 293
-SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
-ES id 64 tid 64 eid 64 etid 64 c omnetpp::cPacket n UDP_Packet_15 l 6400 sm 6 sg 2621440 st 3.00492 am 7 ag 0 at 3.00772 pe 294
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 64 tid 64 eid 64 etid 64 c omnetpp::cPacket n UDP_Packet_15 l 6400 sm 6 sg 2621441 st 3.00492 am 8 ag 0 at 3.00772 pe 294
 CL id 66 tid 64 eid 66 etid 64 c omnetpp::cMessage n UDP_Packet_15 m 6 pe -1 cid 64
 
 E # 295 t 3.0062 m 6 ce 291 msg 65
@@ -1758,9 +1758,9 @@ E # 297 t 3.0062 m 2 ce 296 msg 66
 - INFO: sender1: Adaptive packet size is now 1500 bytes (CI=0)
 DM id 66 tid 66 eid 66 etid 66 c omnetpp::cMessage n feedback m 2 pe 297
 
-E # 298 t 3.00772 m 7 ce 294 msg 64
-- INFO: receiver1 received packet #46 from router2
-DM id 64 tid 64 eid 64 etid 64 c omnetpp::cMessage n UDP_Packet_15 m 7 pe 298
+E # 298 t 3.00772 m 8 ce 294 msg 64
+- INFO: receiver2 received packet #23 from router2
+DM id 64 tid 64 eid 64 etid 64 c omnetpp::cMessage n UDP_Packet_15 m 8 pe 298
 
 E # 299 t 3.0086 m 6 ce 292 msg 63
 BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 3.0086 am 6 at 3.0086 pe 299
@@ -1768,17 +1768,17 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 3.0086 am 6 at
 
 E # 300 t 3.0086 m 6 ce 299 msg 4
 BS id 63 tid 63 eid 63 etid 63 c omnetpp::cPacket n UDP_Packet_15 l 12000 m 6 pe 299
-SH sm 6 sg 2621440 pd 0.002 td 0.0015 rd 0.0015
-ES id 63 tid 63 eid 63 etid 63 c omnetpp::cPacket n UDP_Packet_15 l 12000 sm 6 sg 2621440 st 3.0086 am 7 ag 0 at 3.0121 pe 300
+SH sm 6 sg 2621441 pd 0.002 td 0.0015 rd 0.0015
+ES id 63 tid 63 eid 63 etid 63 c omnetpp::cPacket n UDP_Packet_15 l 12000 sm 6 sg 2621441 st 3.0086 am 8 ag 0 at 3.0121 pe 300
 CL id 67 tid 63 eid 67 etid 63 c omnetpp::cMessage n UDP_Packet_15 m 6 pe -1 cid 63
 
 E # 301 t 3.009 m 7 ce 296 msg 65
-- INFO: receiver1 received packet #47 from router2
+- INFO: receiver1 received packet #24 from router2
 DM id 65 tid 65 eid 65 etid 65 c omnetpp::cMessage n UDP_Packet_15 m 7 pe 301
 
-E # 302 t 3.0121 m 7 ce 300 msg 63
-- INFO: receiver1 received packet #48 from router2
-DM id 63 tid 63 eid 63 etid 63 c omnetpp::cMessage n UDP_Packet_15 m 7 pe 302
+E # 302 t 3.0121 m 8 ce 300 msg 63
+- INFO: receiver2 received packet #24 from router2
+DM id 63 tid 63 eid 63 etid 63 c omnetpp::cMessage n UDP_Packet_15 m 8 pe 302
 
 E # 303 t 3.2 m 2 ce 284 msg 0
 CM id 67 tid 67 eid 67 etid 67 c omnetpp::cMessage n UDP_Packet_16 pe -1
@@ -1853,12 +1853,12 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 3.2062 am 6 at
 
 E # 315 t 3.2062 m 6 ce 314 msg 4
 BS id 69 tid 69 eid 69 etid 69 c omnetpp::cPacket n UDP_Packet_16 l 6400 m 6 pe 314
-SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
-ES id 69 tid 69 eid 69 etid 69 c omnetpp::cPacket n UDP_Packet_16 l 6400 sm 6 sg 2621440 st 3.2062 am 7 ag 0 at 3.209 pe 315
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 69 tid 69 eid 69 etid 69 c omnetpp::cPacket n UDP_Packet_16 l 6400 sm 6 sg 2621441 st 3.2062 am 8 ag 0 at 3.209 pe 315
 CL id 70 tid 69 eid 70 etid 69 c omnetpp::cMessage n UDP_Packet_16 m 6 pe -1 cid 69
 
 E # 316 t 3.20772 m 7 ce 313 msg 68
-- INFO: receiver1 received packet #49 from router2
+- INFO: receiver1 received packet #25 from router2
 DM id 68 tid 68 eid 68 etid 68 c omnetpp::cMessage n UDP_Packet_16 m 7 pe 316
 
 E # 317 t 3.2086 m 6 ce 311 msg 67
@@ -1880,12 +1880,12 @@ E # 319 t 3.2086 m 2 ce 318 msg 70
 - INFO: sender1: Adaptive packet size is now 1500 bytes (CI=0)
 DM id 70 tid 70 eid 70 etid 70 c omnetpp::cMessage n feedback m 2 pe 319
 
-E # 320 t 3.209 m 7 ce 315 msg 69
-- INFO: receiver1 received packet #50 from router2
-DM id 69 tid 69 eid 69 etid 69 c omnetpp::cMessage n UDP_Packet_16 m 7 pe 320
+E # 320 t 3.209 m 8 ce 315 msg 69
+- INFO: receiver2 received packet #25 from router2
+DM id 69 tid 69 eid 69 etid 69 c omnetpp::cMessage n UDP_Packet_16 m 8 pe 320
 
 E # 321 t 3.2121 m 7 ce 318 msg 67
-- INFO: receiver1 received packet #51 from router2
+- INFO: receiver1 received packet #26 from router2
 DM id 67 tid 67 eid 67 etid 67 c omnetpp::cMessage n UDP_Packet_16 m 7 pe 321
 
 E # 322 t 3.4 m 2 ce 303 msg 0
@@ -1951,8 +1951,8 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 3.40492 am 6 a
 
 E # 332 t 3.40492 m 6 ce 331 msg 4
 BS id 72 tid 72 eid 72 etid 72 c omnetpp::cPacket n UDP_Packet_17 l 6400 m 6 pe 331
-SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
-ES id 72 tid 72 eid 72 etid 72 c omnetpp::cPacket n UDP_Packet_17 l 6400 sm 6 sg 2621440 st 3.40492 am 7 ag 0 at 3.40772 pe 332
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 72 tid 72 eid 72 etid 72 c omnetpp::cPacket n UDP_Packet_17 l 6400 sm 6 sg 2621441 st 3.40492 am 8 ag 0 at 3.40772 pe 332
 CL id 74 tid 72 eid 74 etid 72 c omnetpp::cMessage n UDP_Packet_17 m 6 pe -1 cid 72
 
 E # 333 t 3.4062 m 6 ce 329 msg 73
@@ -1974,9 +1974,9 @@ E # 335 t 3.4062 m 2 ce 334 msg 74
 - INFO: sender1: Adaptive packet size is now 1500 bytes (CI=0)
 DM id 74 tid 74 eid 74 etid 74 c omnetpp::cMessage n feedback m 2 pe 335
 
-E # 336 t 3.40772 m 7 ce 332 msg 72
-- INFO: receiver1 received packet #52 from router2
-DM id 72 tid 72 eid 72 etid 72 c omnetpp::cMessage n UDP_Packet_17 m 7 pe 336
+E # 336 t 3.40772 m 8 ce 332 msg 72
+- INFO: receiver2 received packet #26 from router2
+DM id 72 tid 72 eid 72 etid 72 c omnetpp::cMessage n UDP_Packet_17 m 8 pe 336
 
 E # 337 t 3.4086 m 6 ce 330 msg 71
 BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 3.4086 am 6 at 3.4086 pe 337
@@ -1984,17 +1984,17 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 3.4086 am 6 at
 
 E # 338 t 3.4086 m 6 ce 337 msg 4
 BS id 71 tid 71 eid 71 etid 71 c omnetpp::cPacket n UDP_Packet_17 l 12000 m 6 pe 337
-SH sm 6 sg 2621440 pd 0.002 td 0.0015 rd 0.0015
-ES id 71 tid 71 eid 71 etid 71 c omnetpp::cPacket n UDP_Packet_17 l 12000 sm 6 sg 2621440 st 3.4086 am 7 ag 0 at 3.4121 pe 338
+SH sm 6 sg 2621441 pd 0.002 td 0.0015 rd 0.0015
+ES id 71 tid 71 eid 71 etid 71 c omnetpp::cPacket n UDP_Packet_17 l 12000 sm 6 sg 2621441 st 3.4086 am 8 ag 0 at 3.4121 pe 338
 CL id 75 tid 71 eid 75 etid 71 c omnetpp::cMessage n UDP_Packet_17 m 6 pe -1 cid 71
 
 E # 339 t 3.409 m 7 ce 334 msg 73
-- INFO: receiver1 received packet #53 from router2
+- INFO: receiver1 received packet #27 from router2
 DM id 73 tid 73 eid 73 etid 73 c omnetpp::cMessage n UDP_Packet_17 m 7 pe 339
 
-E # 340 t 3.4121 m 7 ce 338 msg 71
-- INFO: receiver1 received packet #54 from router2
-DM id 71 tid 71 eid 71 etid 71 c omnetpp::cMessage n UDP_Packet_17 m 7 pe 340
+E # 340 t 3.4121 m 8 ce 338 msg 71
+- INFO: receiver2 received packet #27 from router2
+DM id 71 tid 71 eid 71 etid 71 c omnetpp::cMessage n UDP_Packet_17 m 8 pe 340
 
 E # 341 t 3.6 m 2 ce 322 msg 0
 CM id 75 tid 75 eid 75 etid 75 c omnetpp::cMessage n UDP_Packet_18 pe -1
@@ -2069,12 +2069,12 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 3.6062 am 6 at
 
 E # 353 t 3.6062 m 6 ce 352 msg 4
 BS id 77 tid 77 eid 77 etid 77 c omnetpp::cPacket n UDP_Packet_18 l 6400 m 6 pe 352
-SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
-ES id 77 tid 77 eid 77 etid 77 c omnetpp::cPacket n UDP_Packet_18 l 6400 sm 6 sg 2621440 st 3.6062 am 7 ag 0 at 3.609 pe 353
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 77 tid 77 eid 77 etid 77 c omnetpp::cPacket n UDP_Packet_18 l 6400 sm 6 sg 2621441 st 3.6062 am 8 ag 0 at 3.609 pe 353
 CL id 78 tid 77 eid 78 etid 77 c omnetpp::cMessage n UDP_Packet_18 m 6 pe -1 cid 77
 
 E # 354 t 3.60772 m 7 ce 351 msg 76
-- INFO: receiver1 received packet #55 from router2
+- INFO: receiver1 received packet #28 from router2
 DM id 76 tid 76 eid 76 etid 76 c omnetpp::cMessage n UDP_Packet_18 m 7 pe 354
 
 E # 355 t 3.6086 m 6 ce 349 msg 75
@@ -2087,12 +2087,12 @@ SH sm 6 sg 2621440 pd 0.002 td 0.0015 rd 0.0015
 ES id 75 tid 75 eid 75 etid 75 c omnetpp::cPacket n UDP_Packet_18 l 12000 sm 6 sg 2621440 st 3.6086 am 7 ag 0 at 3.6121 pe 356
 CL id 78 tid 75 eid 78 etid 75 c omnetpp::cMessage n UDP_Packet_18 m 6 pe -1 cid 75
 
-E # 357 t 3.609 m 7 ce 353 msg 77
-- INFO: receiver1 received packet #56 from router2
-DM id 77 tid 77 eid 77 etid 77 c omnetpp::cMessage n UDP_Packet_18 m 7 pe 357
+E # 357 t 3.609 m 8 ce 353 msg 77
+- INFO: receiver2 received packet #28 from router2
+DM id 77 tid 77 eid 77 etid 77 c omnetpp::cMessage n UDP_Packet_18 m 8 pe 357
 
 E # 358 t 3.6121 m 7 ce 356 msg 75
-- INFO: receiver1 received packet #57 from router2
+- INFO: receiver1 received packet #29 from router2
 DM id 75 tid 75 eid 75 etid 75 c omnetpp::cMessage n UDP_Packet_18 m 7 pe 358
 
 E # 359 t 3.8 m 2 ce 341 msg 0
@@ -2158,8 +2158,8 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 3.80492 am 6 a
 
 E # 369 t 3.80492 m 6 ce 368 msg 4
 BS id 79 tid 79 eid 79 etid 79 c omnetpp::cPacket n UDP_Packet_19 l 6400 m 6 pe 368
-SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
-ES id 79 tid 79 eid 79 etid 79 c omnetpp::cPacket n UDP_Packet_19 l 6400 sm 6 sg 2621440 st 3.80492 am 7 ag 0 at 3.80772 pe 369
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 79 tid 79 eid 79 etid 79 c omnetpp::cPacket n UDP_Packet_19 l 6400 sm 6 sg 2621441 st 3.80492 am 8 ag 0 at 3.80772 pe 369
 CL id 81 tid 79 eid 81 etid 79 c omnetpp::cMessage n UDP_Packet_19 m 6 pe -1 cid 79
 
 E # 370 t 3.8062 m 6 ce 366 msg 80
@@ -2172,9 +2172,9 @@ SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
 ES id 80 tid 80 eid 80 etid 80 c omnetpp::cPacket n UDP_Packet_19 l 6400 sm 6 sg 2621440 st 3.8062 am 7 ag 0 at 3.809 pe 371
 CL id 81 tid 80 eid 81 etid 80 c omnetpp::cMessage n UDP_Packet_19 m 6 pe -1 cid 80
 
-E # 372 t 3.80772 m 7 ce 369 msg 79
-- INFO: receiver1 received packet #58 from router2
-DM id 79 tid 79 eid 79 etid 79 c omnetpp::cMessage n UDP_Packet_19 m 7 pe 372
+E # 372 t 3.80772 m 8 ce 369 msg 79
+- INFO: receiver2 received packet #29 from router2
+DM id 79 tid 79 eid 79 etid 79 c omnetpp::cMessage n UDP_Packet_19 m 8 pe 372
 
 E # 373 t 3.8086 m 6 ce 367 msg 78
 BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 3.8086 am 6 at 3.8086 pe 373
@@ -2182,17 +2182,17 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 3.8086 am 6 at
 
 E # 374 t 3.8086 m 6 ce 373 msg 4
 BS id 78 tid 78 eid 78 etid 78 c omnetpp::cPacket n UDP_Packet_19 l 12000 m 6 pe 373
-SH sm 6 sg 2621440 pd 0.002 td 0.0015 rd 0.0015
-ES id 78 tid 78 eid 78 etid 78 c omnetpp::cPacket n UDP_Packet_19 l 12000 sm 6 sg 2621440 st 3.8086 am 7 ag 0 at 3.8121 pe 374
+SH sm 6 sg 2621441 pd 0.002 td 0.0015 rd 0.0015
+ES id 78 tid 78 eid 78 etid 78 c omnetpp::cPacket n UDP_Packet_19 l 12000 sm 6 sg 2621441 st 3.8086 am 8 ag 0 at 3.8121 pe 374
 CL id 81 tid 78 eid 81 etid 78 c omnetpp::cMessage n UDP_Packet_19 m 6 pe -1 cid 78
 
 E # 375 t 3.809 m 7 ce 371 msg 80
-- INFO: receiver1 received packet #59 from router2
+- INFO: receiver1 received packet #30 from router2
 DM id 80 tid 80 eid 80 etid 80 c omnetpp::cMessage n UDP_Packet_19 m 7 pe 375
 
-E # 376 t 3.8121 m 7 ce 374 msg 78
-- INFO: receiver1 received packet #60 from router2
-DM id 78 tid 78 eid 78 etid 78 c omnetpp::cMessage n UDP_Packet_19 m 7 pe 376
+E # 376 t 3.8121 m 8 ce 374 msg 78
+- INFO: receiver2 received packet #30 from router2
+DM id 78 tid 78 eid 78 etid 78 c omnetpp::cMessage n UDP_Packet_19 m 8 pe 376
 
 E # 377 t 4 m 2 ce 359 msg 0
 CM id 81 tid 81 eid 81 etid 81 c omnetpp::cMessage n UDP_Packet_20 pe -1
@@ -2276,12 +2276,12 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 4.0062 am 6 at
 
 E # 390 t 4.0062 m 6 ce 389 msg 4
 BS id 83 tid 83 eid 83 etid 83 c omnetpp::cPacket n UDP_Packet_20 l 6400 m 6 pe 389
-SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
-ES id 83 tid 83 eid 83 etid 83 c omnetpp::cPacket n UDP_Packet_20 l 6400 sm 6 sg 2621440 st 4.0062 am 7 ag 0 at 4.009 pe 390
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 83 tid 83 eid 83 etid 83 c omnetpp::cPacket n UDP_Packet_20 l 6400 sm 6 sg 2621441 st 4.0062 am 8 ag 0 at 4.009 pe 390
 CL id 85 tid 83 eid 85 etid 83 c omnetpp::cMessage n UDP_Packet_20 m 6 pe -1 cid 83
 
 E # 391 t 4.00772 m 7 ce 388 msg 82
-- INFO: receiver1 received packet #61 from router2
+- INFO: receiver1 received packet #31 from router2
 DM id 82 tid 82 eid 82 etid 82 c omnetpp::cMessage n UDP_Packet_20 m 7 pe 391
 
 E # 392 t 4.0086 m 6 ce 385 msg 81
@@ -2294,12 +2294,12 @@ SH sm 6 sg 2621440 pd 0.002 td 0.0015 rd 0.0015
 ES id 81 tid 81 eid 81 etid 81 c omnetpp::cPacket n UDP_Packet_20 l 12000 sm 6 sg 2621440 st 4.0086 am 7 ag 0 at 4.0121 pe 393
 CL id 85 tid 81 eid 85 etid 81 c omnetpp::cMessage n UDP_Packet_20 m 6 pe -1 cid 81
 
-E # 394 t 4.009 m 7 ce 390 msg 83
-- INFO: receiver1 received packet #62 from router2
-DM id 83 tid 83 eid 83 etid 83 c omnetpp::cMessage n UDP_Packet_20 m 7 pe 394
+E # 394 t 4.009 m 8 ce 390 msg 83
+- INFO: receiver2 received packet #31 from router2
+DM id 83 tid 83 eid 83 etid 83 c omnetpp::cMessage n UDP_Packet_20 m 8 pe 394
 
 E # 395 t 4.0121 m 7 ce 393 msg 81
-- INFO: receiver1 received packet #63 from router2
+- INFO: receiver1 received packet #32 from router2
 DM id 81 tid 81 eid 81 etid 81 c omnetpp::cMessage n UDP_Packet_20 m 7 pe 395
 
 E # 396 t 4.2 m 2 ce 377 msg 0
@@ -2374,8 +2374,8 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 4.20492 am 6 a
 
 E # 407 t 4.20492 m 6 ce 406 msg 4
 BS id 86 tid 86 eid 86 etid 86 c omnetpp::cPacket n UDP_Packet_21 l 6400 m 6 pe 406
-SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
-ES id 86 tid 86 eid 86 etid 86 c omnetpp::cPacket n UDP_Packet_21 l 6400 sm 6 sg 2621440 st 4.20492 am 7 ag 0 at 4.20772 pe 407
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 86 tid 86 eid 86 etid 86 c omnetpp::cPacket n UDP_Packet_21 l 6400 sm 6 sg 2621441 st 4.20492 am 8 ag 0 at 4.20772 pe 407
 CL id 89 tid 86 eid 89 etid 86 c omnetpp::cMessage n UDP_Packet_21 m 6 pe -1 cid 86
 
 E # 408 t 4.2062 m 6 ce 404 msg 87
@@ -2388,9 +2388,9 @@ SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
 ES id 87 tid 87 eid 87 etid 87 c omnetpp::cPacket n UDP_Packet_21 l 6400 sm 6 sg 2621440 st 4.2062 am 7 ag 0 at 4.209 pe 409
 CL id 89 tid 87 eid 89 etid 87 c omnetpp::cMessage n UDP_Packet_21 m 6 pe -1 cid 87
 
-E # 410 t 4.20772 m 7 ce 407 msg 86
-- INFO: receiver1 received packet #64 from router2
-DM id 86 tid 86 eid 86 etid 86 c omnetpp::cMessage n UDP_Packet_21 m 7 pe 410
+E # 410 t 4.20772 m 8 ce 407 msg 86
+- INFO: receiver2 received packet #32 from router2
+DM id 86 tid 86 eid 86 etid 86 c omnetpp::cMessage n UDP_Packet_21 m 8 pe 410
 
 E # 411 t 4.2086 m 6 ce 405 msg 85
 BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 4.2086 am 6 at 4.2086 pe 411
@@ -2398,17 +2398,17 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 4.2086 am 6 at
 
 E # 412 t 4.2086 m 6 ce 411 msg 4
 BS id 85 tid 85 eid 85 etid 85 c omnetpp::cPacket n UDP_Packet_21 l 12000 m 6 pe 411
-SH sm 6 sg 2621440 pd 0.002 td 0.0015 rd 0.0015
-ES id 85 tid 85 eid 85 etid 85 c omnetpp::cPacket n UDP_Packet_21 l 12000 sm 6 sg 2621440 st 4.2086 am 7 ag 0 at 4.2121 pe 412
+SH sm 6 sg 2621441 pd 0.002 td 0.0015 rd 0.0015
+ES id 85 tid 85 eid 85 etid 85 c omnetpp::cPacket n UDP_Packet_21 l 12000 sm 6 sg 2621441 st 4.2086 am 8 ag 0 at 4.2121 pe 412
 CL id 89 tid 85 eid 89 etid 85 c omnetpp::cMessage n UDP_Packet_21 m 6 pe -1 cid 85
 
 E # 413 t 4.209 m 7 ce 409 msg 87
-- INFO: receiver1 received packet #65 from router2
+- INFO: receiver1 received packet #33 from router2
 DM id 87 tid 87 eid 87 etid 87 c omnetpp::cMessage n UDP_Packet_21 m 7 pe 413
 
-E # 414 t 4.2121 m 7 ce 412 msg 85
-- INFO: receiver1 received packet #66 from router2
-DM id 85 tid 85 eid 85 etid 85 c omnetpp::cMessage n UDP_Packet_21 m 7 pe 414
+E # 414 t 4.2121 m 8 ce 412 msg 85
+- INFO: receiver2 received packet #33 from router2
+DM id 85 tid 85 eid 85 etid 85 c omnetpp::cMessage n UDP_Packet_21 m 8 pe 414
 
 E # 415 t 4.4 m 2 ce 396 msg 0
 CM id 89 tid 89 eid 89 etid 89 c omnetpp::cMessage n UDP_Packet_22 pe -1
@@ -2501,12 +2501,12 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 4.4062 am 6 at
 
 E # 429 t 4.4062 m 6 ce 428 msg 4
 BS id 91 tid 91 eid 91 etid 91 c omnetpp::cPacket n UDP_Packet_22 l 6400 m 6 pe 428
-SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
-ES id 91 tid 91 eid 91 etid 91 c omnetpp::cPacket n UDP_Packet_22 l 6400 sm 6 sg 2621440 st 4.4062 am 7 ag 0 at 4.409 pe 429
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 91 tid 91 eid 91 etid 91 c omnetpp::cPacket n UDP_Packet_22 l 6400 sm 6 sg 2621441 st 4.4062 am 8 ag 0 at 4.409 pe 429
 CL id 94 tid 91 eid 94 etid 91 c omnetpp::cMessage n UDP_Packet_22 m 6 pe -1 cid 91
 
 E # 430 t 4.40772 m 7 ce 427 msg 90
-- INFO: receiver1 received packet #67 from router2
+- INFO: receiver1 received packet #34 from router2
 DM id 90 tid 90 eid 90 etid 90 c omnetpp::cMessage n UDP_Packet_22 m 7 pe 430
 
 E # 431 t 4.4086 m 6 ce 424 msg 89
@@ -2519,12 +2519,12 @@ SH sm 6 sg 2621440 pd 0.002 td 0.0015 rd 0.0015
 ES id 89 tid 89 eid 89 etid 89 c omnetpp::cPacket n UDP_Packet_22 l 12000 sm 6 sg 2621440 st 4.4086 am 7 ag 0 at 4.4121 pe 432
 CL id 94 tid 89 eid 94 etid 89 c omnetpp::cMessage n UDP_Packet_22 m 6 pe -1 cid 89
 
-E # 433 t 4.409 m 7 ce 429 msg 91
-- INFO: receiver1 received packet #68 from router2
-DM id 91 tid 91 eid 91 etid 91 c omnetpp::cMessage n UDP_Packet_22 m 7 pe 433
+E # 433 t 4.409 m 8 ce 429 msg 91
+- INFO: receiver2 received packet #34 from router2
+DM id 91 tid 91 eid 91 etid 91 c omnetpp::cMessage n UDP_Packet_22 m 8 pe 433
 
 E # 434 t 4.4121 m 7 ce 432 msg 89
-- INFO: receiver1 received packet #69 from router2
+- INFO: receiver1 received packet #35 from router2
 DM id 89 tid 89 eid 89 etid 89 c omnetpp::cMessage n UDP_Packet_22 m 7 pe 434
 
 E # 435 t 4.6 m 2 ce 415 msg 0
@@ -2599,8 +2599,8 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 4.60492 am 6 a
 
 E # 446 t 4.60492 m 6 ce 445 msg 4
 BS id 95 tid 95 eid 95 etid 95 c omnetpp::cPacket n UDP_Packet_23 l 6400 m 6 pe 445
-SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
-ES id 95 tid 95 eid 95 etid 95 c omnetpp::cPacket n UDP_Packet_23 l 6400 sm 6 sg 2621440 st 4.60492 am 7 ag 0 at 4.60772 pe 446
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 95 tid 95 eid 95 etid 95 c omnetpp::cPacket n UDP_Packet_23 l 6400 sm 6 sg 2621441 st 4.60492 am 8 ag 0 at 4.60772 pe 446
 CL id 98 tid 95 eid 98 etid 95 c omnetpp::cMessage n UDP_Packet_23 m 6 pe -1 cid 95
 
 E # 447 t 4.6062 m 6 ce 443 msg 96
@@ -2613,9 +2613,9 @@ SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
 ES id 96 tid 96 eid 96 etid 96 c omnetpp::cPacket n UDP_Packet_23 l 6400 sm 6 sg 2621440 st 4.6062 am 7 ag 0 at 4.609 pe 448
 CL id 98 tid 96 eid 98 etid 96 c omnetpp::cMessage n UDP_Packet_23 m 6 pe -1 cid 96
 
-E # 449 t 4.60772 m 7 ce 446 msg 95
-- INFO: receiver1 received packet #70 from router2
-DM id 95 tid 95 eid 95 etid 95 c omnetpp::cMessage n UDP_Packet_23 m 7 pe 449
+E # 449 t 4.60772 m 8 ce 446 msg 95
+- INFO: receiver2 received packet #35 from router2
+DM id 95 tid 95 eid 95 etid 95 c omnetpp::cMessage n UDP_Packet_23 m 8 pe 449
 
 E # 450 t 4.6086 m 6 ce 444 msg 94
 BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 4.6086 am 6 at 4.6086 pe 450
@@ -2623,17 +2623,17 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 4.6086 am 6 at
 
 E # 451 t 4.6086 m 6 ce 450 msg 4
 BS id 94 tid 94 eid 94 etid 94 c omnetpp::cPacket n UDP_Packet_23 l 12000 m 6 pe 450
-SH sm 6 sg 2621440 pd 0.002 td 0.0015 rd 0.0015
-ES id 94 tid 94 eid 94 etid 94 c omnetpp::cPacket n UDP_Packet_23 l 12000 sm 6 sg 2621440 st 4.6086 am 7 ag 0 at 4.6121 pe 451
+SH sm 6 sg 2621441 pd 0.002 td 0.0015 rd 0.0015
+ES id 94 tid 94 eid 94 etid 94 c omnetpp::cPacket n UDP_Packet_23 l 12000 sm 6 sg 2621441 st 4.6086 am 8 ag 0 at 4.6121 pe 451
 CL id 98 tid 94 eid 98 etid 94 c omnetpp::cMessage n UDP_Packet_23 m 6 pe -1 cid 94
 
 E # 452 t 4.609 m 7 ce 448 msg 96
-- INFO: receiver1 received packet #71 from router2
+- INFO: receiver1 received packet #36 from router2
 DM id 96 tid 96 eid 96 etid 96 c omnetpp::cMessage n UDP_Packet_23 m 7 pe 452
 
-E # 453 t 4.6121 m 7 ce 451 msg 94
-- INFO: receiver1 received packet #72 from router2
-DM id 94 tid 94 eid 94 etid 94 c omnetpp::cMessage n UDP_Packet_23 m 7 pe 453
+E # 453 t 4.6121 m 8 ce 451 msg 94
+- INFO: receiver2 received packet #36 from router2
+DM id 94 tid 94 eid 94 etid 94 c omnetpp::cMessage n UDP_Packet_23 m 8 pe 453
 
 E # 454 t 4.8 m 2 ce 435 msg 0
 CM id 98 tid 98 eid 98 etid 98 c omnetpp::cMessage n UDP_Packet_24 pe -1
@@ -2717,12 +2717,12 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 4.8062 am 6 at
 
 E # 467 t 4.8062 m 6 ce 466 msg 4
 BS id 100 tid 100 eid 100 etid 100 c omnetpp::cPacket n UDP_Packet_24 l 6400 m 6 pe 466
-SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
-ES id 100 tid 100 eid 100 etid 100 c omnetpp::cPacket n UDP_Packet_24 l 6400 sm 6 sg 2621440 st 4.8062 am 7 ag 0 at 4.809 pe 467
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 100 tid 100 eid 100 etid 100 c omnetpp::cPacket n UDP_Packet_24 l 6400 sm 6 sg 2621441 st 4.8062 am 8 ag 0 at 4.809 pe 467
 CL id 102 tid 100 eid 102 etid 100 c omnetpp::cMessage n UDP_Packet_24 m 6 pe -1 cid 100
 
 E # 468 t 4.80772 m 7 ce 465 msg 99
-- INFO: receiver1 received packet #73 from router2
+- INFO: receiver1 received packet #37 from router2
 DM id 99 tid 99 eid 99 etid 99 c omnetpp::cMessage n UDP_Packet_24 m 7 pe 468
 
 E # 469 t 4.8086 m 6 ce 463 msg 98
@@ -2744,12 +2744,12 @@ E # 471 t 4.8086 m 2 ce 470 msg 102
 - INFO: sender1: Adaptive packet size is now 1500 bytes (CI=0)
 DM id 102 tid 102 eid 102 etid 102 c omnetpp::cMessage n feedback m 2 pe 471
 
-E # 472 t 4.809 m 7 ce 467 msg 100
-- INFO: receiver1 received packet #74 from router2
-DM id 100 tid 100 eid 100 etid 100 c omnetpp::cMessage n UDP_Packet_24 m 7 pe 472
+E # 472 t 4.809 m 8 ce 467 msg 100
+- INFO: receiver2 received packet #37 from router2
+DM id 100 tid 100 eid 100 etid 100 c omnetpp::cMessage n UDP_Packet_24 m 8 pe 472
 
 E # 473 t 4.8121 m 7 ce 470 msg 98
-- INFO: receiver1 received packet #75 from router2
+- INFO: receiver1 received packet #38 from router2
 DM id 98 tid 98 eid 98 etid 98 c omnetpp::cMessage n UDP_Packet_24 m 7 pe 473
 
 E # 474 t 5 m 2 ce 454 msg 0
@@ -2824,8 +2824,8 @@ ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 5.00492 am 6 a
 
 E # 485 t 5.00492 m 6 ce 484 msg 4
 BS id 104 tid 104 eid 104 etid 104 c omnetpp::cPacket n UDP_Packet_25 l 6400 m 6 pe 484
-SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
-ES id 104 tid 104 eid 104 etid 104 c omnetpp::cPacket n UDP_Packet_25 l 6400 sm 6 sg 2621440 st 5.00492 am 7 ag 0 at 5.00772 pe 485
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 104 tid 104 eid 104 etid 104 c omnetpp::cPacket n UDP_Packet_25 l 6400 sm 6 sg 2621441 st 5.00492 am 8 ag 0 at 5.00772 pe 485
 CL id 107 tid 104 eid 107 etid 104 c omnetpp::cMessage n UDP_Packet_25 m 6 pe -1 cid 104
 
 E # 486 t 5.0062 m 6 ce 482 msg 105
@@ -2843,4 +2843,376 @@ SD sm 6 dm 2 dg 0
 ES id 107 tid 107 eid 107 etid 107 c omnetpp::cMessage n feedback sm 6 st 5.0062 am 2 ag 0 at 5.0062 pe 487
 CL id 108 tid 107 eid 108 etid 107 c omnetpp::cMessage n feedback m 6 pe -1 cid 107
 
-SE e 0 c 10 m "The user has finished the simulation -- at t=5.0062s, event #487"
+E # 488 t 5.0062 m 2 ce 487 msg 107
+- INFO: sender1: Adaptive packet size is now 1500 bytes (CI=0)
+DM id 107 tid 107 eid 107 etid 107 c omnetpp::cMessage n feedback m 2 pe 488
+
+E # 489 t 5.00772 m 8 ce 485 msg 104
+- INFO: receiver2 received packet #38 from router2
+DM id 104 tid 104 eid 104 etid 104 c omnetpp::cMessage n UDP_Packet_25 m 8 pe 489
+
+E # 490 t 5.0086 m 6 ce 483 msg 103
+BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 5.0086 am 6 at 5.0086 pe 490
+ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 5.0086 am 6 at 5.0086 pe 490
+
+E # 491 t 5.0086 m 6 ce 490 msg 4
+BS id 103 tid 103 eid 103 etid 103 c omnetpp::cPacket n UDP_Packet_25 l 12000 m 6 pe 490
+SH sm 6 sg 2621441 pd 0.002 td 0.0015 rd 0.0015
+ES id 103 tid 103 eid 103 etid 103 c omnetpp::cPacket n UDP_Packet_25 l 12000 sm 6 sg 2621441 st 5.0086 am 8 ag 0 at 5.0121 pe 491
+CL id 108 tid 103 eid 108 etid 103 c omnetpp::cMessage n UDP_Packet_25 m 6 pe -1 cid 103
+
+E # 492 t 5.009 m 7 ce 487 msg 105
+- INFO: receiver1 received packet #39 from router2
+DM id 105 tid 105 eid 105 etid 105 c omnetpp::cMessage n UDP_Packet_25 m 7 pe 492
+
+E # 493 t 5.0121 m 8 ce 491 msg 103
+- INFO: receiver2 received packet #39 from router2
+DM id 103 tid 103 eid 103 etid 103 c omnetpp::cMessage n UDP_Packet_25 m 8 pe 493
+
+E # 494 t 5.2 m 2 ce 474 msg 0
+CM id 108 tid 108 eid 108 etid 108 c omnetpp::cMessage n UDP_Packet_26 pe -1
+BS id 108 tid 108 eid 108 etid 108 c omnetpp::cPacket n UDP_Packet_26 l 12000 m 2 pe 494
+SH sm 2 sg 3 pd 0.001 td 0.0012 rd 0.0012
+ES id 108 tid 108 eid 108 etid 108 c omnetpp::cPacket n UDP_Packet_26 l 12000 sm 2 sg 3 st 5.2 am 5 ag 1048576 at 5.2022 pe 494
+CL id 109 tid 108 eid 109 etid 108 c omnetpp::cMessage n UDP_Packet_26 m 2 pe -1 cid 108
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n sendTimer sm 2 st 5.2 am 2 at 5.4 pe 494
+ES id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n sendTimer sm 2 st 5.2 am 2 at 5.4 pe 494
+
+E # 495 t 5.2 m 3 ce 475 msg 1
+CM id 109 tid 109 eid 109 etid 109 c omnetpp::cMessage n UDP_Packet_26 pe -1
+BS id 109 tid 109 eid 109 etid 109 c omnetpp::cPacket n UDP_Packet_26 l 6400 m 3 pe 495
+SH sm 3 sg 3 pd 0.001 td 0.00064 rd 0.00064
+ES id 109 tid 109 eid 109 etid 109 c omnetpp::cPacket n UDP_Packet_26 l 6400 sm 3 sg 3 st 5.2 am 5 ag 1048577 at 5.20164 pe 495
+CL id 110 tid 109 eid 110 etid 109 c omnetpp::cMessage n UDP_Packet_26 m 3 pe -1 cid 109
+BS id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n sendTimer sm 3 st 5.2 am 3 at 5.4 pe 495
+ES id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n sendTimer sm 3 st 5.2 am 3 at 5.4 pe 495
+
+E # 496 t 5.2 m 4 ce 476 msg 2
+CM id 110 tid 110 eid 110 etid 110 c omnetpp::cMessage n UDP_Packet_26 pe -1
+BS id 110 tid 110 eid 110 etid 110 c omnetpp::cPacket n UDP_Packet_26 l 6400 m 4 pe 496
+SH sm 4 sg 3 pd 0.001 td 0.00064 rd 0.00064
+ES id 110 tid 110 eid 110 etid 110 c omnetpp::cPacket n UDP_Packet_26 l 6400 sm 4 sg 3 st 5.2 am 5 ag 1048578 at 5.20164 pe 496
+CL id 111 tid 110 eid 111 etid 110 c omnetpp::cMessage n UDP_Packet_26 m 4 pe -1 cid 110
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n sendTimer sm 4 st 5.2 am 4 at 5.4 pe 496
+ES id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n sendTimer sm 4 st 5.2 am 4 at 5.4 pe 496
+
+E # 497 t 5.20164 m 5 ce 495 msg 109
+BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 5.20164 am 5 at 5.20164 pe 497
+ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 5.20164 am 5 at 5.20164 pe 497
+
+E # 498 t 5.20164 m 5 ce 496 msg 110
+
+E # 499 t 5.20164 m 5 ce 497 msg 3
+BS id 109 tid 109 eid 109 etid 109 c omnetpp::cPacket n UDP_Packet_26 l 6400 m 5 pe 497
+SH sm 5 sg 2621440 pd 0.002 td 0.00128 rd 0.00128
+ES id 109 tid 109 eid 109 etid 109 c omnetpp::cPacket n UDP_Packet_26 l 6400 sm 5 sg 2621440 st 5.20164 am 6 ag 1048576 at 5.20492 pe 499
+CL id 111 tid 109 eid 111 etid 109 c omnetpp::cMessage n UDP_Packet_26 m 5 pe -1 cid 109
+BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 5.20164 am 5 at 5.20292 pe 499
+ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 5.20164 am 5 at 5.20292 pe 499
+
+E # 500 t 5.2022 m 5 ce 494 msg 108
+
+E # 501 t 5.20292 m 5 ce 499 msg 3
+BS id 110 tid 110 eid 110 etid 110 c omnetpp::cPacket n UDP_Packet_26 l 6400 m 5 pe 498
+SH sm 5 sg 2621440 pd 0.002 td 0.00128 rd 0.00128
+ES id 110 tid 110 eid 110 etid 110 c omnetpp::cPacket n UDP_Packet_26 l 6400 sm 5 sg 2621440 st 5.20292 am 6 ag 1048576 at 5.2062 pe 501
+CL id 111 tid 110 eid 111 etid 110 c omnetpp::cMessage n UDP_Packet_26 m 5 pe -1 cid 110
+BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 5.20292 am 5 at 5.2042 pe 501
+ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 5.20292 am 5 at 5.2042 pe 501
+
+E # 502 t 5.2042 m 5 ce 501 msg 3
+BS id 108 tid 108 eid 108 etid 108 c omnetpp::cPacket n UDP_Packet_26 l 12000 m 5 pe 500
+SH sm 5 sg 2621440 pd 0.002 td 0.0024 rd 0.0024
+ES id 108 tid 108 eid 108 etid 108 c omnetpp::cPacket n UDP_Packet_26 l 12000 sm 5 sg 2621440 st 5.2042 am 6 ag 1048576 at 5.2086 pe 502
+CL id 111 tid 108 eid 111 etid 108 c omnetpp::cMessage n UDP_Packet_26 m 5 pe -1 cid 108
+CM id 111 tid 111 eid 111 etid 111 c omnetpp::cMessage n feedback pe -1
+BS id 111 tid 111 eid 111 etid 111 c omnetpp::cMessage n feedback m 5 pe 502
+SD sm 5 dm 2 dg 0
+ES id 111 tid 111 eid 111 etid 111 c omnetpp::cMessage n feedback sm 5 st 5.2042 am 2 ag 0 at 5.2042 pe 502
+CL id 112 tid 111 eid 112 etid 111 c omnetpp::cMessage n feedback m 5 pe -1 cid 111
+
+E # 503 t 5.2042 m 2 ce 502 msg 111
+- INFO: sender1: Adaptive packet size is now 1500 bytes (CI=0)
+DM id 111 tid 111 eid 111 etid 111 c omnetpp::cMessage n feedback m 2 pe 503
+
+E # 504 t 5.20492 m 6 ce 499 msg 109
+BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 5.20492 am 6 at 5.20492 pe 504
+ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 5.20492 am 6 at 5.20492 pe 504
+
+E # 505 t 5.20492 m 6 ce 504 msg 4
+BS id 109 tid 109 eid 109 etid 109 c omnetpp::cPacket n UDP_Packet_26 l 6400 m 6 pe 504
+SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
+ES id 109 tid 109 eid 109 etid 109 c omnetpp::cPacket n UDP_Packet_26 l 6400 sm 6 sg 2621440 st 5.20492 am 7 ag 0 at 5.20772 pe 505
+CL id 112 tid 109 eid 112 etid 109 c omnetpp::cMessage n UDP_Packet_26 m 6 pe -1 cid 109
+
+E # 506 t 5.2062 m 6 ce 501 msg 110
+BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 5.2062 am 6 at 5.2062 pe 506
+ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 5.2062 am 6 at 5.2062 pe 506
+
+E # 507 t 5.2062 m 6 ce 506 msg 4
+BS id 110 tid 110 eid 110 etid 110 c omnetpp::cPacket n UDP_Packet_26 l 6400 m 6 pe 506
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 110 tid 110 eid 110 etid 110 c omnetpp::cPacket n UDP_Packet_26 l 6400 sm 6 sg 2621441 st 5.2062 am 8 ag 0 at 5.209 pe 507
+CL id 112 tid 110 eid 112 etid 110 c omnetpp::cMessage n UDP_Packet_26 m 6 pe -1 cid 110
+
+E # 508 t 5.20772 m 7 ce 505 msg 109
+- INFO: receiver1 received packet #40 from router2
+DM id 109 tid 109 eid 109 etid 109 c omnetpp::cMessage n UDP_Packet_26 m 7 pe 508
+
+E # 509 t 5.2086 m 6 ce 502 msg 108
+BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 5.2086 am 6 at 5.2086 pe 509
+ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 5.2086 am 6 at 5.2086 pe 509
+
+E # 510 t 5.2086 m 6 ce 509 msg 4
+BS id 108 tid 108 eid 108 etid 108 c omnetpp::cPacket n UDP_Packet_26 l 12000 m 6 pe 509
+SH sm 6 sg 2621440 pd 0.002 td 0.0015 rd 0.0015
+ES id 108 tid 108 eid 108 etid 108 c omnetpp::cPacket n UDP_Packet_26 l 12000 sm 6 sg 2621440 st 5.2086 am 7 ag 0 at 5.2121 pe 510
+CL id 112 tid 108 eid 112 etid 108 c omnetpp::cMessage n UDP_Packet_26 m 6 pe -1 cid 108
+
+E # 511 t 5.209 m 8 ce 507 msg 110
+- INFO: receiver2 received packet #40 from router2
+DM id 110 tid 110 eid 110 etid 110 c omnetpp::cMessage n UDP_Packet_26 m 8 pe 511
+
+E # 512 t 5.2121 m 7 ce 510 msg 108
+- INFO: receiver1 received packet #41 from router2
+DM id 108 tid 108 eid 108 etid 108 c omnetpp::cMessage n UDP_Packet_26 m 7 pe 512
+
+E # 513 t 5.4 m 2 ce 494 msg 0
+CM id 112 tid 112 eid 112 etid 112 c omnetpp::cMessage n UDP_Packet_27 pe -1
+BS id 112 tid 112 eid 112 etid 112 c omnetpp::cPacket n UDP_Packet_27 l 12000 m 2 pe 513
+SH sm 2 sg 3 pd 0.001 td 0.0012 rd 0.0012
+ES id 112 tid 112 eid 112 etid 112 c omnetpp::cPacket n UDP_Packet_27 l 12000 sm 2 sg 3 st 5.4 am 5 ag 1048576 at 5.4022 pe 513
+CL id 113 tid 112 eid 113 etid 112 c omnetpp::cMessage n UDP_Packet_27 m 2 pe -1 cid 112
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n sendTimer sm 2 st 5.4 am 2 at 5.6 pe 513
+ES id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n sendTimer sm 2 st 5.4 am 2 at 5.6 pe 513
+
+E # 514 t 5.4 m 3 ce 495 msg 1
+CM id 113 tid 113 eid 113 etid 113 c omnetpp::cMessage n UDP_Packet_27 pe -1
+BS id 113 tid 113 eid 113 etid 113 c omnetpp::cPacket n UDP_Packet_27 l 6400 m 3 pe 514
+SH sm 3 sg 3 pd 0.001 td 0.00064 rd 0.00064
+ES id 113 tid 113 eid 113 etid 113 c omnetpp::cPacket n UDP_Packet_27 l 6400 sm 3 sg 3 st 5.4 am 5 ag 1048577 at 5.40164 pe 514
+CL id 114 tid 113 eid 114 etid 113 c omnetpp::cMessage n UDP_Packet_27 m 3 pe -1 cid 113
+BS id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n sendTimer sm 3 st 5.4 am 3 at 5.6 pe 514
+ES id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n sendTimer sm 3 st 5.4 am 3 at 5.6 pe 514
+
+E # 515 t 5.4 m 4 ce 496 msg 2
+CM id 114 tid 114 eid 114 etid 114 c omnetpp::cMessage n UDP_Packet_27 pe -1
+BS id 114 tid 114 eid 114 etid 114 c omnetpp::cPacket n UDP_Packet_27 l 6400 m 4 pe 515
+SH sm 4 sg 3 pd 0.001 td 0.00064 rd 0.00064
+ES id 114 tid 114 eid 114 etid 114 c omnetpp::cPacket n UDP_Packet_27 l 6400 sm 4 sg 3 st 5.4 am 5 ag 1048578 at 5.40164 pe 515
+CL id 115 tid 114 eid 115 etid 114 c omnetpp::cMessage n UDP_Packet_27 m 4 pe -1 cid 114
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n sendTimer sm 4 st 5.4 am 4 at 5.6 pe 515
+ES id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n sendTimer sm 4 st 5.4 am 4 at 5.6 pe 515
+
+E # 516 t 5.40164 m 5 ce 514 msg 113
+BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 5.40164 am 5 at 5.40164 pe 516
+ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 5.40164 am 5 at 5.40164 pe 516
+
+E # 517 t 5.40164 m 5 ce 515 msg 114
+
+E # 518 t 5.40164 m 5 ce 516 msg 3
+BS id 113 tid 113 eid 113 etid 113 c omnetpp::cPacket n UDP_Packet_27 l 6400 m 5 pe 516
+SH sm 5 sg 2621440 pd 0.002 td 0.00128 rd 0.00128
+ES id 113 tid 113 eid 113 etid 113 c omnetpp::cPacket n UDP_Packet_27 l 6400 sm 5 sg 2621440 st 5.40164 am 6 ag 1048576 at 5.40492 pe 518
+CL id 115 tid 113 eid 115 etid 113 c omnetpp::cMessage n UDP_Packet_27 m 5 pe -1 cid 113
+BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 5.40164 am 5 at 5.40292 pe 518
+ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 5.40164 am 5 at 5.40292 pe 518
+
+E # 519 t 5.4022 m 5 ce 513 msg 112
+
+E # 520 t 5.40292 m 5 ce 518 msg 3
+BS id 114 tid 114 eid 114 etid 114 c omnetpp::cPacket n UDP_Packet_27 l 6400 m 5 pe 517
+SH sm 5 sg 2621440 pd 0.002 td 0.00128 rd 0.00128
+ES id 114 tid 114 eid 114 etid 114 c omnetpp::cPacket n UDP_Packet_27 l 6400 sm 5 sg 2621440 st 5.40292 am 6 ag 1048576 at 5.4062 pe 520
+CL id 115 tid 114 eid 115 etid 114 c omnetpp::cMessage n UDP_Packet_27 m 5 pe -1 cid 114
+BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 5.40292 am 5 at 5.4042 pe 520
+ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 5.40292 am 5 at 5.4042 pe 520
+
+E # 521 t 5.4042 m 5 ce 520 msg 3
+BS id 112 tid 112 eid 112 etid 112 c omnetpp::cPacket n UDP_Packet_27 l 12000 m 5 pe 519
+SH sm 5 sg 2621440 pd 0.002 td 0.0024 rd 0.0024
+ES id 112 tid 112 eid 112 etid 112 c omnetpp::cPacket n UDP_Packet_27 l 12000 sm 5 sg 2621440 st 5.4042 am 6 ag 1048576 at 5.4086 pe 521
+CL id 115 tid 112 eid 115 etid 112 c omnetpp::cMessage n UDP_Packet_27 m 5 pe -1 cid 112
+CM id 115 tid 115 eid 115 etid 115 c omnetpp::cMessage n feedback pe -1
+BS id 115 tid 115 eid 115 etid 115 c omnetpp::cMessage n feedback m 5 pe 521
+SD sm 5 dm 2 dg 0
+ES id 115 tid 115 eid 115 etid 115 c omnetpp::cMessage n feedback sm 5 st 5.4042 am 2 ag 0 at 5.4042 pe 521
+CL id 116 tid 115 eid 116 etid 115 c omnetpp::cMessage n feedback m 5 pe -1 cid 115
+
+E # 522 t 5.4042 m 2 ce 521 msg 115
+- INFO: sender1: Adaptive packet size is now 1500 bytes (CI=0)
+DM id 115 tid 115 eid 115 etid 115 c omnetpp::cMessage n feedback m 2 pe 522
+
+E # 523 t 5.40492 m 6 ce 518 msg 113
+BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 5.40492 am 6 at 5.40492 pe 523
+ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 5.40492 am 6 at 5.40492 pe 523
+
+E # 524 t 5.40492 m 6 ce 523 msg 4
+BS id 113 tid 113 eid 113 etid 113 c omnetpp::cPacket n UDP_Packet_27 l 6400 m 6 pe 523
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 113 tid 113 eid 113 etid 113 c omnetpp::cPacket n UDP_Packet_27 l 6400 sm 6 sg 2621441 st 5.40492 am 8 ag 0 at 5.40772 pe 524
+CL id 116 tid 113 eid 116 etid 113 c omnetpp::cMessage n UDP_Packet_27 m 6 pe -1 cid 113
+
+E # 525 t 5.4062 m 6 ce 520 msg 114
+BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 5.4062 am 6 at 5.4062 pe 525
+ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 5.4062 am 6 at 5.4062 pe 525
+
+E # 526 t 5.4062 m 6 ce 525 msg 4
+BS id 114 tid 114 eid 114 etid 114 c omnetpp::cPacket n UDP_Packet_27 l 6400 m 6 pe 525
+SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
+ES id 114 tid 114 eid 114 etid 114 c omnetpp::cPacket n UDP_Packet_27 l 6400 sm 6 sg 2621440 st 5.4062 am 7 ag 0 at 5.409 pe 526
+CL id 116 tid 114 eid 116 etid 114 c omnetpp::cMessage n UDP_Packet_27 m 6 pe -1 cid 114
+
+E # 527 t 5.40772 m 8 ce 524 msg 113
+- INFO: receiver2 received packet #41 from router2
+DM id 113 tid 113 eid 113 etid 113 c omnetpp::cMessage n UDP_Packet_27 m 8 pe 527
+
+E # 528 t 5.4086 m 6 ce 521 msg 112
+BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 5.4086 am 6 at 5.4086 pe 528
+ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 5.4086 am 6 at 5.4086 pe 528
+
+E # 529 t 5.4086 m 6 ce 528 msg 4
+BS id 112 tid 112 eid 112 etid 112 c omnetpp::cPacket n UDP_Packet_27 l 12000 m 6 pe 528
+SH sm 6 sg 2621441 pd 0.002 td 0.0015 rd 0.0015
+ES id 112 tid 112 eid 112 etid 112 c omnetpp::cPacket n UDP_Packet_27 l 12000 sm 6 sg 2621441 st 5.4086 am 8 ag 0 at 5.4121 pe 529
+CL id 116 tid 112 eid 116 etid 112 c omnetpp::cMessage n UDP_Packet_27 m 6 pe -1 cid 112
+
+E # 530 t 5.409 m 7 ce 526 msg 114
+- INFO: receiver1 received packet #42 from router2
+DM id 114 tid 114 eid 114 etid 114 c omnetpp::cMessage n UDP_Packet_27 m 7 pe 530
+
+E # 531 t 5.4121 m 8 ce 529 msg 112
+- INFO: receiver2 received packet #42 from router2
+DM id 112 tid 112 eid 112 etid 112 c omnetpp::cMessage n UDP_Packet_27 m 8 pe 531
+
+E # 532 t 5.6 m 2 ce 513 msg 0
+CM id 116 tid 116 eid 116 etid 116 c omnetpp::cMessage n UDP_Packet_28 pe -1
+BS id 116 tid 116 eid 116 etid 116 c omnetpp::cPacket n UDP_Packet_28 l 12000 m 2 pe 532
+SH sm 2 sg 3 pd 0.001 td 0.0012 rd 0.0012
+ES id 116 tid 116 eid 116 etid 116 c omnetpp::cPacket n UDP_Packet_28 l 12000 sm 2 sg 3 st 5.6 am 5 ag 1048576 at 5.6022 pe 532
+CL id 117 tid 116 eid 117 etid 116 c omnetpp::cMessage n UDP_Packet_28 m 2 pe -1 cid 116
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n sendTimer sm 2 st 5.6 am 2 at 5.8 pe 532
+ES id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n sendTimer sm 2 st 5.6 am 2 at 5.8 pe 532
+
+E # 533 t 5.6 m 3 ce 514 msg 1
+CM id 117 tid 117 eid 117 etid 117 c omnetpp::cMessage n UDP_Packet_28 pe -1
+BS id 117 tid 117 eid 117 etid 117 c omnetpp::cPacket n UDP_Packet_28 l 6400 m 3 pe 533
+SH sm 3 sg 3 pd 0.001 td 0.00064 rd 0.00064
+ES id 117 tid 117 eid 117 etid 117 c omnetpp::cPacket n UDP_Packet_28 l 6400 sm 3 sg 3 st 5.6 am 5 ag 1048577 at 5.60164 pe 533
+CL id 118 tid 117 eid 118 etid 117 c omnetpp::cMessage n UDP_Packet_28 m 3 pe -1 cid 117
+BS id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n sendTimer sm 3 st 5.6 am 3 at 5.8 pe 533
+ES id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n sendTimer sm 3 st 5.6 am 3 at 5.8 pe 533
+
+E # 534 t 5.6 m 4 ce 515 msg 2
+CM id 118 tid 118 eid 118 etid 118 c omnetpp::cMessage n UDP_Packet_28 pe -1
+BS id 118 tid 118 eid 118 etid 118 c omnetpp::cPacket n UDP_Packet_28 l 6400 m 4 pe 534
+SH sm 4 sg 3 pd 0.001 td 0.00064 rd 0.00064
+ES id 118 tid 118 eid 118 etid 118 c omnetpp::cPacket n UDP_Packet_28 l 6400 sm 4 sg 3 st 5.6 am 5 ag 1048578 at 5.60164 pe 534
+CL id 119 tid 118 eid 119 etid 118 c omnetpp::cMessage n UDP_Packet_28 m 4 pe -1 cid 118
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n sendTimer sm 4 st 5.6 am 4 at 5.8 pe 534
+ES id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n sendTimer sm 4 st 5.6 am 4 at 5.8 pe 534
+
+E # 535 t 5.60164 m 5 ce 533 msg 117
+BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 5.60164 am 5 at 5.60164 pe 535
+ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 5.60164 am 5 at 5.60164 pe 535
+
+E # 536 t 5.60164 m 5 ce 534 msg 118
+
+E # 537 t 5.60164 m 5 ce 535 msg 3
+BS id 117 tid 117 eid 117 etid 117 c omnetpp::cPacket n UDP_Packet_28 l 6400 m 5 pe 535
+SH sm 5 sg 2621440 pd 0.002 td 0.00128 rd 0.00128
+ES id 117 tid 117 eid 117 etid 117 c omnetpp::cPacket n UDP_Packet_28 l 6400 sm 5 sg 2621440 st 5.60164 am 6 ag 1048576 at 5.60492 pe 537
+CL id 119 tid 117 eid 119 etid 117 c omnetpp::cMessage n UDP_Packet_28 m 5 pe -1 cid 117
+BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 5.60164 am 5 at 5.60292 pe 537
+ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 5.60164 am 5 at 5.60292 pe 537
+
+E # 538 t 5.6022 m 5 ce 532 msg 116
+
+E # 539 t 5.60292 m 5 ce 537 msg 3
+BS id 118 tid 118 eid 118 etid 118 c omnetpp::cPacket n UDP_Packet_28 l 6400 m 5 pe 536
+SH sm 5 sg 2621440 pd 0.002 td 0.00128 rd 0.00128
+ES id 118 tid 118 eid 118 etid 118 c omnetpp::cPacket n UDP_Packet_28 l 6400 sm 5 sg 2621440 st 5.60292 am 6 ag 1048576 at 5.6062 pe 539
+CL id 119 tid 118 eid 119 etid 118 c omnetpp::cMessage n UDP_Packet_28 m 5 pe -1 cid 118
+BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 5.60292 am 5 at 5.6042 pe 539
+ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 5.60292 am 5 at 5.6042 pe 539
+
+E # 540 t 5.6042 m 5 ce 539 msg 3
+BS id 116 tid 116 eid 116 etid 116 c omnetpp::cPacket n UDP_Packet_28 l 12000 m 5 pe 538
+SH sm 5 sg 2621440 pd 0.002 td 0.0024 rd 0.0024
+ES id 116 tid 116 eid 116 etid 116 c omnetpp::cPacket n UDP_Packet_28 l 12000 sm 5 sg 2621440 st 5.6042 am 6 ag 1048576 at 5.6086 pe 540
+CL id 119 tid 116 eid 119 etid 116 c omnetpp::cMessage n UDP_Packet_28 m 5 pe -1 cid 116
+
+E # 541 t 5.60492 m 6 ce 537 msg 117
+BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 5.60492 am 6 at 5.60492 pe 541
+ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 5.60492 am 6 at 5.60492 pe 541
+
+E # 542 t 5.60492 m 6 ce 541 msg 4
+BS id 117 tid 117 eid 117 etid 117 c omnetpp::cPacket n UDP_Packet_28 l 6400 m 6 pe 541
+SH sm 6 sg 2621440 pd 0.002 td 0.0008 rd 0.0008
+ES id 117 tid 117 eid 117 etid 117 c omnetpp::cPacket n UDP_Packet_28 l 6400 sm 6 sg 2621440 st 5.60492 am 7 ag 0 at 5.60772 pe 542
+CL id 119 tid 117 eid 119 etid 117 c omnetpp::cMessage n UDP_Packet_28 m 6 pe -1 cid 117
+
+E # 543 t 5.6062 m 6 ce 539 msg 118
+BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 5.6062 am 6 at 5.6062 pe 543
+ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 5.6062 am 6 at 5.6062 pe 543
+
+E # 544 t 5.6062 m 6 ce 543 msg 4
+BS id 118 tid 118 eid 118 etid 118 c omnetpp::cPacket n UDP_Packet_28 l 6400 m 6 pe 543
+SH sm 6 sg 2621441 pd 0.002 td 0.0008 rd 0.0008
+ES id 118 tid 118 eid 118 etid 118 c omnetpp::cPacket n UDP_Packet_28 l 6400 sm 6 sg 2621441 st 5.6062 am 8 ag 0 at 5.609 pe 544
+CL id 119 tid 118 eid 119 etid 118 c omnetpp::cMessage n UDP_Packet_28 m 6 pe -1 cid 118
+
+E # 545 t 5.60772 m 7 ce 542 msg 117
+- INFO: receiver1 received packet #43 from router2
+DM id 117 tid 117 eid 117 etid 117 c omnetpp::cMessage n UDP_Packet_28 m 7 pe 545
+
+E # 546 t 5.6086 m 6 ce 540 msg 116
+BS id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 5.6086 am 6 at 5.6086 pe 546
+ES id 4 tid 4 eid 4 etid 4 c omnetpp::cMessage n sendNext sm 6 st 5.6086 am 6 at 5.6086 pe 546
+
+E # 547 t 5.6086 m 6 ce 546 msg 4
+BS id 116 tid 116 eid 116 etid 116 c omnetpp::cPacket n UDP_Packet_28 l 12000 m 6 pe 546
+SH sm 6 sg 2621440 pd 0.002 td 0.0015 rd 0.0015
+ES id 116 tid 116 eid 116 etid 116 c omnetpp::cPacket n UDP_Packet_28 l 12000 sm 6 sg 2621440 st 5.6086 am 7 ag 0 at 5.6121 pe 547
+CL id 119 tid 116 eid 119 etid 116 c omnetpp::cMessage n UDP_Packet_28 m 6 pe -1 cid 116
+
+E # 548 t 5.609 m 8 ce 544 msg 118
+- INFO: receiver2 received packet #43 from router2
+DM id 118 tid 118 eid 118 etid 118 c omnetpp::cMessage n UDP_Packet_28 m 8 pe 548
+
+E # 549 t 5.6121 m 7 ce 547 msg 116
+- INFO: receiver1 received packet #44 from router2
+DM id 116 tid 116 eid 116 etid 116 c omnetpp::cMessage n UDP_Packet_28 m 7 pe 549
+
+E # 550 t 5.8 m 2 ce 532 msg 0
+CM id 119 tid 119 eid 119 etid 119 c omnetpp::cMessage n UDP_Packet_29 pe -1
+BS id 119 tid 119 eid 119 etid 119 c omnetpp::cPacket n UDP_Packet_29 l 12000 m 2 pe 550
+SH sm 2 sg 3 pd 0.001 td 0.0012 rd 0.0012
+ES id 119 tid 119 eid 119 etid 119 c omnetpp::cPacket n UDP_Packet_29 l 12000 sm 2 sg 3 st 5.8 am 5 ag 1048576 at 5.8022 pe 550
+CL id 120 tid 119 eid 120 etid 119 c omnetpp::cMessage n UDP_Packet_29 m 2 pe -1 cid 119
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n sendTimer sm 2 st 5.8 am 2 at 6 pe 550
+ES id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n sendTimer sm 2 st 5.8 am 2 at 6 pe 550
+
+E # 551 t 5.8 m 3 ce 533 msg 1
+CM id 120 tid 120 eid 120 etid 120 c omnetpp::cMessage n UDP_Packet_29 pe -1
+BS id 120 tid 120 eid 120 etid 120 c omnetpp::cPacket n UDP_Packet_29 l 6400 m 3 pe 551
+SH sm 3 sg 3 pd 0.001 td 0.00064 rd 0.00064
+ES id 120 tid 120 eid 120 etid 120 c omnetpp::cPacket n UDP_Packet_29 l 6400 sm 3 sg 3 st 5.8 am 5 ag 1048577 at 5.80164 pe 551
+CL id 121 tid 120 eid 121 etid 120 c omnetpp::cMessage n UDP_Packet_29 m 3 pe -1 cid 120
+BS id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n sendTimer sm 3 st 5.8 am 3 at 6 pe 551
+ES id 1 tid 1 eid 1 etid 1 c omnetpp::cMessage n sendTimer sm 3 st 5.8 am 3 at 6 pe 551
+
+E # 552 t 5.8 m 4 ce 534 msg 2
+CM id 121 tid 121 eid 121 etid 121 c omnetpp::cMessage n UDP_Packet_29 pe -1
+BS id 121 tid 121 eid 121 etid 121 c omnetpp::cPacket n UDP_Packet_29 l 6400 m 4 pe 552
+SH sm 4 sg 3 pd 0.001 td 0.00064 rd 0.00064
+ES id 121 tid 121 eid 121 etid 121 c omnetpp::cPacket n UDP_Packet_29 l 6400 sm 4 sg 3 st 5.8 am 5 ag 1048578 at 5.80164 pe 552
+CL id 122 tid 121 eid 122 etid 121 c omnetpp::cMessage n UDP_Packet_29 m 4 pe -1 cid 121
+BS id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n sendTimer sm 4 st 5.8 am 4 at 6 pe 552
+ES id 2 tid 2 eid 2 etid 2 c omnetpp::cMessage n sendTimer sm 4 st 5.8 am 4 at 6 pe 552
+
+E # 553 t 5.80164 m 5 ce 551 msg 120
+BS id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 5.80164 am 5 at 5.80164 pe 553
+ES id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n sendNext sm 5 st 5.80164 am 5 at 5.80164 pe 553
+
+SE e 0 c 10 m "The user has finished the simulation -- at t=5.80164s, event #553"

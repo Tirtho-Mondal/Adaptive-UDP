@@ -12,6 +12,7 @@ void RouterNode::initialize()
     ciSignal = registerSignal("ci");
     buffer.setName("outBuffer");
     sendNextEvent = new cMessage("sendNext");
+    nextOutGate = 0; // initialize the output gate index
 }
 
 void RouterNode::handleMessage(cMessage *msg)
@@ -41,38 +42,33 @@ void RouterNode::trySend()
     if (buffer.isEmpty())
         return;
 
-    // Always send using out[0]
-    int outIx = 0;
-    cGate *outGate = gate("out", outIx);
+    int numOutGates = gateSize("out");
+    if (numOutGates == 0)
+        return; // safeguard
 
-    // Retrieve the channel
+    // Select output gate in round-robin
+    cGate *outGate = gate("out", nextOutGate);
+    nextOutGate = (nextOutGate + 1) % numOutGates;
+
     cChannel *channel = outGate->getTransmissionChannel();
-
-    // Default "readyAt" is now
     simtime_t readyAt = simTime();
 
-    // If this gate has a channel, get its transmission finish time
     if (channel != nullptr)
         readyAt = channel->getTransmissionFinishTime();
 
     if (readyAt <= simTime()) {
-        // Channel is free, send packet
         cMessage *pkt = (cMessage *)buffer.pop();
         send(pkt, outGate);
 
-        // Emit congestion index signal
         double ci = computeCI();
         emit(ciSignal, ci);
 
-        // Optionally send feedback
         if (uniform(0, 1) < 0.15)
             sendFeedback(ci);
 
-        // Schedule next transmission if queue not empty
         if (!buffer.isEmpty() && channel != nullptr)
             scheduleAt(channel->getTransmissionFinishTime(), sendNextEvent);
     } else {
-        // Still transmitting, reschedule when ready
         scheduleAt(readyAt, sendNextEvent);
     }
 }
@@ -81,7 +77,6 @@ double RouterNode::computeCI()
 {
     double q = ((double)buffer.getLength()) / capacity;
     double l = (double)droppedPackets / (droppedPackets + 1);
-    // Simple queue+loss congestion indicator
     return 0.7 * q + 0.3 * l;
 }
 
