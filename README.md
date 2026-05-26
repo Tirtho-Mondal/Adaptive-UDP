@@ -183,7 +183,7 @@ The simulated network includes:
 ---
 
 <p align="center">
-  <img src="assets/Network_UDP.png" width="800"/>
+  <img src="Network_UDP.png" width="800"/>
 </p>
 
 <div align="center">
@@ -221,7 +221,7 @@ T_s = 0.2 \text{ seconds}
 ---
 
 <p align="center">
-  <img src="assets/Initially sending paket.png" width="900"/>
+  <img src="Initially sending paket.png" width="900"/>
 </p>
 
 <div align="center">
@@ -299,7 +299,7 @@ Where:
 ---
 
 <p align="center">
-  <img src="assets/Feedback.png" width="900"/>
+  <img src="Feedback.png" width="900"/>
 </p>
 
 <div align="center">
@@ -393,7 +393,7 @@ The GA continues until:
 ---
 
 <p align="center">
-  <img src="assets/diff inin.png" width="900"/>
+  <img src="diff inin.png" width="900"/>
 </p>
 
 <div align="center">
@@ -415,7 +415,7 @@ N_r = \text{TotalPacketsReceived}
 ---
 
 <p align="center">
-  <img src="assets/Screenshot 2025-10-30 000802.png" width="900"/>
+  <img src="Initially sending paket.png" width="900"/>
 </p>
 
 <div align="center">
@@ -529,7 +529,7 @@ Adaptive-UDP/
 │   ├── omnetpp.ini
 │   ├── network.ned
 │
-├── assets/
+├── 
 │   ├── images
 │   ├── diagrams
 │
